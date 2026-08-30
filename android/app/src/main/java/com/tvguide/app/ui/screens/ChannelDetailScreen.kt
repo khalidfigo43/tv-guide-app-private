@@ -121,6 +121,20 @@ fun ChannelDetailScreen(
         }
     }
 
+    val listState = androidx.compose.foundation.lazy.rememberLazyListState()
+    val liveIndex = remember(schedule) {
+        schedule.indexOfFirst { calculateAiringStatus(it.startTime, it.endTime) == AiringStatus.LIVE }
+    }
+
+    LaunchedEffect(schedule, liveIndex) {
+        if (liveIndex != -1) {
+            listState.scrollToItem(
+                index = (2 + liveIndex).coerceAtLeast(0),
+                scrollOffset = -220
+            )
+        }
+    }
+
     Scaffold(
         containerColor = DarkBackground,
         topBar = {
@@ -148,6 +162,7 @@ fun ChannelDetailScreen(
         }
     ) { padding ->
         LazyColumn(
+            state = listState,
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding),
