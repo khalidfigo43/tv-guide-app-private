@@ -160,82 +160,91 @@ fun TopSearchBar(
         modifier = Modifier
             .fillMaxWidth()
             .statusBarsPadding()
-            .padding(horizontal = 12.dp, vertical = 6.dp),
-        shape = RoundedCornerShape(16.dp),
-        shadowElevation = 4.dp
+            .padding(horizontal = 10.dp, vertical = 2.dp),
+        shape = RoundedCornerShape(12.dp),
+        shadowElevation = 2.dp
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 4.dp),
+                .height(40.dp)
+                .padding(horizontal = 8.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            TextField(
-                value = query,
-                onValueChange = onQueryChange,
-                placeholder = {
-                    Text(
-                        text = "ابحث عن قناة، فيلم، مسلسل، أو ممثل...",
-                        color = TextSecondary,
-                        fontSize = 12.sp
-                    )
-                },
-                leadingIcon = {
-                    Icon(
-                        imageVector = Icons.Default.Search,
-                        contentDescription = "Search",
-                        tint = AccentGold,
-                        modifier = Modifier.size(20.dp)
-                    )
-                },
-                trailingIcon = {
-                    if (query.isNotBlank()) {
-                        IconButton(onClick = onClear) {
-                            Icon(
-                                imageVector = Icons.Default.Close,
-                                contentDescription = "Clear",
-                                tint = TextSecondary,
-                                modifier = Modifier.size(18.dp)
-                            )
-                        }
-                    }
-                },
-                singleLine = true,
-                keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
-                colors = TextFieldDefaults.colors(
-                    focusedContainerColor = Color.Transparent,
-                    unfocusedContainerColor = Color.Transparent,
-                    disabledContainerColor = Color.Transparent,
-                    focusedIndicatorColor = Color.Transparent,
-                    unfocusedIndicatorColor = Color.Transparent,
-                    focusedTextColor = Color.White,
-                    unfocusedTextColor = Color.White
-                ),
-                modifier = Modifier.weight(1f)
+            Icon(
+                imageVector = Icons.Default.Search,
+                contentDescription = "Search",
+                tint = AccentGold,
+                modifier = Modifier.size(18.dp)
             )
+            Spacer(modifier = Modifier.width(6.dp))
+
+            Box(
+                modifier = Modifier.weight(1f),
+                contentAlignment = Alignment.CenterStart
+            ) {
+                if (query.isEmpty()) {
+                    Text(
+                        text = "ابحث عن فيلم، مسلسل، قناة، ممثل...",
+                        color = TextSecondary,
+                        fontSize = 12.sp,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                }
+                androidx.compose.foundation.text.BasicTextField(
+                    value = query,
+                    onValueChange = onQueryChange,
+                    singleLine = true,
+                    maxLines = 1,
+                    textStyle = androidx.compose.ui.text.TextStyle(
+                        color = Color.White,
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.Medium
+                    ),
+                    cursorBrush = androidx.compose.ui.graphics.SolidColor(PrimaryRed),
+                    keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
+                    modifier = Modifier.fillMaxWidth()
+                )
+            }
+
+            if (query.isNotBlank()) {
+                IconButton(
+                    onClick = onClear,
+                    modifier = Modifier.size(24.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Close,
+                        contentDescription = "Clear",
+                        tint = TextSecondary,
+                        modifier = Modifier.size(16.dp)
+                    )
+                }
+                Spacer(modifier = Modifier.width(4.dp))
+            }
 
             // Country & Timezone Button
             Surface(
                 color = DarkSurfaceVariant,
-                shape = RoundedCornerShape(10.dp),
+                shape = RoundedCornerShape(8.dp),
                 modifier = Modifier
-                    .padding(end = 6.dp)
+                    .height(28.dp)
                     .clickable(onClick = onTimezoneClick)
             ) {
                 Row(
-                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 6.dp),
+                    modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
                         text = selectedTimezone.flag,
-                        fontSize = 13.sp
+                        fontSize = 12.sp
                     )
-                    Spacer(modifier = Modifier.width(4.dp))
+                    Spacer(modifier = Modifier.width(3.dp))
                     Icon(
                         imageVector = Icons.Default.Public,
                         contentDescription = "Timezone",
                         tint = AccentCyan,
-                        modifier = Modifier.size(14.dp)
+                        modifier = Modifier.size(12.dp)
                     )
                 }
             }

@@ -14,6 +14,9 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 object AdMobHelper {
     private const val TAG = "AdMobHelper"
 
+    // Master Switch to toggle Ads (Set to true when AdMob account is ready)
+    const val ENABLE_ADS = false
+
     // Official Google Test Ad Unit IDs (replace with your production IDs in release)
     const val BANNER_AD_UNIT_ID = "ca-app-pub-3940256099942544/6300978111"
     const val INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-3940256099942544/1033173712"
@@ -24,6 +27,7 @@ object AdMobHelper {
     private const val CLICKS_BETWEEN_ADS = 4
 
     fun initialize(context: Context) {
+        if (!ENABLE_ADS) return
         try {
             MobileAds.initialize(context) { initializationStatus ->
                 Log.d(TAG, "AdMob Initialized: $initializationStatus")
@@ -35,6 +39,7 @@ object AdMobHelper {
     }
 
     fun loadInterstitialAd(context: Context) {
+        if (!ENABLE_ADS) return
         if (interstitialAd != null || isAdLoading) return
         isAdLoading = true
 
@@ -60,6 +65,11 @@ object AdMobHelper {
     }
 
     fun showInterstitialAdIfReady(activity: Activity?, onDismissed: () -> Unit = {}) {
+        if (!ENABLE_ADS) {
+            onDismissed()
+            return
+        }
+
         clickCount++
         if (clickCount % CLICKS_BETWEEN_ADS != 0) {
             onDismissed()

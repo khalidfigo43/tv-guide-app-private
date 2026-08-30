@@ -68,6 +68,22 @@ fun UpdateDialog(
                     .verticalScroll(rememberScrollState()),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
+                if (updateInfo.isForceUpdate) {
+                    Surface(
+                        color = PrimaryRed.copy(alpha = 0.15f),
+                        shape = RoundedCornerShape(8.dp),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text(
+                            text = "⚠️ هذا التحديث إجباري وهام لمتابعة استخدام التطبيق",
+                            color = PrimaryRed,
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.Bold,
+                            modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp)
+                        )
+                    }
+                }
+
                 if (updateInfo.releaseNotes.isNotBlank()) {
                     Surface(
                         color = DarkSurfaceVariant,
@@ -158,3 +174,4 @@ fun UpdateDialog(
         }
     )
 }
+
