@@ -27,3 +27,7 @@ __pycache__/
 TVGuide.apk
 build_output/
 
+
+github-recovery-codes.txt
+*.txt
+
