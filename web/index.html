@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل التلفزيون | TV Guide Online (90 قناة)</title>
+  <!-- Google Fonts: Cairo & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#E50914',
+              gold: '#FFB800',
+              cyan: '#00D2FF',
+              dark: '#0B0C10',
+              surface: '#151821',
+              card: '#1F2330',
+              border: '#2C3245'
+            }
+          },
+          fontFamily: {
+            sans: ['Cairo', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar { height: 6px; width: 6px; }
+    ::-webkit-scrollbar-track { background: #0B0C10; }
+    ::-webkit-scrollbar-thumb { background: #2C3245; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #E50914; }
+    .poster-glow:hover {
+      box-shadow: 0 10px 25px -5px rgba(229, 9, 20, 0.4);
+      transform: translateY(-4px);
+    }
+    @keyframes bellRing {
+      0%, 100% { transform: rotate(0); }
+      20%, 60% { transform: rotate(15deg); }
+      40%, 80% { transform: rotate(-15deg); }
+    }
+    .bell-animate:hover svg {
+      animation: bellRing 0.6s ease;
+    }
+  </style>
+</head>
+<body class="bg-[#0B0C10] text-gray-100 font-sans min-h-screen flex flex-col antialiased selection:bg-red-600 selection:text-white">
+
+  <!-- ===================================================================== -->
+  <!-- NAVBAR -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-[#151821]/95 backdrop-blur-md border-b border-brand-border px-4 lg:px-8 py-3.5 flex items-center justify-between shadow-lg">
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-2.5 cursor-pointer" onclick="resetView()">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-red to-orange-500 flex items-center justify-center shadow-md shadow-red-900/30 font-black text-xl text-white">
+          TV
+        </div>
+        <div>
+          <h1 class="text-xl font-black tracking-tight text-white flex items-center gap-1.5">
+            دليل التلفزيون
+            <span id="navbarChannelCount" class="text-[10px] bg-brand-red/20 text-brand-red font-bold px-2 py-0.5 rounded-full border border-brand-red/30">149 قناة فضائية</span>
+          </h1>
+          <p class="text-[11px] text-gray-400">أفلام، مسلسلات، وثائقيات، وبث حي</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Input -->
+    <div class="flex-1 max-w-md mx-4 hidden sm:block">
+      <div class="relative">
+        <input 
+          id="searchInput"
+          type="text" 
+          placeholder="ابحث عن فيلم (ابن الحاج أحمد، Oppenheimer)، مسلسل..."
+          class="w-full bg-[#1F2330] border border-brand-border rounded-full py-2 px-10 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition"
+          oninput="handleSearch(this.value)"
+        >
+        <svg class="w-4 h-4 text-gray-400 absolute right-3.5 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <button id="clearSearchBtn" class="hidden absolute left-3.5 top-2.5 text-xs text-gray-400 hover:text-white" onclick="clearSearch()">✕</button>
+      </div>
+    </div>
+
+    <!-- Right Controls: Timezone Selector + Reminders + Lang + Auth -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Timezone Selector Dropdown -->
+      <div class="relative flex items-center bg-brand-card border border-brand-border rounded-xl px-2.5 py-1 text-xs">
+        <span class="text-brand-gold ml-1.5 font-bold">🕒</span>
+        <select id="timezoneSelect" onchange="changeTimezone(this.value)" class="bg-transparent text-gray-200 font-bold focus:outline-none cursor-pointer text-xs">
+          <option value="Africa/Cairo" class="bg-[#151821] text-white">🇪🇬 توقيت مصر (القاهرة)</option>
+          <option value="Asia/Riyadh" class="bg-[#151821] text-white">🇸🇦 توقيت السعودية (مكة)</option>
+          <option value="Asia/Dubai" class="bg-[#151821] text-white">🇦🇪 توقيت الإمارات (دبي)</option>
+          <option value="Africa/Casablanca" class="bg-[#151821] text-white">🇲🇦 توقيت المغرب (الرباط)</option>
+          <option value="UTC" class="bg-[#151821] text-white">🇬🇧 توقيت جرينتش (GMT)</option>
+          <option value="auto" class="bg-[#151821] text-brand-gold">📍 تحديد تلقائي (موقعي)</option>
+        </select>
+      </div>
+
+      <!-- Reminders Button with Counter -->
+      <button onclick="openRemindersDrawer()" class="bell-animate relative px-3 py-1.5 rounded-xl bg-brand-card hover:bg-brand-border border border-brand-border text-xs font-bold text-gray-200 flex items-center gap-1.5 transition">
+        <svg class="w-4 h-4 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"/></svg>
+        <span>تنبيهاتي</span>
+        <span id="remindersCountBadge" class="hidden bg-brand-red text-white text-[10px] font-black px-1.5 py-0.2 rounded-full">0</span>
+      </button>
+
+      <button onclick="showAuthModal()" class="px-3.5 py-1.5 rounded-lg bg-brand-red hover:bg-red-700 text-xs font-bold text-white shadow-md shadow-red-900/30 transition">
+        حساب مجاني
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Search Bar -->
+  <div class="sm:hidden p-3 bg-[#151821] border-b border-brand-border">
+    <div class="relative">
+      <input 
+        id="mobileSearchInput"
+        type="text" 
+        placeholder="ابحث عن فيلم، مسلسل، وثائقي، أو قناة..."
+        class="w-full bg-[#1F2330] border border-brand-border rounded-full py-2 px-10 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-brand-red"
+        oninput="handleSearch(this.value)"
+      >
+      <svg class="w-4 h-4 text-gray-400 absolute right-3.5 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    </div>
+  </div>
+
+  <!-- Timezone Notification Banner -->
+  <div class="bg-brand-surface/80 border-b border-brand-border/60 py-1 px-4 text-center text-[11px] text-gray-400 flex items-center justify-center gap-2">
+    <span>💡 يتم ضبط جميع مواعيد العرض والتنبيهات تلقائياً حسب:</span>
+    <span id="currentTimezoneLabel" class="text-brand-cyan font-bold">🇪🇬 توقيت مصر (القاهرة)</span>
+    <button onclick="requestGeolocation()" class="text-brand-gold hover:underline font-bold text-[10px] bg-brand-card px-2 py-0.5 rounded border border-brand-border">📍 تحديث عبر الـ GPS</button>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MAIN CONTENT -->
+  <!-- ===================================================================== -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 space-y-10">
+
+    <!-- SEARCH RESULTS (Conditional) -->
+    <section id="searchResultsSection" class="hidden space-y-4">
+      <div class="flex items-center justify-between border-b border-brand-border pb-2">
+        <h2 class="text-xl font-bold text-white flex items-center gap-2">
+          <span>نتائج البحث عن:</span>
+          <span id="searchKeyword" class="text-brand-gold"></span>
+        </h2>
+        <span id="searchCount" class="text-xs text-gray-400"></span>
+      </div>
+      <div id="searchResultsGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"></div>
+    </section>
+
+    <!-- DEFAULT HOME VIEW -->
+    <div id="homeContent" class="space-y-10">
+
+      <!-- SECTION 1: NOW AIRING (يعرض الآن) -->
+      <section>
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="text-2xl font-black text-white flex items-center gap-2.5">
+              <span class="w-3 h-3 rounded-full bg-brand-red animate-ping"></span>
+              <span>يعرض الآن</span>
+            </h2>
+            <p class="text-xs text-gray-400 mt-0.5">البث المباشر الحالي عبر <span id="nowSectionChannelCount">149</span> قناة فضائية</p>
+          </div>
+        </div>
+
+        <div id="nowAiringContainer" class="flex gap-4 overflow-x-auto pb-4 pt-1 snap-x scroll-smooth">
+          <div class="text-gray-400 text-sm animate-pulse">جاري تحميل البث المباشر...</div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: NEXT UP (التالي على القنوات - مع بوسترات العروض وتوقيت البدء) -->
+      <section>
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="text-2xl font-black text-white flex items-center gap-2.5">
+              <svg class="w-6 h-6 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+              <span>التالي على القنوات</span>
+            </h2>
+            <p class="text-xs text-gray-400 mt-0.5">العروض والأفلام والمسلسلات القادمة تالياً في مواعيد البث</p>
+          </div>
+        </div>
+
+        <div id="nextAiringContainer" class="flex gap-4 overflow-x-auto pb-4 pt-1 snap-x scroll-smooth">
+          <div class="text-gray-400 text-sm animate-pulse">جاري تحميل العروض القادمة...</div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: MOVIE, SERIES, DOC & ANIME LIBRARY (مكتبة العروض الحية من جداول القنوات مع فلاتر تفصيلية) -->
+      <section>
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+          <div>
+            <h2 class="text-2xl font-black text-white flex items-center gap-2.5">
+              <svg class="w-6 h-6 text-brand-red" fill="currentColor" viewBox="0 0 20 20"><path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"/><path fill-rule="evenodd" d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
+              <span>مكتبة السينما والمسلسلات والوثائقيات والكرتون</span>
+              <span id="libraryItemsCount" class="text-xs bg-brand-card text-brand-cyan px-2.5 py-1 rounded-full border border-brand-border font-bold"></span>
+            </h2>
+            <p class="text-xs text-gray-400 mt-0.5">تصفح كافة الأفلام والمسلسلات والأنمي والوثائقيات المعروضة حالياً على القنوات</p>
+          </div>
+
+          <!-- Detailed Granular Filter Tabs -->
+          <div class="flex flex-wrap gap-1.5 text-xs font-bold" id="libraryTypeTabs">
+            <button onclick="switchLibraryType('all', this)" class="lib-tab active px-3.5 py-1.5 rounded-lg bg-brand-red text-white transition">الكل</button>
+            <button onclick="switchLibraryType('arabic_movies', this)" class="lib-tab px-3.5 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">🎬 أفلام عربية</button>
+            <button onclick="switchLibraryType('foreign_movies', this)" class="lib-tab px-3.5 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">🍿 أفلام أجنبية</button>
+            <button onclick="switchLibraryType('series', this)" class="lib-tab px-3.5 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">📺 مسلسلات ودراما</button>
+            <button onclick="switchLibraryType('kids', this)" class="lib-tab px-3.5 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">👶 كرتون وأنيميشن</button>
+            <button onclick="switchLibraryType('documentary', this)" class="lib-tab px-3.5 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">🌍 وثائقيات واستكشاف</button>
+            <button onclick="switchLibraryType('sports', this)" class="lib-tab px-3.5 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">⚽ رياضة وبرامج</button>
+          </div>
+        </div>
+
+        <div id="moviesGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"></div>
+      </section>
+
+      <!-- SECTION 4: CHANNELS ROW (القنوات الفضائية - في نهاية الصفحة) -->
+      <section>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+          <div>
+            <h2 class="text-2xl font-black text-white flex items-center gap-2">
+              <span>القنوات الفضائية</span>
+              <span id="channelsCountBadge" class="text-xs bg-brand-card text-brand-gold px-2.5 py-0.5 rounded-full border border-brand-border font-bold">171 قناة</span>
+            </h2>
+            <p class="text-xs text-gray-400 mt-0.5">اختر القناة لعرض التردد وجدول البث التفصيلي الكامل</p>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="flex flex-wrap gap-1.5 text-xs font-bold" id="channelCategoryTabs">
+            <button onclick="filterChannels('all')" class="cat-btn active px-3 py-1.5 rounded-lg bg-brand-red text-white transition">الكل</button>
+            <button onclick="filterChannels('egypt')" class="cat-btn px-3 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">🇪🇬 قنوات مصرية</button>
+            <button onclick="filterChannels('movies')" class="cat-btn px-3 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">🎬 أفلام وسينما</button>
+            <button onclick="filterChannels('drama')" class="cat-btn px-3 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">📺 دراما ومسلسلات</button>
+            <button onclick="filterChannels('documentary')" class="cat-btn px-3 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">🌍 وثائقيات</button>
+            <button onclick="filterChannels('kids')" class="cat-btn px-3 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">🧒 أطفال</button>
+            <button onclick="filterChannels('general')" class="cat-btn px-3 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 transition">🌟 قنوات عامة</button>
+          </div>
+        </div>
+
+        <div id="channelsContainer" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-3"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- MODALS & DRAWERS -->
+  <!-- ===================================================================== -->
+
+  <!-- 1. MOVIE & CONTENT DETAILS MODAL -->
+  <div id="movieModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-[#151821] border border-brand-border rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
+      <button onclick="closeMovieModal()" class="absolute top-4 left-4 z-20 w-9 h-9 rounded-full bg-black/70 hover:bg-black text-white flex items-center justify-center transition border border-white/20">✕</button>
+
+      <!-- Hero Header Backdrop -->
+      <div class="relative h-56 w-full bg-cover bg-center overflow-hidden" id="modalBackdrop">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#151821] via-[#151821]/60 to-transparent"></div>
+      </div>
+
+      <!-- Body -->
+      <div class="p-6 -mt-20 relative z-10">
+        <div class="flex gap-4">
+          <img id="modalPoster" class="w-28 h-40 object-cover rounded-xl shadow-xl border border-brand-border shrink-0 bg-brand-card" src="" alt="">
+          <div class="pt-6">
+            <h3 id="modalTitleAr" class="text-2xl font-black text-white leading-tight"></h3>
+            <p id="modalTitleEn" class="text-xs text-gray-400 mt-1"></p>
+            <div class="flex items-center gap-3 mt-3">
+              <span id="modalYear" class="text-xs bg-[#1F2330] px-2 py-0.5 rounded text-gray-300 border border-brand-border"></span>
+              <span id="modalRating" class="text-xs font-bold text-brand-gold flex items-center gap-1"></span>
+              <span id="modalRuntime" class="text-xs text-gray-400"></span>
+            </div>
+            <div id="modalGenres" class="flex flex-wrap gap-1.5 mt-2"></div>
+          </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="mt-5">
+          <h4 class="text-sm font-bold text-white mb-1.5">قصة العمل</h4>
+          <p id="modalOverview" class="text-xs text-gray-300 leading-relaxed"></p>
+        </div>
+
+        <!-- TV AIRINGS (العروض التلفزيونية عبر كل القنوات مع زر التنبيه) -->
+        <div class="mt-6 border-t border-brand-border pt-4">
+          <div class="flex items-center justify-between mb-3">
+            <h4 class="text-sm font-black text-white flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-brand-red"></span>
+              <span>مواعيد العرض التلفزيوني عبر القنوات</span>
+            </h4>
+            <span id="modalAiringsBadge" class="text-[11px] font-bold text-brand-red bg-red-950/40 border border-red-800/40 px-2 py-0.5 rounded-full"></span>
+          </div>
+
+          <div id="modalAiringsList" class="space-y-2.5"></div>
+        </div>
+
+        <!-- Cast -->
+        <div class="mt-6 border-t border-brand-border pt-4">
+          <h4 class="text-sm font-bold text-white mb-3">طاقم التمثيل</h4>
+          <div id="modalCast" class="flex gap-3 overflow-x-auto pb-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. CHANNEL FREQUENCY & SCHEDULE MODAL -->
+  <div id="channelModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-[#151821] border border-brand-border rounded-2xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative p-6">
+      <button onclick="closeChannelModal()" class="absolute top-4 left-4 w-9 h-9 rounded-full bg-brand-card hover:bg-brand-border text-white flex items-center justify-center transition border border-brand-border">✕</button>
+
+      <div class="flex items-center gap-4 mb-6">
+        <img id="chModalLogo" class="w-14 h-14 object-contain rounded-2xl border border-brand-border shadow-md" src="" alt="">
+        <div>
+          <h3 id="chModalName" class="text-xl font-black text-white"></h3>
+          <p id="chModalCategory" class="text-xs text-brand-gold font-semibold"></p>
+        </div>
+      </div>
+
+      <!-- Frequency Section -->
+      <div class="mb-6">
+        <h4 class="text-sm font-black text-white flex items-center gap-2 mb-3">
+          <svg class="w-4 h-4 text-brand-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          <span>بيانات التردد والاستقبال (Satellite Frequencies)</span>
+        </h4>
+        <div id="chModalFrequencies" class="space-y-2.5"></div>
+      </div>
+
+      <!-- Schedule Section with Date Tabs -->
+      <div class="border-t border-brand-border pt-4">
+        <div class="flex items-center justify-between mb-3">
+          <h4 class="text-sm font-black text-white flex items-center gap-2">
+            <span>جدول البث والتوقيت</span>
+          </h4>
+          <span id="chModalDateTitle" class="text-xs text-brand-cyan font-bold bg-brand-card px-2.5 py-1 rounded-lg border border-brand-border"></span>
+        </div>
+
+        <!-- Date Tabs (7 Days) -->
+        <div id="chModalDateTabs" class="flex gap-1.5 overflow-x-auto pb-2 mb-3 scroll-smooth"></div>
+
+        <!-- Schedule Items -->
+        <div id="chModalSchedule" class="space-y-2 max-h-72 overflow-y-auto pr-1"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. REMINDERS DRAWER MODAL (تنبيهاتي المحفوظة) -->
+  <div id="remindersModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-[#151821] border border-brand-border rounded-2xl max-w-lg w-full max-h-[85vh] overflow-y-auto shadow-2xl relative p-6">
+      <button onclick="closeRemindersModal()" class="absolute top-4 left-4 w-9 h-9 rounded-full bg-brand-card hover:bg-brand-border text-white flex items-center justify-center transition border border-brand-border">✕</button>
+
+      <div class="flex items-center gap-3 mb-6 border-b border-brand-border pb-4">
+        <div class="w-10 h-10 rounded-xl bg-brand-red/20 text-brand-red flex items-center justify-center font-bold text-lg border border-brand-red/30">
+          🔔
+        </div>
+        <div>
+          <h3 class="text-lg font-black text-white">تنبيهاتي ومواعيدي المحفوظة</h3>
+          <p class="text-xs text-gray-400">سيتم إرسال إشعار قبل بدء العرض بـ 60 دقيقة و 10 دقائق ⏰</p>
+        </div>
+      </div>
+
+      <div id="remindersListContainer" class="space-y-3">
+        <!-- Injected Reminders -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Alert -->
+  <div id="toastAlert" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-brand-card border border-brand-gold/60 text-white text-xs font-bold px-4 py-3 rounded-2xl shadow-2xl shadow-black/80 flex items-center gap-3 transition-all duration-300 opacity-0 pointer-events-none translate-y-4">
+    <span class="text-lg">⏰</span>
+    <span id="toastMessage">تم تفعيل التنبيه بنجاح!</span>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT APP LOGIC -->
+  <!-- ===================================================================== -->
+  <script>
+    const API_BASE = window.location.origin;
+
+    let allChannels = [];
+    let allMovies = [];
+    let currentLang = 'ar';
+    let currentCategoryFilter = 'all';
+
+    // Timezone Management (Default: Africa/Cairo)
+    let selectedTimezone = localStorage.getItem('tvguide_timezone') || 'Africa/Cairo';
+
+    const TIMEZONE_LABELS = {
+      'Africa/Cairo': '🇪🇬 توقيت مصر (القاهرة)',
+      'Asia/Riyadh': '🇸🇦 توقيت السعودية (مكة)',
+      'Asia/Dubai': '🇦🇪 توقيت الإمارات (دبي)',
+      'Africa/Casablanca': '🇲🇦 توقيت المغرب (الرباط)',
+      'UTC': '🇬🇧 توقيت جرينتش (GMT)'
+    };
+
+    function initTimezone() {
+      const select = document.getElementById('timezoneSelect');
+      if (select) {
+        select.value = selectedTimezone in TIMEZONE_LABELS ? selectedTimezone : 'Africa/Cairo';
+      }
+      updateTimezoneBanner();
+    }
+
+    function updateTimezoneBanner() {
+      const labelEl = document.getElementById('currentTimezoneLabel');
+      if (labelEl) {
+        labelEl.textContent = TIMEZONE_LABELS[selectedTimezone] || `توقيت ${selectedTimezone}`;
+      }
+    }
+
+    function changeTimezone(newTz) {
+      if (newTz === 'auto') {
+        requestGeolocation();
+        return;
+      }
+      selectedTimezone = newTz;
+      localStorage.setItem('tvguide_timezone', newTz);
+      updateTimezoneBanner();
+      fetchNowAiring();
+      fetchNextAiring();
+    }
+
+    function requestGeolocation() {
+      if ('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            try {
+              const detected = Intl.DateTimeFormat().resolvedOptions().timeZone;
+              selectedTimezone = detected || 'Africa/Cairo';
+              localStorage.setItem('tvguide_timezone', selectedTimezone);
+              const select = document.getElementById('timezoneSelect');
+              if (select && select.querySelector(`option[value="${selectedTimezone}"]`)) {
+                select.value = selectedTimezone;
+              }
+              updateTimezoneBanner();
+              fetchNowAiring();
+              fetchNextAiring();
+              showToast(`تم ضبط التوقيت تلقائياً حسب موقعك: ${selectedTimezone}`);
+            } catch (e) {
+              selectedTimezone = 'Africa/Cairo';
+            }
+          },
+          (err) => {
+            showToast('تعذر الوصول إلى الموقع الجغرافي. تم الإبقاء على توقيت القاهرة.');
+          }
+        );
+      }
+    }
+
+    // Convert ISO datetime string to user selected timezone
+    function formatTimeInSelectedZone(isoDatetime, fallbackTime) {
+      if (!isoDatetime) return fallbackTime || '--:--';
+      try {
+        const d = new Date(isoDatetime);
+        if (isNaN(d.getTime())) return fallbackTime || '--:--';
+        
+        return d.toLocaleTimeString('ar-EG', {
+          timeZone: selectedTimezone,
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        });
+      } catch (err) {
+        return fallbackTime || '--:--';
+      }
+    }
+
+    // =========================================================================
+    // REMINDER & NOTIFICATION SYSTEM
+    // =========================================================================
+    let userReminders = JSON.parse(localStorage.getItem('tvguide_user_reminders') || '[]');
+
+    function updateRemindersBadge() {
+      const badge = document.getElementById('remindersCountBadge');
+      if (badge) {
+        badge.textContent = userReminders.length;
+        if (userReminders.length > 0) {
+          badge.classList.remove('hidden');
+        } else {
+          badge.classList.add('hidden');
+        }
+      }
+    }
+
+    async function toggleReminder(broadcastId, title, channelName, channelLogo, startDatetime) {
+      if (!('Notification' in window)) {
+        alert('المتصفح لا يدعم إشعارات النظام.');
+      } else if (Notification.permission !== 'granted') {
+        await Notification.requestPermission();
+      }
+
+      const existingIndex = userReminders.findIndex(r => r.broadcast_id === broadcastId);
+      if (existingIndex >= 0) {
+        userReminders.splice(existingIndex, 1);
+        showToast(`تم إلغاء التنبيه لـ "${title}"`);
+      } else {
+        const reminderObj = {
+          id: `rem_${Date.now()}`,
+          broadcast_id: broadcastId,
+          title: title,
+          channel_name: channelName,
+          channel_logo: channelLogo,
+          start_datetime: startDatetime,
+          remind_1hour: true,
+          remind_10min: true,
+          created_at: new Date().toISOString()
+        };
+        userReminders.push(reminderObj);
+
+        // Sync with Backend
+        try {
+          fetch(`${API_BASE}/api/reminders`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(reminderObj)
+          });
+        } catch (e) {}
+
+        // Schedule Client Timers
+        scheduleLocalNotification(reminderObj);
+
+        showToast(`🔔 تم تفعيل التنبيه لـ "${title}"! سيتم تذكيرك قبل البدء بساعة وقبلها بـ 10 دقائق.`);
+      }
+
+      localStorage.setItem('tvguide_user_reminders', JSON.stringify(userReminders));
+      updateRemindersBadge();
+    }
+
+    function scheduleLocalNotification(reminder) {
+      const startTimeMs = new Date(reminder.start_datetime).getTime();
+      const nowMs = Date.now();
+
+      // 1 Hour Before Alert
+      const timeTo1HourMs = startTimeMs - nowMs - (60 * 60 * 1000);
+      if (timeTo1HourMs > 0) {
+        setTimeout(() => {
+          if (Notification.permission === 'granted') {
+            new Notification(`⏰ موعد العرض اقترب! (${reminder.channel_name})`, {
+              body: `فيلم/برنامج "${reminder.title}" سيبدأ بعد ساعة على قناة ${reminder.channel_name}.`,
+              icon: reminder.channel_logo
+            });
+          }
+        }, timeTo1HourMs);
+      }
+
+      // 10 Minutes Before Alert
+      const timeTo10MinMs = startTimeMs - nowMs - (10 * 60 * 1000);
+      if (timeTo10MinMs > 0) {
+        setTimeout(() => {
+          if (Notification.permission === 'granted') {
+            new Notification(`🎬 سيبدأ العرض بعد 10 دقائق!`, {
+              body: `استعد لمشاهدة "${reminder.title}" على قناة ${reminder.channel_name} الآن.`,
+              icon: reminder.channel_logo
+            });
+          }
+        }, timeTo10MinMs);
+      }
+    }
+
+    function openRemindersDrawer() {
+      const container = document.getElementById('remindersListContainer');
+      container.innerHTML = '';
+
+      if (userReminders.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-10 space-y-2">
+            <span class="text-4xl">🔔</span>
+            <p class="text-sm font-bold text-gray-300">لا توجد تنبيهات نشطة حالياً</p>
+            <p class="text-xs text-gray-500">اضغط على زر "ذكرني 🔔" بجانب أي فيلم أو برنامج لتفعيله.</p>
+          </div>
+        `;
+      } else {
+        userReminders.forEach((r, idx) => {
+          const localTime = formatTimeInSelectedZone(r.start_datetime);
+          const gCalUrl = createGoogleCalendarUrl(r.title, r.channel_name, r.start_datetime);
+
+          const card = document.createElement('div');
+          card.className = 'bg-brand-card border border-brand-border p-3.5 rounded-xl flex items-center justify-between gap-3';
+          card.innerHTML = `
+            <div class="flex items-center gap-3 truncate">
+              <img src="${r.channel_logo}" class="w-10 h-10 object-contain rounded-lg border border-brand-border p-1 bg-brand-surface shrink-0">
+              <div class="truncate">
+                <h4 class="text-sm font-bold text-white truncate">${r.title}</h4>
+                <div class="flex items-center gap-2 text-xs text-gray-400 mt-0.5">
+                  <span class="text-brand-gold font-bold">${r.channel_name}</span>
+                  <span>•</span>
+                  <span class="text-brand-cyan font-bold">${localTime}</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="${gCalUrl}" target="_blank" class="text-xs bg-[#151821] hover:bg-brand-border text-gray-300 px-2.5 py-1.5 rounded-lg border border-brand-border font-bold flex items-center gap-1 transition" title="إضافة إلى تقويم جوجل">
+                📅
+              </a>
+              <button onclick="removeReminderById('${r.broadcast_id}')" class="text-xs bg-red-950/40 hover:bg-red-900/60 text-red-400 px-2.5 py-1.5 rounded-lg border border-red-800/40 font-bold transition">
+                إلغاء
+              </button>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      }
+
+      document.getElementById('remindersModal').classList.remove('hidden');
+    }
+
+    function removeReminderById(broadcastId) {
+      userReminders = userReminders.filter(r => r.broadcast_id !== broadcastId);
+      localStorage.setItem('tvguide_user_reminders', JSON.stringify(userReminders));
+      updateRemindersBadge();
+      openRemindersDrawer();
+      showToast('تم حذف التنبيه.');
+    }
+
+    function closeRemindersModal() {
+      document.getElementById('remindersModal').classList.add('hidden');
+    }
+
+    function createGoogleCalendarUrl(title, channelName, startDatetime) {
+      try {
+        const start = new Date(startDatetime);
+        const end = new Date(start.getTime() + (2 * 60 * 60 * 1000));
+        const formatGTime = (d) => d.toISOString().replace(/-|:|\.\d+/g, '');
+        const dates = `${formatGTime(start)}/${formatGTime(end)}`;
+        return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title + ' على ' + channelName)}&dates=${dates}&details=${encodeURIComponent('بث مباشر على قناة ' + channelName + ' عبر دليل التلفزيون.')}&location=${encodeURIComponent(channelName)}`;
+      } catch (e) {
+        return '#';
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastAlert');
+      document.getElementById('toastMessage').textContent = msg;
+      toast.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+      }, 4000);
+    }
+
+    // Smart Aesthetic Poster & Image Provider (Supports TMDB, ElCinema direct CDN, and Pure Base64)
+    function getPosterImage(posterPath, title) {
+      if (posterPath && posterPath !== 'None' && typeof posterPath === 'string') {
+        if (posterPath.startsWith('http://') || posterPath.startsWith('https://')) {
+          return posterPath;
+        }
+        if (posterPath.startsWith('/')) {
+          return `https://image.tmdb.org/t/p/w500${posterPath}`;
+        }
+      }
+      const cleanTitle = (title || 'عمل تلفزيوني').replace(/[<>&"]/g, '');
+      const colors = ['#E50914', '#D97706', '#7C3AED', '#0284C7', '#059669', '#DC2626'];
+      const charCode = (title || 'A').charCodeAt(0);
+      const color = colors[charCode % colors.length];
+      
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="${color}"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#g)"/>
+  <circle cx="150" cy="180" r="45" fill="white" opacity="0.12"/>
+  <text x="150" y="195" font-family="sans-serif" font-size="38" fill="white" text-anchor="middle" opacity="0.85">🎬</text>
+  <text x="150" y="270" font-family="Cairo, Arial, sans-serif" font-weight="bold" font-size="20" fill="white" text-anchor="middle">${cleanTitle}</text>
+  <text x="150" y="305" font-family="Cairo, Arial, sans-serif" font-size="13" fill="#9CA3AF" text-anchor="middle">دليل التلفزيون</text>
+</svg>`;
+      
+      return 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svg)));
+    }
+
+    function getBackdropImage(backdropPath, posterPath, title) {
+      if (backdropPath && backdropPath !== 'None' && typeof backdropPath === 'string') {
+        if (backdropPath.startsWith('http://') || backdropPath.startsWith('https://')) {
+          return backdropPath;
+        }
+        if (backdropPath.startsWith('/')) {
+          return `https://image.tmdb.org/t/p/w780${backdropPath}`;
+        }
+      }
+      return getPosterImage(posterPath, title);
+    }
+
+    async function initApp() {
+      initTimezone();
+      updateRemindersBadge();
+      await Promise.all([
+        fetchNowAiring(),
+        fetchNextAiring(),
+        fetchChannels(),
+        fetchMovies()
+      ]);
+
+      // Live Ticker: Update countdowns and progress bars every 5 seconds
+      setInterval(updateLiveTickers, 5000);
+      
+      // Auto-refresh Now & Next every 60 seconds
+      setInterval(() => {
+        fetchNowAiring();
+        fetchNextAiring();
+      }, 60000);
+    }
+
+    // Helper: Compute dynamic remaining minutes and elapsed percentage
+    function calcProgress(startIso, endIso) {
+      const now = Date.now();
+      const start = new Date(startIso).getTime();
+      let end = new Date(endIso).getTime();
+      
+      if (isNaN(start) || isNaN(end)) return { remainingMin: 0, percent: 50 };
+      if (end <= start) end += (24 * 60 * 60 * 1000); // Cross-midnight adjustment
+      
+      const total = Math.max(60000, end - start);
+      const elapsed = Math.max(0, now - start);
+      const remaining = Math.max(0, end - now);
+      
+      const remainingMin = Math.round(remaining / 60000);
+      const percent = Math.min(100, Math.max(0, Math.round((elapsed / total) * 100)));
+      return { remainingMin, percent };
+    }
+
+    function updateLiveTickers() {
+      const cards = document.querySelectorAll('.now-airing-card');
+      cards.forEach(card => {
+        const startIso = card.getAttribute('data-start');
+        const endIso = card.getAttribute('data-end');
+        if (!startIso || !endIso) return;
+
+        const { remainingMin, percent } = calcProgress(startIso, endIso);
+        const label = card.querySelector('.remaining-time-label');
+        const bar = card.querySelector('.progress-bar-fill');
+
+        if (label) {
+          if (remainingMin > 0) {
+            label.textContent = `متبقي ${remainingMin} دقيقة`;
+            label.className = 'remaining-time-label text-brand-cyan font-bold';
+          } else {
+            label.textContent = 'ينتهي الآن';
+            label.className = 'remaining-time-label text-brand-gold font-bold animate-pulse';
+          }
+        }
+        if (bar) {
+          bar.style.width = `${percent}%`;
+        }
+      });
+    }
+
+    // 1. Fetch Now Airing
+    async function fetchNowAiring() {
+      try {
+        const res = await fetch(`${API_BASE}/api/now?_t=${Date.now()}`);
+        const data = await res.json();
+        const container = document.getElementById('nowAiringContainer');
+        container.innerHTML = '';
+
+        data.now_airing.forEach(item => {
+          const imgUrl = getBackdropImage(item.backdrop_path, item.poster_path, item.title);
+          const localStartTime = formatTimeInSelectedZone(item.start_datetime, item.start_time);
+          const localEndTime = formatTimeInSelectedZone(item.end_datetime, item.end_time);
+          const { remainingMin, percent } = calcProgress(item.start_datetime, item.end_datetime);
+
+          const card = document.createElement('div');
+          card.className = 'now-airing-card w-72 shrink-0 bg-brand-surface border border-brand-border rounded-2xl overflow-hidden shadow-lg hover:border-brand-red transition cursor-pointer relative snap-start group';
+          card.setAttribute('data-start', item.start_datetime);
+          card.setAttribute('data-end', item.end_datetime);
+          card.onclick = () => openContentDetails(item.content_id);
+          card.innerHTML = `
+            <div class="relative h-36 bg-cover bg-center overflow-hidden" style="background-image: url('${imgUrl}')">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-surface via-brand-surface/40 to-transparent"></div>
+              <span class="absolute top-2.5 right-2.5 bg-brand-red text-white text-[10px] font-black px-2 py-0.5 rounded-full flex items-center gap-1 shadow-md">
+                <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                مباشر
+              </span>
+              <span class="absolute top-2.5 left-2.5 bg-black/75 backdrop-blur-md text-brand-gold text-[10px] font-bold px-2 py-0.5 rounded border border-white/10">
+                ${item.channel_name}
+              </span>
+            </div>
+            <div class="p-3.5 -mt-4 relative z-10">
+              <h3 class="font-bold text-sm text-white truncate group-hover:text-brand-red transition">${item.title}</h3>
+              <div class="flex items-center justify-between text-[11px] text-gray-400 mt-1">
+                <span>${localStartTime} - ${localEndTime || '...'}</span>
+                <span class="remaining-time-label ${remainingMin > 0 ? 'text-brand-cyan font-bold' : 'text-brand-gold font-bold'}">
+                  ${remainingMin > 0 ? `متبقي ${remainingMin} دقيقة` : 'ينتهي الآن'}
+                </span>
+              </div>
+              <div class="w-full bg-brand-border h-1.5 rounded-full mt-2.5 overflow-hidden">
+                <div class="progress-bar-fill bg-brand-red h-full rounded-full transition-all duration-500" style="width: ${percent}%"></div>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      } catch (err) {
+        console.error('Failed to fetch now airing', err);
+      }
+    }
+
+    // 2. Fetch Next Airing (مع البوسترات وتوقيت البدء المباشر)
+    async function fetchNextAiring() {
+      try {
+        const res = await fetch(`${API_BASE}/api/next?_t=${Date.now()}`);
+        const data = await res.json();
+        const container = document.getElementById('nextAiringContainer');
+        container.innerHTML = '';
+
+        if (!data.next_airing || data.next_airing.length === 0) {
+          container.innerHTML = `<div class="text-gray-400 text-sm">لا توجد عروض قادمة مسجلة حالياً</div>`;
+          return;
+        }
+
+        data.next_airing.forEach(item => {
+          const imgUrl = getBackdropImage(item.backdrop_path, item.poster_path, item.title);
+          const localStartTime = formatTimeInSelectedZone(item.start_datetime, item.start_time);
+          const isReminderSet = userReminders.some(r => r.broadcast_id === item.broadcast_id);
+
+          const card = document.createElement('div');
+          card.className = 'w-72 shrink-0 bg-brand-surface border border-brand-border rounded-2xl overflow-hidden shadow-lg hover:border-brand-gold/80 transition cursor-pointer relative snap-start group';
+          card.onclick = () => openContentDetails(item.content_id);
+          card.innerHTML = `
+            <div class="relative h-36 bg-cover bg-center overflow-hidden" style="background-image: url('${imgUrl}')">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-surface via-brand-surface/50 to-transparent"></div>
+              
+              <!-- Upcoming Badge -->
+              <span class="absolute top-2.5 right-2.5 bg-brand-gold/90 text-black text-[10px] font-black px-2 py-0.5 rounded-full flex items-center gap-1 shadow-md">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+                <span>يبدأ ${localStartTime}</span>
+              </span>
+
+              <!-- Channel Logo & Name -->
+              <div class="absolute bottom-2.5 right-2.5 flex items-center gap-1.5 bg-black/75 backdrop-blur-md px-2 py-1 rounded-lg border border-white/10 max-w-[85%]">
+                <img src="${item.channel_logo}" alt="${item.channel_name}" class="w-4 h-4 rounded-full object-contain shrink-0 bg-black/40">
+                <span class="text-xs font-bold text-gray-200 truncate">${item.channel_name}</span>
+              </div>
+            </div>
+
+            <div class="p-3.5 flex flex-col justify-between min-h-[90px]">
+              <div>
+                <h4 class="font-extrabold text-sm text-white group-hover:text-brand-gold transition truncate" title="${item.title}">${item.title}</h4>
+                <div class="flex items-center gap-2 mt-1 text-[11px] text-gray-400">
+                  <span>${item.release_year || 'قريباً'}</span>
+                  ${item.rating ? `<span class="text-brand-gold font-bold flex items-center gap-0.5">★ ${item.rating}</span>` : ''}
+                </div>
+              </div>
+
+              <div class="mt-3 pt-2.5 border-t border-brand-border flex items-center justify-between">
+                <span class="text-[10px] text-gray-400 font-bold">موعد العرض القادم</span>
+                <button onclick="event.stopPropagation(); toggleReminder('${item.broadcast_id}', '${item.title.replace(/'/g, "\\'")}', '${item.channel_name}', '${item.channel_logo}', '${item.start_datetime}')" class="text-[11px] font-bold px-2 py-1 rounded-lg transition flex items-center gap-1 ${isReminderSet ? 'bg-brand-red text-white' : 'bg-[#1F2330] hover:bg-brand-gold/20 text-gray-300 hover:text-brand-gold border border-brand-border'}">
+                  <span>${isReminderSet ? '✓ تم التنبيه' : '🔔 ذكرني'}</span>
+                </button>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      } catch (err) {
+        console.error('Failed to fetch next airing', err);
+      }
+    }
+
+    // 3. Fetch Channels
+    async function fetchChannels() {
+      try {
+        const res = await fetch(`${API_BASE}/api/channels`);
+        const data = await res.json();
+        allChannels = data.channels;
+        
+        // Update all channel count indicators dynamically
+        const countText = `${allChannels.length} قناة فضائية`;
+        const navCount = document.getElementById('navbarChannelCount');
+        if (navCount) navCount.textContent = countText;
+        const nowCount = document.getElementById('nowSectionChannelCount');
+        if (nowCount) nowCount.textContent = allChannels.length;
+        const badgeCount = document.getElementById('channelsCountBadge');
+        if (badgeCount) badgeCount.textContent = `${allChannels.length} قناة`;
+
+        renderChannels(allChannels);
+      } catch (err) {
+        console.error('Failed to fetch channels', err);
+      }
+    }
+
+    function renderChannels(channelsToRender) {
+      const container = document.getElementById('channelsContainer');
+      container.innerHTML = '';
+
+      channelsToRender.forEach(ch => {
+        const card = document.createElement('div');
+        card.className = 'bg-brand-surface border border-brand-border p-3 rounded-2xl text-center hover:border-brand-red hover:shadow-lg hover:shadow-red-950/20 transition cursor-pointer flex flex-col items-center justify-center group';
+        card.onclick = () => openChannelDetails(ch.id);
+        card.innerHTML = `
+          <div class="w-12 h-12 rounded-2xl overflow-hidden flex items-center justify-center mb-2 group-hover:scale-105 transition shadow-md">
+            <img src="${ch.logo_url}" alt="${ch.name_ar}" class="w-full h-full object-contain">
+          </div>
+          <h4 class="text-xs font-bold text-white truncate w-full group-hover:text-brand-red">${ch.name_ar}</h4>
+          <span class="text-[9px] text-gray-400 mt-0.5 flex items-center gap-1">
+            <span class="w-1 h-1 rounded-full bg-green-500"></span>
+            تردد HD
+          </span>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterChannels(category) {
+      currentCategoryFilter = category;
+      const buttons = document.querySelectorAll('#channelCategoryTabs button');
+      buttons.forEach(b => {
+        b.classList.remove('bg-brand-red', 'text-white');
+        b.classList.add('bg-brand-card', 'text-gray-300');
+      });
+      event.target.classList.remove('bg-brand-card', 'text-gray-300');
+      event.target.classList.add('bg-brand-red', 'text-white');
+
+      if (category === 'all') {
+        renderChannels(allChannels);
+      } else {
+        const filtered = allChannels.filter(c => {
+          if (category === 'egypt') return c.country === 'EG' || (c.source && c.source.startsWith('egypt'));
+          if (category === 'movies') return c.category === 'movies' || c.category === 'action' || c.category === 'comedy' || c.category === 'classic' || c.category === 'bollywood';
+          if (category === 'drama') return c.category === 'drama' || c.category === 'series';
+          if (category === 'documentary') return c.category === 'documentary';
+          if (category === 'kids') return c.category === 'kids';
+          return c.category === category || c.category === 'general' || c.category === 'variety';
+        });
+        renderChannels(filtered);
+      }
+    }
+
+    // 4. Fetch Movies & Content Library (Dynamic from Live Schedules)
+    let currentLibraryType = 'all';
+
+    function switchLibraryType(type, btn) {
+      currentLibraryType = type;
+      const buttons = document.querySelectorAll('#libraryTypeTabs button');
+      buttons.forEach(b => {
+        b.classList.remove('bg-brand-red', 'text-white');
+        b.classList.add('bg-brand-card', 'text-gray-300');
+      });
+      if (btn) {
+        btn.classList.remove('bg-brand-card', 'text-gray-300');
+        btn.classList.add('bg-brand-red', 'text-white');
+      }
+      fetchMovies(type);
+    }
+
+    async function fetchMovies(type = currentLibraryType) {
+      try {
+        const typeQuery = type && type !== 'all' ? `&type=${type}` : '';
+        const res = await fetch(`${API_BASE}/api/movies?limit=36${typeQuery}`);
+        const data = await res.json();
+        allMovies = data.results;
+
+        const countBadge = document.getElementById('libraryItemsCount');
+        if (countBadge) {
+          countBadge.textContent = `${data.total} عرض حقيقي`;
+        }
+
+        const container = document.getElementById('moviesGrid');
+        container.innerHTML = '';
+
+        if (!allMovies || allMovies.length === 0) {
+          container.innerHTML = `
+            <div class="col-span-full py-12 text-center text-gray-400 bg-brand-surface border border-brand-border rounded-2xl">
+              <p class="text-sm font-bold">لا توجد عروض مطابقة حالياً في جدول البث</p>
+            </div>
+          `;
+          return;
+        }
+
+        allMovies.forEach(m => {
+          const poster = getPosterImage(m.poster_path, m.title_ar);
+          const channelNames = m.channels && m.channels.length > 0 ? m.channels.slice(0, 2).join(' • ') : 'قناة فضائية';
+          const broadcastsCount = m.broadcasts_count || 1;
+
+          const card = document.createElement('div');
+          card.className = 'group cursor-pointer poster-glow transition-all duration-200 bg-brand-surface border border-brand-border rounded-xl p-2 hover:border-brand-red';
+          card.onclick = () => openContentDetails(m.id);
+          card.innerHTML = `
+            <div class="aspect-[2/3] w-full rounded-lg overflow-hidden bg-brand-card relative shadow-md">
+              <img src="${poster}" alt="${m.title_ar}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              ${m.rating ? `
+                <div class="absolute top-2 right-2 bg-black/80 backdrop-blur-md px-1.5 py-0.5 rounded text-[10px] font-black text-brand-gold flex items-center gap-1 border border-white/10">
+                  ★ ${m.rating}
+                </div>
+              ` : ''}
+              <div class="absolute bottom-2 left-2 bg-black/80 backdrop-blur-md px-1.5 py-0.5 rounded text-[9px] font-bold text-brand-cyan border border-white/10">
+                ${broadcastsCount} مواعيد بث
+              </div>
+            </div>
+            <div class="mt-2">
+              <h4 class="text-xs font-bold text-white truncate group-hover:text-brand-red" title="${m.title_ar}">${m.title_ar}</h4>
+              <div class="flex items-center justify-between text-[10px] text-gray-400 mt-1">
+                <span class="text-brand-gold font-bold truncate max-w-[110px]" title="${channelNames}">📺 ${channelNames}</span>
+                <span class="text-gray-400 shrink-0">${m.release_year || 'مباشر'}</span>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      } catch (err) {
+        console.error('Failed to fetch movies library', err);
+      }
+    }
+
+    // 5. Open Movie Details Modal (with grouped broadcasts & clickable channel schedule button)
+    async function openContentDetails(contentId) {
+      try {
+        const res = await fetch(`${API_BASE}/api/content/${contentId}`);
+        const data = await res.json();
+
+        const backdropUrl = getBackdropImage(data.backdrop_path, data.poster_path, data.title_ar);
+        const posterUrl = getPosterImage(data.poster_path, data.title_ar);
+
+        document.getElementById('modalBackdrop').style.backgroundImage = `url('${backdropUrl}')`;
+        document.getElementById('modalPoster').src = posterUrl;
+        document.getElementById('modalTitleAr').textContent = data.title_ar;
+        document.getElementById('modalTitleEn').textContent = data.title_en || '';
+        document.getElementById('modalYear').textContent = data.release_year ? `${data.release_year}` : 'عمل تلفزيوني';
+        document.getElementById('modalRating').textContent = data.rating ? `★ ${data.rating} / 10` : '';
+        document.getElementById('modalRuntime').textContent = data.runtime_minutes ? `${data.runtime_minutes} دقيقة` : '';
+        document.getElementById('modalOverview').textContent = data.overview || 'لا يتوفر وصف تفصيلي لهذا العمل حالياً.';
+
+        // Genres
+        const genresContainer = document.getElementById('modalGenres');
+        genresContainer.innerHTML = '';
+        (data.genres || []).forEach(g => {
+          const badge = document.createElement('span');
+          badge.className = 'text-[10px] bg-brand-border/60 text-gray-200 px-2 py-0.5 rounded-full';
+          badge.textContent = g;
+          genresContainer.appendChild(badge);
+        });
+
+        // Airings list with clickable channel and Reminder button
+        const airingsContainer = document.getElementById('modalAiringsList');
+        airingsContainer.innerHTML = '';
+        document.getElementById('modalAiringsBadge').textContent = `${data.airings.length} مواعيد بث (${TIMEZONE_LABELS[selectedTimezone] || selectedTimezone})`;
+
+        if (data.airings.length === 0) {
+          airingsContainer.innerHTML = '<p class="text-xs text-gray-400">لا توجد مواعيد بث مجدولة حالياً لهذا العمل.</p>';
+        } else {
+          data.airings.forEach(a => {
+            const localStart = formatTimeInSelectedZone(a.start_datetime, a.start_time);
+            const localEnd = formatTimeInSelectedZone(a.end_datetime, a.end_time);
+            const isReminderSet = userReminders.some(r => r.broadcast_id === a.broadcast_id);
+
+            const nowMs = Date.now();
+            let startMs = a.start_datetime ? new Date(a.start_datetime).getTime() : NaN;
+            let endMs = a.end_datetime ? new Date(a.end_datetime).getTime() : NaN;
+            if (isNaN(startMs)) {
+              startMs = new Date(`${a.date}T${a.start_time || '00:00'}:00+03:00`).getTime();
+            }
+            if (isNaN(endMs)) {
+              endMs = new Date(`${a.date}T${a.end_time || '23:59'}:00+03:00`).getTime();
+            }
+            if (endMs <= startMs) {
+              endMs += 24 * 60 * 60 * 1000;
+            }
+
+            const isPast = nowMs >= endMs;
+            const isCurrent = nowMs >= startMs && nowMs < endMs;
+
+            const item = document.createElement('div');
+            
+            if (isCurrent) {
+              item.className = 'bg-gradient-to-r from-red-950/80 via-[#20151B] to-red-950/50 border-2 border-brand-red p-3 rounded-xl flex items-center justify-between gap-3 shadow-lg shadow-red-950/50 relative overflow-hidden';
+              item.innerHTML = `
+                <div class="absolute right-0 top-0 bottom-0 w-1 bg-brand-red"></div>
+                <div class="flex items-center gap-3 truncate cursor-pointer group pl-2" onclick="closeMovieModal(); openChannelDetails(${a.channel_id})" title="عرض جدول وتردد ${a.channel_name}">
+                  <img src="${a.channel_logo}" alt="" class="w-9 h-9 object-contain rounded-lg border border-brand-border bg-brand-card shrink-0 shadow">
+                  <div class="truncate">
+                    <div class="flex items-center gap-1.5 mb-0.5">
+                      <span class="bg-brand-red text-white text-[9px] font-black px-2 py-0.5 rounded-full flex items-center gap-1 animate-pulse">
+                        🔴 يعرض الآن
+                      </span>
+                      <span class="text-xs font-bold text-white block truncate group-hover:text-brand-red transition">
+                        ${a.channel_name}
+                      </span>
+                    </div>
+                    <span class="text-[10px] text-gray-300 font-semibold">${a.date} • <span class="text-brand-cyan group-hover:underline">عرض جدول القناة 📺</span></span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="text-xs font-black text-white bg-brand-red px-2.5 py-1 rounded-lg shadow">
+                    ${localStart} - ${localEnd}
+                  </span>
+                </div>
+              `;
+            } else if (isPast) {
+              item.className = 'opacity-40 hover:opacity-75 bg-[#0e1017]/70 border border-brand-border/30 p-2.5 rounded-xl flex items-center justify-between gap-3 text-xs transition';
+              item.innerHTML = `
+                <div class="flex items-center gap-3 truncate cursor-pointer group" onclick="closeMovieModal(); openChannelDetails(${a.channel_id})" title="عرض جدول وتردد ${a.channel_name}">
+                  <img src="${a.channel_logo}" alt="" class="w-8 h-8 object-contain rounded-lg border border-brand-border/30 bg-brand-card shrink-0 opacity-60">
+                  <div class="truncate">
+                    <span class="text-xs font-medium text-gray-400 block truncate group-hover:text-gray-200 transition">
+                      ${a.channel_name}
+                    </span>
+                    <span class="text-[10px] text-gray-500">${a.date} • انتهى العرض ✓</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="text-[11px] font-medium text-gray-500 bg-brand-card/40 border border-brand-border/20 px-2 py-0.5 rounded-lg">
+                    ${localStart}
+                  </span>
+                </div>
+              `;
+            } else {
+              item.className = 'bg-brand-surface border border-brand-border p-3 rounded-xl flex items-center justify-between gap-3 hover:border-brand-red/60 transition';
+              item.innerHTML = `
+                <div class="flex items-center gap-3 truncate cursor-pointer group" onclick="closeMovieModal(); openChannelDetails(${a.channel_id})" title="عرض جدول وتردد ${a.channel_name}">
+                  <img src="${a.channel_logo}" alt="" class="w-9 h-9 object-contain rounded-lg border border-brand-border bg-brand-card shrink-0 group-hover:scale-105 transition shadow">
+                  <div class="truncate">
+                    <span class="text-xs font-bold text-white block truncate group-hover:text-brand-red transition flex items-center gap-1.5">
+                      ${a.channel_name}
+                      <svg class="w-3.5 h-3.5 text-brand-gold shrink-0 opacity-80 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </span>
+                    <span class="text-[11px] text-gray-400">${a.date} • <span class="text-brand-cyan group-hover:underline font-semibold">عرض جدول القناة 📺</span></span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="text-xs font-bold text-brand-cyan bg-[#1F2330] border border-brand-border px-2.5 py-1 rounded-lg">
+                    ${localStart}
+                  </span>
+                  <button 
+                    onclick="event.stopPropagation(); toggleReminder('${a.broadcast_id}', '${data.title_ar.replace(/'/g, "\\'")}', '${a.channel_name.replace(/'/g, "\\'")}', '${a.channel_logo}', '${a.start_datetime}'); this.classList.toggle('bg-brand-red'); this.classList.toggle('text-white');" 
+                    class="px-2.5 py-1 rounded-lg border text-xs font-bold transition flex items-center gap-1 ${isReminderSet ? 'bg-brand-red text-white border-brand-red' : 'bg-brand-card hover:bg-brand-border text-brand-gold border-brand-border'}"
+                    title="تنبيهي قبل العرض بساعة و10 دقائق"
+                  >
+                    <span>🔔</span>
+                    <span class="hidden sm:inline">${isReminderSet ? 'تم التنبيه' : 'ذكرني'}</span>
+                  </button>
+                </div>
+              `;
+            }
+            airingsContainer.appendChild(item);
+          });
+        }
+
+        // Cast
+        const castContainer = document.getElementById('modalCast');
+        castContainer.innerHTML = '';
+        (data.cast || []).forEach(c => {
+          const actor = document.createElement('div');
+          actor.className = 'w-20 shrink-0 text-center';
+          const pic = c.profile_path ? `https://image.tmdb.org/t/p/w185${c.profile_path}` : 'https://via.placeholder.com/150/1F2330/FFFFFF?text=Cast';
+          actor.innerHTML = `
+            <img src="${pic}" class="w-16 h-16 rounded-full object-cover mx-auto mb-1.5 border border-brand-border bg-brand-card">
+            <h5 class="text-[11px] font-bold text-white truncate">${c.name}</h5>
+            <p class="text-[9px] text-gray-400 truncate">${c.character || ''}</p>
+          `;
+          castContainer.appendChild(actor);
+        });
+
+        document.getElementById('movieModal').classList.remove('hidden');
+      } catch (err) {
+        console.error('Failed to open content details', err);
+      }
+    }
+
+    function closeMovieModal() {
+      document.getElementById('movieModal').classList.add('hidden');
+    }
+
+    // 6. Open Channel Details & Frequencies Modal
+    async function openChannelDetails(channelId) {
+      try {
+        const ch = allChannels.find(c => c.id === channelId);
+        if (!ch) return;
+
+        document.getElementById('chModalName').textContent = ch.name_ar;
+        document.getElementById('chModalCategory').textContent = `تصنيف: ${ch.category || 'عام'}`;
+        document.getElementById('chModalLogo').src = ch.logo_url;
+
+        // Frequencies
+        const freqContainer = document.getElementById('chModalFrequencies');
+        freqContainer.innerHTML = '';
+        (ch.frequencies || []).forEach(f => {
+          const fCard = document.createElement('div');
+          fCard.className = 'bg-brand-card border border-brand-border p-3 rounded-xl text-xs space-y-1';
+          fCard.innerHTML = `
+            <div class="font-bold text-brand-gold flex items-center justify-between">
+              <span>${f.satellite}</span>
+              <span class="text-[10px] bg-brand-red/20 text-brand-red px-1.5 py-0.5 rounded border border-brand-red/30">${f.quality}</span>
+            </div>
+            <div class="flex justify-between text-gray-300 text-[11px]">
+              <span>التردد: <strong>${f.frequency} ${f.polarization}</strong></span>
+              <span>الترميز: <strong>${f.symbol_rate}</strong></span>
+              <span>التصحيح: <strong>${f.fec}</strong></span>
+            </div>
+          `;
+          freqContainer.appendChild(fCard);
+        });
+
+        // Schedule: Render with interactive 7-day Date Tabs
+        const res = await fetch(`${API_BASE}/api/channels/${channelId}/schedule`);
+        const schedData = await res.json();
+        const allSchedule = schedData.schedule || [];
+
+        const tabsContainer = document.getElementById('chModalDateTabs');
+        const schedContainer = document.getElementById('chModalSchedule');
+        tabsContainer.innerHTML = '';
+        schedContainer.innerHTML = '';
+
+        if (allSchedule.length === 0) {
+          document.getElementById('chModalDateTitle').textContent = '📡 البث الفضائي المباشر';
+          schedContainer.innerHTML = `
+            <div class="text-center py-10 bg-brand-surface/60 rounded-2xl border border-brand-border/80 p-6 space-y-3">
+              <span class="text-4xl block">📡</span>
+              <h4 class="text-base font-black text-white">جدول البث اليومي غير معلن رسمياً</h4>
+              <p class="text-xs text-gray-400 max-w-md mx-auto leading-relaxed">
+                إدارة هذه القناة لا تنشر جدولاً برامجياً مسبقاً لمواعيد اليوم. يمكنك استقبال ومتابعة البث الفضائي المباشر على مدار 24 ساعة عبر التردد الموضح أعلاه.
+              </p>
+              <div class="inline-flex items-center gap-2 bg-brand-card px-3 py-1.5 rounded-xl border border-brand-border text-xs text-brand-gold font-bold mt-2">
+                <span>⚡ البث الفضائي مستمر ويعمل بجودة HD</span>
+              </div>
+            </div>
+          `;
+          document.getElementById('channelModal').classList.remove('hidden');
+          return;
+        }
+
+        // Group broadcasts by date
+        const datesMap = {};
+        allSchedule.forEach(item => {
+          if (!datesMap[item.date]) datesMap[item.date] = [];
+          datesMap[item.date].push(item);
+        });
+
+        const availableDates = Object.keys(datesMap).sort();
+        tabsContainer.innerHTML = '';
+
+        const arabicDays = ['الأحد', 'الإثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
+
+        function renderDaySchedule(selectedDate) {
+          const dayItems = datesMap[selectedDate] || [];
+          const dateObj = new Date(selectedDate);
+          const dayName = isNaN(dateObj.getTime()) ? '' : arabicDays[dateObj.getDay()];
+          const formattedDate = selectedDate.split('-').reverse().join('/');
+
+          document.getElementById('chModalDateTitle').textContent = `📅 ${dayName} ${formattedDate}`;
+
+          // Update active tab styling
+          const tabBtns = tabsContainer.querySelectorAll('button');
+          tabBtns.forEach(btn => {
+            if (btn.getAttribute('data-date') === selectedDate) {
+              btn.className = 'px-3 py-1 rounded-lg bg-brand-red text-white text-xs font-bold shrink-0 transition shadow';
+            } else {
+              btn.className = 'px-3 py-1 rounded-lg bg-brand-card hover:bg-brand-border text-gray-300 text-xs font-bold shrink-0 transition border border-brand-border';
+            }
+          });
+
+          const schedContainer = document.getElementById('chModalSchedule');
+          schedContainer.innerHTML = '';
+
+          if (dayItems.length === 0) {
+            schedContainer.innerHTML = '<p class="text-xs text-gray-400 py-4 text-center">لا يتوفر جدول بث لهذا اليوم.</p>';
+            return;
+          }
+
+          // Legend Header
+          const legend = document.createElement('div');
+          legend.className = 'flex items-center justify-between text-[11px] text-gray-400 px-1 pb-1 mb-1 border-b border-brand-border/40';
+          legend.innerHTML = `
+            <div class="flex items-center gap-3">
+              <span class="flex items-center gap-1.5 text-white font-bold"><span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span> يعرض الآن</span>
+              <span class="flex items-center gap-1.5 text-brand-cyan"><span class="w-2 h-2 rounded-full bg-brand-cyan"></span> قادم</span>
+              <span class="flex items-center gap-1.5 text-gray-500"><span class="w-2 h-2 rounded-full bg-gray-600"></span> انتهى</span>
+            </div>
+            <span class="text-[10px] text-gray-400 font-bold">حسب الوقت الحالي ⏰</span>
+          `;
+          schedContainer.appendChild(legend);
+
+          const nowMs = Date.now();
+          let currentItemEl = null;
+
+          dayItems.forEach((s, idx) => {
+            const localStart = formatTimeInSelectedZone(s.start_datetime, s.start_time);
+            const localEnd = formatTimeInSelectedZone(s.end_datetime, s.end_time);
+            const isReminderSet = userReminders.some(r => r.broadcast_id === s.broadcast_id);
+
+            // Determine if the show is Past, Currently Airing, or Upcoming
+            let startMs, endMs;
+            if (s.start_datetime) {
+              startMs = new Date(s.start_datetime).getTime();
+            }
+            if (s.end_datetime) {
+              endMs = new Date(s.end_datetime).getTime();
+            }
+            if (!startMs || isNaN(startMs)) {
+              const pDate = s.date || selectedDate;
+              startMs = new Date(`${pDate}T${s.start_time || '00:00'}:00+03:00`).getTime();
+            }
+            if (!endMs || isNaN(endMs)) {
+              const eDate = s.endDate || s.date || selectedDate;
+              endMs = new Date(`${eDate}T${s.end_time || '23:59'}:00+03:00`).getTime();
+            }
+            if (endMs <= startMs) {
+              endMs += 24 * 60 * 60 * 1000;
+            }
+
+            const isPast = nowMs >= endMs;
+            const isCurrent = nowMs >= startMs && nowMs < endMs;
+            const isUpcoming = nowMs < startMs;
+
+            const item = document.createElement('div');
+
+            if (isCurrent) {
+              // لون فاقع وبارز ومميز جداً للعرض الحالي (Currently Airing)
+              item.id = 'currentAiringShowItem';
+              item.className = 'bg-gradient-to-r from-red-950/90 via-[#23181E] to-red-950/60 border-2 border-brand-red p-3.5 rounded-2xl flex items-center justify-between gap-3 text-xs shadow-2xl shadow-red-950/70 ring-2 ring-brand-red/40 relative overflow-hidden transition-all duration-300 transform scale-[1.01] my-1';
+              item.innerHTML = `
+                <div class="absolute right-0 top-0 bottom-0 w-1.5 bg-brand-red shadow-[0_0_14px_#E50914]"></div>
+                <div class="truncate pl-2 flex-1">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="bg-brand-red text-white text-[10px] font-black px-2.5 py-0.5 rounded-full flex items-center gap-1.5 shadow-md shadow-red-900/60 animate-pulse">
+                      <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+                      🔴 يعرض الآن مباشرة
+                    </span>
+                    <span class="text-[10px] text-gray-300 font-bold">📅 ${formattedDate}</span>
+                  </div>
+                  <span class="font-black text-white block truncate text-base drop-shadow tracking-tight">${s.title}</span>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="text-white font-black text-xs bg-brand-red px-3 py-1.5 rounded-xl border border-red-400/50 shadow-lg shadow-red-900/40">
+                    ${localStart} - ${localEnd}
+                  </span>
+                  <button 
+                    onclick="toggleReminder('${s.broadcast_id}', '${s.title.replace(/'/g, "\\'")}', '${ch.name_ar.replace(/'/g, "\\'")}', '${ch.logo_url}', '${s.start_datetime}'); this.classList.toggle('bg-white'); this.classList.toggle('text-black');" 
+                    class="px-2.5 py-1.5 rounded-xl text-xs font-bold border transition ${isReminderSet ? 'bg-white text-black border-white' : 'bg-red-900/80 hover:bg-brand-red text-white border-red-500/50'}"
+                    title="تنبيهي"
+                  >
+                    🔔
+                  </button>
+                </div>
+              `;
+              currentItemEl = item;
+            } else if (isPast) {
+              // لون باهت وغير بارز للعروض التي انتهت (Past Shows)
+              item.className = 'opacity-35 hover:opacity-75 bg-[#0e1017]/70 border border-brand-border/25 p-2 rounded-xl flex items-center justify-between gap-3 text-xs transition duration-200';
+              item.innerHTML = `
+                <div class="truncate">
+                  <div class="flex items-center gap-1.5 mb-0.5">
+                    <span class="text-[9px] text-gray-500 font-bold bg-black/40 px-1.5 py-0.5 rounded border border-white/5">انتهى ✓</span>
+                    <span class="text-[9px] text-gray-500">📅 ${formattedDate}</span>
+                  </div>
+                  <span class="font-medium text-gray-400 block truncate text-xs line-through decoration-gray-600/50">${s.title}</span>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="text-gray-500 font-medium bg-brand-card/40 px-2 py-0.5 rounded-lg border border-brand-border/20 text-[11px]">${localStart} - ${localEnd}</span>
+                </div>
+              `;
+            } else {
+              // العروض القادمة (Upcoming Shows)
+              item.className = 'bg-brand-surface border border-brand-border/60 p-2.5 rounded-xl flex items-center justify-between gap-3 text-xs hover:border-brand-gold/60 transition';
+              item.innerHTML = `
+                <div class="truncate">
+                  <div class="flex items-center gap-1.5 mb-0.5">
+                    <span class="text-[9px] text-brand-gold font-bold bg-brand-gold/10 border border-brand-gold/20 px-1.5 py-0.5 rounded">قريباً ⏳</span>
+                    <span class="text-[10px] text-gray-400">📅 ${formattedDate}</span>
+                  </div>
+                  <span class="font-bold text-white block truncate text-sm">${s.title}</span>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="text-brand-cyan font-bold bg-[#1F2330] px-2.5 py-1 rounded-lg border border-brand-border">${localStart} - ${localEnd}</span>
+                  <button 
+                    onclick="toggleReminder('${s.broadcast_id}', '${s.title.replace(/'/g, "\\'")}', '${ch.name_ar.replace(/'/g, "\\'")}', '${ch.logo_url}', '${s.start_datetime}'); this.classList.toggle('bg-brand-red'); this.classList.toggle('text-white');" 
+                    class="px-2.5 py-1 rounded-lg text-xs font-bold border transition ${isReminderSet ? 'bg-brand-red text-white border-brand-red' : 'bg-brand-card hover:bg-brand-border text-brand-gold border-brand-border'}"
+                    title="تنبيهي قبل العرض بساعة و10 دقائق"
+                  >
+                    🔔
+                  </button>
+                </div>
+              `;
+            }
+
+            schedContainer.appendChild(item);
+          });
+
+          // Auto-scroll smoothly to the current show
+          if (currentItemEl) {
+            setTimeout(() => {
+              currentItemEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 150);
+          }
+        }
+
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const todayStr = `${y}-${m}-${day}`;
+        
+        const tomDate = new Date(now.getTime() + 86400000);
+        const tomorrowStr = `${tomDate.getFullYear()}-${String(tomDate.getMonth() + 1).padStart(2, '0')}-${String(tomDate.getDate()).padStart(2, '0')}`;
+        
+        const yesDate = new Date(now.getTime() - 86400000);
+        const yesterdayStr = `${yesDate.getFullYear()}-${String(yesDate.getMonth() + 1).padStart(2, '0')}-${String(yesDate.getDate()).padStart(2, '0')}`;
+
+        // Build Tabs for each date
+        availableDates.forEach(d => {
+          const dObj = new Date(d);
+          const dayName = isNaN(dObj.getTime()) ? '' : arabicDays[dObj.getDay()];
+          const formatted = d.split('-').reverse().slice(0, 2).join('/'); // DD/MM
+
+          let label = `${dayName} (${formatted})`;
+          if (d === todayStr) label = `اليوم (${formatted})`;
+          else if (d === tomorrowStr) label = `غداً (${formatted})`;
+          else if (d === yesterdayStr) label = `أمس (${formatted})`;
+
+          const btn = document.createElement('button');
+          btn.setAttribute('data-date', d);
+          btn.textContent = label;
+          btn.onclick = () => renderDaySchedule(d);
+          tabsContainer.appendChild(btn);
+        });
+
+        // Default to Today if available, else first available date
+        const defaultDate = availableDates.includes(todayStr) ? todayStr : availableDates[0];
+        if (defaultDate) {
+          renderDaySchedule(defaultDate);
+        } else {
+          document.getElementById('chModalSchedule').innerHTML = '<p class="text-xs text-gray-400 py-4 text-center">لا يتوفر جدول بث لهذه القناة حالياً.</p>';
+        }
+
+        document.getElementById('channelModal').classList.remove('hidden');
+      } catch (err) {
+        console.error('Failed to open channel modal', err);
+      }
+    }
+
+    function closeChannelModal() {
+      document.getElementById('channelModal').classList.add('hidden');
+    }
+
+    // 7. Search Handler
+    let searchTimeout = null;
+    function handleSearch(query) {
+      clearTimeout(searchTimeout);
+      const clearBtn = document.getElementById('clearSearchBtn');
+      if (query.trim().length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+        resetView();
+        return;
+      }
+
+      searchTimeout = setTimeout(async () => {
+        try {
+          const res = await fetch(`${API_BASE}/api/search?q=${encodeURIComponent(query)}`);
+          const data = await res.json();
+
+          document.getElementById('homeContent').classList.add('hidden');
+          const searchSection = document.getElementById('searchResultsSection');
+          searchSection.classList.remove('hidden');
+
+          document.getElementById('searchKeyword').textContent = `"${query}"`;
+          document.getElementById('searchCount').textContent = `${data.count} نتيجة`;
+
+          const grid = document.getElementById('searchResultsGrid');
+          grid.innerHTML = '';
+
+          if (data.results.length === 0) {
+            grid.innerHTML = '<div class="col-span-full text-center py-12 text-gray-400">لم يتم العثور على أي أفلام أو برامج مطابقة.</div>';
+            return;
+          }
+
+          data.results.forEach(m => {
+            const poster = getPosterImage(m.poster_path, m.title_ar);
+            const card = document.createElement('div');
+            card.className = 'group cursor-pointer poster-glow transition-all';
+            card.onclick = () => openContentDetails(m.id);
+            card.innerHTML = `
+              <div class="aspect-[2/3] w-full rounded-xl overflow-hidden bg-brand-surface border border-brand-border relative shadow-md">
+                <img src="${poster}" alt="${m.title_ar}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                ${m.rating ? `<div class="absolute top-2 right-2 bg-black/80 px-2 py-0.5 rounded text-[11px] font-bold text-brand-gold">★ ${m.rating}</div>` : ''}
+              </div>
+              <div class="mt-2">
+                <h4 class="text-xs font-bold text-white truncate group-hover:text-brand-red">${m.title_ar}</h4>
+                <p class="text-[10px] text-gray-400">${m.release_year || 'عمل تلفزيوني'}</p>
+              </div>
+            `;
+            grid.appendChild(card);
+          });
+        } catch (err) {
+          console.error('Search failed', err);
+        }
+      }, 200);
+    }
+
+    function clearSearch() {
+      document.getElementById('searchInput').value = '';
+      document.getElementById('mobileSearchInput').value = '';
+      document.getElementById('clearSearchBtn').classList.add('hidden');
+      resetView();
+    }
+
+    function resetView() {
+      document.getElementById('homeContent').classList.remove('hidden');
+      document.getElementById('searchResultsSection').classList.add('hidden');
+    }
+
+    function toggleLanguage() {
+      if (currentLang === 'ar') {
+        currentLang = 'en';
+        document.documentElement.dir = 'ltr';
+        document.documentElement.lang = 'en';
+      } else {
+        currentLang = 'ar';
+        document.documentElement.dir = 'rtl';
+        document.documentElement.lang = 'ar';
+      }
+    }
+
+    function showAuthModal() {
+      alert('تسجيل الدخول عبر Supabase Auth متاح للجمهور مجاناً.');
+    }
+
+    document.addEventListener('DOMContentLoaded', initApp);
+  </script>
+</body>
+</html>

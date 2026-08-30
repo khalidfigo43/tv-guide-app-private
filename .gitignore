@@ -1,0 +1,28 @@
+# Build and Cache
+.gradle/
+build/
+android/.gradle/
+android/build/
+android/app/build/
+android/.idea/
+android/local.properties
+android/sdk/
+
+# Python Virtual Environment & Cache
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE & Editor
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Temporary & Output Binaries
+*.apk
+*.aab
+TVGuide.apk
+build_output/

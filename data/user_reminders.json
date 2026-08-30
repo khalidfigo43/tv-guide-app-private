@@ -1,0 +1,54 @@
+[
+  {
+    "user_id": "anonymous",
+    "broadcast_id": "prog_10_100135",
+    "content_id": null,
+    "title": "كريستال",
+    "channel_name": "إم بي سي 1",
+    "channel_logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfbWJjMSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMyNTYzRUIiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX21iYzEpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5NQkMgMTwvdGV4dD4KPC9zdmc+",
+    "start_datetime": "2026-09-05T11:00:00+03:00",
+    "remind_1hour": true,
+    "remind_10min": true,
+    "id": "rem_1788050815925",
+    "created_at": "2026-08-30T03:46:55.925984"
+  },
+  {
+    "user_id": "anonymous",
+    "broadcast_id": "1243298",
+    "content_id": null,
+    "title": "قلب أمه",
+    "channel_name": "روتانا كوميدي",
+    "channel_logo": "null",
+    "start_datetime": "2026-08-29T11:00:00+03:00",
+    "remind_1hour": true,
+    "remind_10min": true,
+    "id": "rem_1788052934532",
+    "created_at": "2026-08-30T04:22:14.533255"
+  },
+  {
+    "user_id": "anonymous",
+    "broadcast_id": "elcinema_2_700023",
+    "content_id": null,
+    "title": "مراتي وزوجتي",
+    "channel_name": "روتانا سينما مصر",
+    "channel_logo": "https://media0106.elcinema.com/tvguide/1148_2.png",
+    "start_datetime": "2026-08-30T05:00:00+03:00",
+    "remind_1hour": true,
+    "remind_10min": true,
+    "id": "rem_1788058070951",
+    "created_at": "2026-08-30T05:47:50.951635"
+  },
+  {
+    "user_id": "anonymous",
+    "broadcast_id": "elcinema_2_900088",
+    "content_id": null,
+    "title": "بدل فاقد",
+    "channel_name": "روتانا سينما مصر",
+    "channel_logo": "https://media0106.elcinema.com/tvguide/1148_2.png",
+    "start_datetime": "2026-08-31T09:00:00+03:00",
+    "remind_1hour": true,
+    "remind_10min": true,
+    "id": "rem_1788108889022",
+    "created_at": "2026-08-30T19:54:49.022547"
+  }
+]

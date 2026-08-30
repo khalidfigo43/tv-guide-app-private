@@ -1,0 +1,6186 @@
+[
+  {
+    "id": 1,
+    "name_ar": "روتانا سينما السعودية",
+    "name_en": "Rotana Cinema KSA",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1289_1.png",
+    "frequency": "12226 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12226",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 2,
+    "name_ar": "روتانا سينما مصر",
+    "name_en": "Rotana Cinema Egypt",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1148_2.png",
+    "frequency": "12226 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12226",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 3,
+    "name_ar": "روتانا كوميدي",
+    "name_en": "Rotana Comedy",
+    "category": "comedy",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1358_1.png",
+    "frequency": "12226 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12226",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 4,
+    "name_ar": "روتانا كلاسيك",
+    "name_en": "Rotana Classic",
+    "category": "classic",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1217_2.png",
+    "frequency": "12226 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12226",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 5,
+    "name_ar": "روتانا دراما",
+    "name_en": "Rotana Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1147_2.png",
+    "frequency": "12226 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12226",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 6,
+    "name_ar": "روتانا خليجية",
+    "name_en": "Rotana Khaleejiya",
+    "category": "variety",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1137_2.png",
+    "frequency": "12226 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12226",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 7,
+    "name_ar": "إل بي سي",
+    "name_en": "LBC Sat",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1341_2.png",
+    "frequency": "12226 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12226",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 8,
+    "name_ar": "الرسالة",
+    "name_en": "Al Resalah",
+    "category": "religious",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfNDQ2IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA0Nzg1NyIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfNDQ2KSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+2KfZhNix2LPYp9mE2Kk8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "12226 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12226",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 9,
+    "name_ar": "روتانا كليب",
+    "name_en": "Rotana Clip",
+    "category": "music",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfcm90YW5hX2NsaXAiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRUM0ODk5IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9yb3RhbmFfY2xpcCkiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPtmD2YTZitioPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "12226 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12226",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 10,
+    "name_ar": "إم بي سي 1",
+    "name_en": "MBC 1",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/mbc-1-logo.png",
+    "frequency": "11470 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11470",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11270",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 11,
+    "name_ar": "إم بي سي 2",
+    "name_en": "MBC 2",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1128_1.png",
+    "frequency": "11470 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11470",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11270",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 12,
+    "name_ar": "إم بي سي 4",
+    "name_en": "MBC 4",
+    "category": "series",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1129_2.png",
+    "frequency": "11470 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11470",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11270",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 13,
+    "name_ar": "إم بي سي أكشن",
+    "name_en": "MBC Action",
+    "category": "action",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1211_1.png",
+    "frequency": "11470 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11470",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11270",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 14,
+    "name_ar": "إم بي سي ماكس",
+    "name_en": "MBC Max",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1132_2.png",
+    "frequency": "11470 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11470",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11270",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 15,
+    "name_ar": "إم بي سي دراما",
+    "name_en": "MBC Drama",
+    "category": "drama",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/MBC-Drama.png",
+    "frequency": "11470 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11470",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11270",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 16,
+    "name_ar": "إم بي سي مصر",
+    "name_en": "MBC Masr",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/MBC_Masr_Logo.png",
+    "frequency": "12015 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12015",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11270",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 17,
+    "name_ar": "إم بي سي مصر 2",
+    "name_en": "MBC Masr 2",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1239_2.png",
+    "frequency": "11823 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11823",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 18,
+    "name_ar": "إم بي سي بوليود",
+    "name_en": "MBC Bollywood",
+    "category": "bollywood",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1127_2.png",
+    "frequency": "11470 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11470",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 19,
+    "name_ar": "إم بي سي العراق",
+    "name_en": "MBC Iraq",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/MBC-IRAQ_ATV.png",
+    "frequency": "12226 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12226",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11862",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 20,
+    "name_ar": "قناة وناسة",
+    "name_en": "Wanasa TV",
+    "category": "kids",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1156_2.png",
+    "frequency": "11470 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11470",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11270",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 21,
+    "name_ar": "القناة الأولى المصرية",
+    "name_en": "Al Oula Egypt",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1119_2.png",
+    "frequency": "11766 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11766",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12054",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 22,
+    "name_ar": "القناة الثانية المصرية",
+    "name_en": "Al Thaniya Egypt",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1119_2.png",
+    "frequency": "11766 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11766",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 23,
+    "name_ar": "الفضائية المصرية",
+    "name_en": "Al Masriya",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1119_2.png",
+    "frequency": "11766 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11766",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12054",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 24,
+    "name_ar": "نايل سينما",
+    "name_en": "Nile Cinema",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfbmlsZV9jaW5lbWEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjREMyNjI2IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9uaWxlX2NpbmVtYSkiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPtmG2KfZitmEINiz2YrZhtmF2Kc8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "11843 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 25,
+    "name_ar": "نايل دراما",
+    "name_en": "Nile Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1156_2.png",
+    "frequency": "11843 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 26,
+    "name_ar": "نايل كوميدي",
+    "name_en": "Nile Comedy",
+    "category": "comedy",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfbmlsZV9jb21lZHkiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRDk3NzA2IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9uaWxlX2NvbWVkeSkiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPtmG2KfZitmEINmD2YjZhdmK2K/ZijwvdGV4dD4KPC9zdmc+",
+    "frequency": "11843 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 27,
+    "name_ar": "نايل لايف",
+    "name_en": "Nile Life",
+    "category": "variety",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1159_1.png",
+    "frequency": "11843 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 28,
+    "name_ar": "ماسبيرو زمان",
+    "name_en": "Maspero Zaman",
+    "category": "classic",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1336_2.png",
+    "frequency": "11843 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 29,
+    "name_ar": "دي إم سي",
+    "name_en": "DMC",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1290_2.png",
+    "frequency": "12092 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12092",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 30,
+    "name_ar": "دي إم سي دراما",
+    "name_en": "DMC Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1290_2.png",
+    "frequency": "12092 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12092",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 31,
+    "name_ar": "أون إي",
+    "name_en": "ON E",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1203_2.png",
+    "frequency": "11862 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11862",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 32,
+    "name_ar": "أون دراما",
+    "name_en": "ON Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1134_2.png",
+    "frequency": "11862 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11862",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 33,
+    "name_ar": "أون تايم سبورت 1",
+    "name_en": "ON Time Sports 1",
+    "category": "sports",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfb250aW1lX3Nwb3J0czEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjREMyNjI2IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9vbnRpbWVfc3BvcnRzMSkiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPk9OIFRJTUUgMTwvdGV4dD4KPC9zdmc+",
+    "frequency": "11862 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11862",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 34,
+    "name_ar": "أون تايم سبورت 2",
+    "name_en": "ON Time Sports 2",
+    "category": "sports",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfb250aW1lX3Nwb3J0czIiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjQjkxQzFDIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9vbnRpbWVfc3BvcnRzMikiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPk9OIFRJTUUgMjwvdGV4dD4KPC9zdmc+",
+    "frequency": "11862 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11862",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 35,
+    "name_ar": "سي بي سي",
+    "name_en": "CBC",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1198_2.png",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 36,
+    "name_ar": "سي بي سي دراما",
+    "name_en": "CBC Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1198_2.png",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 37,
+    "name_ar": "سي بي سي سفرة",
+    "name_en": "CBC Sofra",
+    "category": "lifestyle",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1198_2.png",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 38,
+    "name_ar": "إكسترا نيوز",
+    "name_en": "Extra News",
+    "category": "news",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1323_2.png",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 39,
+    "name_ar": "إكسترا لايف",
+    "name_en": "Extra Live",
+    "category": "news",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfZXh0cmFfbGl2ZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxRTQwQUYiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX2V4dHJhX2xpdmUpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5MSVZFPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 40,
+    "name_ar": "قناة الحياة",
+    "name_en": "Al Hayah",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1137_2.png",
+    "frequency": "12206 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12206",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 41,
+    "name_ar": "الحياة دراما",
+    "name_en": "Al Hayah Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1137_2.png",
+    "frequency": "12206 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12206",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 42,
+    "name_ar": "قناة النهار",
+    "name_en": "Al Nahar",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1193_2.png",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 43,
+    "name_ar": "النهار دراما",
+    "name_en": "Al Nahar Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1193_2.png",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 44,
+    "name_ar": "النهار سينما",
+    "name_en": "Al Nahar Cinema",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1193_2.png",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 45,
+    "name_ar": "النهار نور",
+    "name_en": "Al Nahar Nour",
+    "category": "religious",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1193_2.png",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 46,
+    "name_ar": "القاهرة والناس",
+    "name_en": "Al Kahera Wal Nas",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1252_2.png",
+    "frequency": "11766 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11766",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 47,
+    "name_ar": "القاهرة والناس 2",
+    "name_en": "Al Kahera Wal Nas 2",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1252_2.png",
+    "frequency": "11766 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11766",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 48,
+    "name_ar": "قناة المحور",
+    "name_en": "Al Mehwar",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1145_1.png",
+    "frequency": "11823 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11823",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 49,
+    "name_ar": "المحور دراما",
+    "name_en": "Al Mehwar Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1145_1.png",
+    "frequency": "11823 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11823",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 50,
+    "name_ar": "صدى البلد",
+    "name_en": "Sada El Balad",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1226_2.png",
+    "frequency": "11823 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11823",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 51,
+    "name_ar": "صدى البلد 2",
+    "name_en": "Sada El Balad 2",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1226_2.png",
+    "frequency": "11823 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11823",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 52,
+    "name_ar": "قناة الشمس",
+    "name_en": "Al Shams",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1374_2.png",
+    "frequency": "12054 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12054",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 53,
+    "name_ar": "قناة تن",
+    "name_en": "TeN TV",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1297_2.png",
+    "frequency": "11843 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 54,
+    "name_ar": "قناة هي",
+    "name_en": "Heya TV",
+    "category": "lifestyle",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1395_2.png",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 55,
+    "name_ar": "قناة الناس",
+    "name_en": "Al Nas",
+    "category": "religious",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfYWxuYXNfdHYiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDY1RjQ2IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9hbG5hc190dikiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPtin2YTZhtin2LM8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "12054 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12054",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 56,
+    "name_ar": "مدرستنا 1",
+    "name_en": "Madrasetna 1",
+    "category": "education",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1297_2.png",
+    "frequency": "12303 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12303",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 57,
+    "name_ar": "ART أفلام 1",
+    "name_en": "ART Aflam 1",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfYXJ0X2FmbGFtMSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNCOTFDMUMiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX2FydF9hZmxhbTEpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5BUlQgMTwvdGV4dD4KPC9zdmc+",
+    "frequency": "12034 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12034",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12341",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 58,
+    "name_ar": "ART أفلام 2",
+    "name_en": "ART Aflam 2",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfYXJ0X2FmbGFtMiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM5OTFCMUIiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX2FydF9hZmxhbTIpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5BUlQgMjwvdGV4dD4KPC9zdmc+",
+    "frequency": "12034 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12034",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12341",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 59,
+    "name_ar": "ART سينما",
+    "name_en": "ART Cinema",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfYXJ0X2NpbmVtYSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNFMTFENDgiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX2FydF9jaW5lbWEpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj7Ys9mK2YbZhdinPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "12034 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12034",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12341",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 60,
+    "name_ar": "ART حكايات",
+    "name_en": "ART Hekayat",
+    "category": "drama",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfYXJ0X2hla2F5YXQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjN0UyMkNFIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9hcnRfaGVrYXlhdCkiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPtit2YPYp9mK2KfYqjwvdGV4dD4KPC9zdmc+",
+    "frequency": "12034 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12034",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12341",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 61,
+    "name_ar": "ART حكايات 2",
+    "name_en": "ART Hekayat 2",
+    "category": "drama",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfYXJ0X2hla2F5YXQyIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZCMjFBOCIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfYXJ0X2hla2F5YXQyKSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+2K3Zg9in2YrYp9iqIDI8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "12034 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12034",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12341",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 62,
+    "name_ar": "OSN Movies First",
+    "name_en": "OSN Movies First",
+    "category": "movies",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MOVIES-FAMILY.png",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 63,
+    "name_ar": "OSN Movies Action",
+    "name_en": "OSN Movies Action",
+    "category": "action",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1211_1.png",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 64,
+    "name_ar": "OSN Hollywood",
+    "name_en": "OSN Movies Hollywood",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfb3NuX21vdmllc19ob2xseXdvb2QiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRDk3NzA2IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9vc25fbW92aWVzX2hvbGx5d29vZCkiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkhPTExZV09PRDwvdGV4dD4KPC9zdmc+",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 65,
+    "name_ar": "OSN Series Prime",
+    "name_en": "OSN Series Prime",
+    "category": "series",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfb3NuX3Nlcmllc19wcmltZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2MzY2RjEiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX29zbl9zZXJpZXNfcHJpbWUpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5QUklNRTwvdGV4dD4KPC9zdmc+",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 66,
+    "name_ar": "OSN يا هلا",
+    "name_en": "OSN Yahala",
+    "category": "drama",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-YAHALA.png",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 67,
+    "name_ar": "OSN يا هلا أفلام",
+    "name_en": "OSN Yahala Aflam",
+    "category": "movies",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-YAHALA-AFLAM.png",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 68,
+    "name_ar": "قناة سيما",
+    "name_en": "Cima TV",
+    "category": "classic",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1176_1.png",
+    "frequency": "12034 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12034",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 69,
+    "name_ar": "بانوراما فيلم",
+    "name_en": "Panorama Film",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfcGFub3JhbWFfZmlsbSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNEQzI2MjYiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX3Bhbm9yYW1hX2ZpbG0pIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj7YqNin2YbZiNix2KfZhdinIEY8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "11257 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11257",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 70,
+    "name_ar": "بانوراما دراما",
+    "name_en": "Panorama Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1177_2.png",
+    "frequency": "12341 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12341",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 71,
+    "name_ar": "بانوراما دراما 2",
+    "name_en": "Panorama Drama 2",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1177_2.png",
+    "frequency": "12341 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12341",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 72,
+    "name_ar": "الشاشة أفلام",
+    "name_en": "Al Shasha Aflam",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfc2hhc2hhX2FmbGFtIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0MyNDEwQyIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfc2hhc2hhX2FmbGFtKSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+2KfZhNi02KfYtNipIEY8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "12562 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12562",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 73,
+    "name_ar": "الشاشة مسلسلات",
+    "name_en": "Al Shasha Mosalsalat",
+    "category": "drama",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfc2hhc2hhX21vc2Fsc2FsYXQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNDMzOENBIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9zaGFzaGFfbW9zYWxzYWxhdCkiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPtin2YTYtNin2LTYqSBNPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "12562 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12562",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 74,
+    "name_ar": "الشاشة كلاسيك",
+    "name_en": "Al Shasha Classic",
+    "category": "classic",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfc2hhc2hhX2NsYXNzaWMiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjODU0RDBFIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9zaGFzaGFfY2xhc3NpYykiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPtin2YTYtNin2LTYqSBDPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "12562 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12562",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 75,
+    "name_ar": "فاميلي سينما",
+    "name_en": "Family Cinema",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfZmFtaWx5X2NpbmVtYSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMjg0QzciIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX2ZhbWlseV9jaW5lbWEpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj7Zgdin2YXZitmE2Yo8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "12562 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12562",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 76,
+    "name_ar": "فاميلي دراما",
+    "name_en": "Family Drama",
+    "category": "drama",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfZmFtaWx5X2RyYW1hIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBEOTQ4OCIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfZmFtaWx5X2RyYW1hKSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+2YHYp9mF2YrZhNmKIEQ8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "12562 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12562",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 77,
+    "name_ar": "كايرو سينما",
+    "name_en": "Cairo Cinema",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfY2Fpcm9fY2luZW1hIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0JFMTIzQyIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfY2Fpcm9fY2luZW1hKSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+2YPYp9mK2LHZiCBDPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 78,
+    "name_ar": "كايرو دراما",
+    "name_en": "Cairo Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1168_2.png",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 79,
+    "name_ar": "صدى البلد دراما",
+    "name_en": "Sada El Balad Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1226_2.png",
+    "frequency": "11823 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11823",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 80,
+    "name_ar": "ميلودي أفلام",
+    "name_en": "Melody Aflam",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfbWVsb2R5X2FmbGFtIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0U1MDkxNCIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfbWVsb2R5X2FmbGFtKSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+2YXZitmE2YjYr9mKPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "11526 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11526",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 81,
+    "name_ar": "توك توك سينما",
+    "name_en": "TokTok Cinema",
+    "category": "comedy",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfdG9rdG9rX2NpbmVtYSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNEOTc3MDYiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX3Rva3Rva19jaW5lbWEpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj7YqtmI2YMg2KrZiNmDPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "11526 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11526",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 82,
+    "name_ar": "اليوم سينما",
+    "name_en": "Alyoum Cinema",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfYWx5b3VtX2NpbmVtYSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNCOTFDMUMiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX2FseW91bV9jaW5lbWEpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj7Yp9mE2YrZiNmFIEY8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "12604 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12604",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 83,
+    "name_ar": "ناشيونال جيوغرافيك",
+    "name_en": "National Geographic AD",
+    "category": "documentary",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfbmF0X2dlb19hZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGQkJGMjQiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX25hdF9nZW9fYWQpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5OQVQgR0VPPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "11411 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11411",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11804",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 84,
+    "name_ar": "ناشيونال جيوغرافيك وايلد",
+    "name_en": "Nat Geo Wild",
+    "category": "documentary",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfbmF0X2dlb193aWxkIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0VBQjMwOCIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfbmF0X2dlb193aWxkKSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+V0lMRDwvdGV4dD4KPC9zdmc+",
+    "frequency": "11411 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11411",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11804",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 85,
+    "name_ar": "الجزيرة الوثائقية",
+    "name_en": "Al Jazeera Documentary",
+    "category": "documentary",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfamF6ZWVyYV9kb2MiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDI4NEM3IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9qYXplZXJhX2RvYykiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPtmI2KvYp9im2YLZitipPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "10971 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "10971",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11604",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 86,
+    "name_ar": "قناة الوثائقية المصرية",
+    "name_en": "Al Wathaeqya",
+    "category": "documentary",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1119_2.png",
+    "frequency": "12303 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12303",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 87,
+    "name_ar": "ديسكفري بالعربية",
+    "name_en": "Discovery Channel Arabic",
+    "category": "documentary",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1272_2.png",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 88,
+    "name_ar": "أنيمال بلانيت",
+    "name_en": "Animal Planet Arabic",
+    "category": "documentary",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfYW5pbWFsX3BsYW5ldF9hciIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxNkEzNEEiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX2FuaW1hbF9wbGFuZXRfYXIpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5QTEFORVQ8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 89,
+    "name_ar": "كويست عربية",
+    "name_en": "Quest Arabiya",
+    "category": "documentary",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfcXVlc3RfYXJhYml5YSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNFQTU4MEMiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX3F1ZXN0X2FyYWJpeWEpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5RVUVTVDwvdGV4dD4KPC9zdmc+",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12130",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 90,
+    "name_ar": "بي بي سي وثائقي",
+    "name_en": "BBC Arabic Documentaries",
+    "category": "documentary",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfYmJjX2RvY19hciIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNCOTFDMUMiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX2JiY19kb2NfYXIpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5CQkMgRE9DPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "11564 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11564",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 91,
+    "name_ar": "روسيا اليوم الوثائقية",
+    "name_en": "RT Arabic Documentary",
+    "category": "documentary",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1394_2.png",
+    "frequency": "10892 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "10892",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 92,
+    "name_ar": "دويتشه فيله وثائقية",
+    "name_en": "DW Documentary Arabic",
+    "category": "documentary",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfZHdfZG9jX2FyIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRGNDZFNSIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfZHdfZG9jX2FyKSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+RFcgRE9DPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "11137 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11137",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11900",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 93,
+    "name_ar": "تلفزيون دبي",
+    "name_en": "Dubai TV",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1169_2.png",
+    "frequency": "12418 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12418",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12130",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 94,
+    "name_ar": "دبي وان",
+    "name_en": "Dubai One",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1169_2.png",
+    "frequency": "12418 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12418",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12130",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 95,
+    "name_ar": "سما دبي",
+    "name_en": "Sama Dubai",
+    "category": "variety",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1169_2.png",
+    "frequency": "12418 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12418",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12130",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 96,
+    "name_ar": "دبي زمان",
+    "name_en": "Dubai Zaman",
+    "category": "classic",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1169_2.png",
+    "frequency": "12418 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12418",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12130",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 97,
+    "name_ar": "تلفزيون أبوظبي",
+    "name_en": "Abu Dhabi TV",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1136_2.png",
+    "frequency": "11411 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11411",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11804",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 98,
+    "name_ar": "قناة الإمارات",
+    "name_en": "Emarat TV",
+    "category": "general",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfZW1hcmF0IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1OTY2OSIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfZW1hcmF0KSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+2KfZhNil2YXYp9ix2KfYqjwvdGV4dD4KPC9zdmc+",
+    "frequency": "11411 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11411",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11804",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 99,
+    "name_ar": "أبوظبي دراما",
+    "name_en": "Abu Dhabi Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1136_2.png",
+    "frequency": "11411 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11411",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11804",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 100,
+    "name_ar": "إس بي سي",
+    "name_en": "SBC",
+    "category": "entertainment",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1297_2.png",
+    "frequency": "12149 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12149",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12015",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 101,
+    "name_ar": "القناة السعودية",
+    "name_en": "Al Saudiya",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1352_2.png",
+    "frequency": "12149 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12149",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12015",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 102,
+    "name_ar": "قناة ذكريات",
+    "name_en": "Thikrayat",
+    "category": "classic",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1366_2.png",
+    "frequency": "12149 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12149",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12015",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 103,
+    "name_ar": "قناة فنون",
+    "name_en": "Funoon TV",
+    "category": "comedy",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfZnVub29uIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0Y1OUUwQiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfZnVub29uKSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+2YHZhtmI2YY8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "12688 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12688",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 104,
+    "name_ar": "تلفزيون الكويت",
+    "name_en": "Kuwait TV",
+    "category": "general",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfa3V3YWl0X3R2IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA0Nzg1NyIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfa3V3YWl0X3R2KSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+2KfZhNmD2YjZitiqPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "11054 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11054",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12523",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 105,
+    "name_ar": "تلفزيون الشارقة",
+    "name_en": "Sharjah TV",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1188_2.png",
+    "frequency": "11012 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11012",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11862",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 106,
+    "name_ar": "قناة الجديد",
+    "name_en": "Al Jadeed",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1216_2.png",
+    "frequency": "12188 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12188",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 107,
+    "name_ar": "MTV اللبنانية",
+    "name_en": "MTV Lebanon",
+    "category": "general",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfbXR2X2xlYmFub24iIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMUQ0RUQ4IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9tdHZfbGViYW5vbikiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPk1UVjwvdGV4dD4KPC9zdmc+",
+    "frequency": "12360 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12360",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 108,
+    "name_ar": "التلفزيون الأردني",
+    "name_en": "Jordan TV",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1314_2.png",
+    "frequency": "11958 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11958",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12054",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 109,
+    "name_ar": "سبيستون",
+    "name_en": "Spacetoon",
+    "category": "kids",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfc3BhY2V0b29uIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0VBNTgwQyIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfc3BhY2V0b29uKSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+2LPYqNmK2LPYqtmI2YY8L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12341",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 110,
+    "name_ar": "كرتون نتورك",
+    "name_en": "Cartoon Network Arabic",
+    "category": "kids",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfY25fYXJhYmljIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfY25fYXJhYmljKSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+Q048L3RleHQ+Cjwvc3ZnPg==",
+    "frequency": "11277 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11277",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11747",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 111,
+    "name_ar": "قناة ماجد",
+    "name_en": "Majid Kids",
+    "category": "kids",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfbWFqaWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOEI1Q0Y2IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjE3MkEiIHN0b3Atb3BhY2l0eT0iMC45NSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjYiIGZpbGw9InVybCgjZ3JhZF9tYWppZCkiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI2MCIgeT0iNjYiIGZvbnQtZmFtaWx5PSJDYWlybywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPtmF2KfYrNivPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "11411 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11411",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11804",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 112,
+    "name_ar": "قناة العربية",
+    "name_en": "Al Arabiya",
+    "category": "news",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Al-Arabiya.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11938",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 113,
+    "name_ar": "سكاي نيوز عربية",
+    "name_en": "Sky News Arabia",
+    "category": "news",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfc2t5bmV3c19hciIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNCRTEyM0MiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBGMTcyQSIgc3RvcC1vcGFjaXR5PSIwLjk1IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNiIgZmlsbD0idXJsKCNncmFkX3NreW5ld3NfYXIpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNjAiIHk9IjY2IiBmb250LWZhbWlseT0iQ2Fpcm8sIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5TS1kgTkVXUzwvdGV4dD4KPC9zdmc+",
+    "frequency": "11977 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11977",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 114,
+    "name_ar": "زي ألوان",
+    "name_en": "Zee Alwan",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1261_2.png",
+    "frequency": "11277 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11277",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 115,
+    "name_ar": "زي أفلام",
+    "name_en": "Zee Aflam",
+    "category": "movies",
+    "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRfemVlX2FmbGFtIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0RDMjYyNiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEYxNzJBIiBzdG9wLW9wYWNpdHk9IjAuOTUiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyYWRfemVlX2FmbGFtKSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMikiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjYwIiB5PSI2NiIgZm9udC1mYW1pbHk9IkNhaXJvLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+2LLZiiDYo9mB2YTYp9mFPC90ZXh0Pgo8L3N2Zz4=",
+    "frequency": "11277 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11277",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 116,
+    "name_ar": "إم بي سي 3",
+    "name_en": "MBC 3",
+    "category": "kids",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/MBC-3.png",
+    "frequency": "11470 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11470",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11270",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 117,
+    "name_ar": "إم بي سي 5",
+    "name_en": "MBC 5",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/MBC5_ATV.png",
+    "frequency": "11470 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11470",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11270",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 118,
+    "name_ar": "قناة ستار موفيز",
+    "name_en": "Star Movies",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1212_1.png",
+    "frequency": "11804 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11804",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 119,
+    "name_ar": "قناة ستار أكشن",
+    "name_en": "Star Action",
+    "category": "action",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1330_2.png",
+    "frequency": "11804 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11804",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 120,
+    "name_ar": "قناة ستار ورلد",
+    "name_en": "Star World",
+    "category": "series",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1329_2.png",
+    "frequency": "11804 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11804",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 121,
+    "name_ar": "ميكس وان",
+    "name_en": "Mix One",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1373_2.png",
+    "frequency": "11843 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 122,
+    "name_ar": "ميكس بالعربي",
+    "name_en": "Mix BelArabi",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1371_2.png",
+    "frequency": "11843 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11843",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 123,
+    "name_ar": "بي إن موفيز بريمير",
+    "name_en": "beIN Movies Premiere",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1322_2.png",
+    "frequency": "11013 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11013",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11547",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 124,
+    "name_ar": "بي إن موفيز أكشن",
+    "name_en": "beIN Movies Action",
+    "category": "action",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1323_2.png",
+    "frequency": "11013 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11013",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11547",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 125,
+    "name_ar": "بي إن موفيز دراما",
+    "name_en": "beIN Movies Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1324_2.png",
+    "frequency": "11013 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11013",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11547",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 126,
+    "name_ar": "بي إن موفيز فاميلي",
+    "name_en": "beIN Movies Family",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1325_2.png",
+    "frequency": "11013 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11013",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11547",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 127,
+    "name_ar": "بي إن سيريس",
+    "name_en": "beIN Series",
+    "category": "series",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1328_2.png",
+    "frequency": "11013 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11013",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11547",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 128,
+    "name_ar": "بي إن دراما",
+    "name_en": "beIN Drama",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1309_2.png",
+    "frequency": "11013 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11013",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "11547",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 129,
+    "name_ar": "أو إس إن شوكيس",
+    "name_en": "OSN Showcase",
+    "category": "entertainment",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-SHOWCASE.png",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 130,
+    "name_ar": "أو إس إن كيدز",
+    "name_en": "OSN Kids",
+    "category": "kids",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-KIDS.png",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 131,
+    "name_ar": "أو إس إن كوميدي",
+    "name_en": "OSN Comedy",
+    "category": "comedy",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-COMEDY.png",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 132,
+    "name_ar": "أو إس إن كرايم",
+    "name_en": "OSN Crime",
+    "category": "action",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-CRIME.png",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 133,
+    "name_ar": "أو إس إن فاميلي",
+    "name_en": "OSN Family",
+    "category": "variety",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1392_2.png",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 134,
+    "name_ar": "أو إس إن وان",
+    "name_en": "OSN One",
+    "category": "entertainment",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-ONE.png",
+    "frequency": "11996 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11996",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "30000"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12073",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "30000"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 135,
+    "name_ar": "قناة رؤيا",
+    "name_en": "Roya TV",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1299_2.png",
+    "frequency": "12398 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12398",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 136,
+    "name_ar": "قناة الشرقية",
+    "name_en": "Al Sharqiya",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1269_2.png",
+    "frequency": "11785 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11785",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 137,
+    "name_ar": "قناة السومرية",
+    "name_en": "Al Sumaria",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1301_2.png",
+    "frequency": "12130 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12130",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 138,
+    "name_ar": "قناة دجلة",
+    "name_en": "Dijlah TV",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1385_2.png",
+    "frequency": "12034 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12034",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 139,
+    "name_ar": "قناة الرشيد",
+    "name_en": "Al Rasheed",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1306_2.png",
+    "frequency": "12360 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12360",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 140,
+    "name_ar": "قناة السعيدة",
+    "name_en": "Al Saeeda",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1339_2.png",
+    "frequency": "11900 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11900",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 141,
+    "name_ar": "تلفزيون حضرموت",
+    "name_en": "Hadramout TV",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1374_2.png",
+    "frequency": "12398 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12398",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 142,
+    "name_ar": "الشروق الجزائرية",
+    "name_en": "Echorouk TV",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1315_2.png",
+    "frequency": "10922 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "10922",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 143,
+    "name_ar": "قناة نسمة",
+    "name_en": "Nessma TV",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1304_2.png",
+    "frequency": "11657 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11657",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 144,
+    "name_ar": "الأولى المغربية",
+    "name_en": "Al Aoula Morocco",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1312_2.png",
+    "frequency": "11476 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11476",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12683",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 145,
+    "name_ar": "قناة الظفرة",
+    "name_en": "Al Dhafra",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1264_2.png",
+    "frequency": "12322 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12322",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 146,
+    "name_ar": "تلفزيون الفجيرة",
+    "name_en": "Fujairah TV",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1302_2.png",
+    "frequency": "12322 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12322",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 147,
+    "name_ar": "التلفزيون العربي 2",
+    "name_en": "Al Araby 2",
+    "category": "variety",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Al-Araby-2.png",
+    "frequency": "11258 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11258",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 148,
+    "name_ar": "تلفزيون عمان",
+    "name_en": "Oman TV",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OmanTV_ATV.png",
+    "frequency": "12111 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "12111",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      },
+      {
+        "fec": "3/4",
+        "frequency": "12456",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Arabsat Badr 26.0°E",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 149,
+    "name_ar": "آي فيلم بالعربية",
+    "name_en": "iFilm Arabic",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1132_2.png",
+    "frequency": "11641 H",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11641",
+        "polarization": "H",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 150,
+    "name_ar": "آي فيلم",
+    "name_en": "Channel 1204",
+    "category": "movies",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1204_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 151,
+    "name_ar": "ال تي في",
+    "name_en": "Channel 1313",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1313_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 152,
+    "name_ar": "قناة أو إس إن ياهلا",
+    "name_en": "Channel 1205",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1205_1.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 153,
+    "name_ar": "يو تي في",
+    "name_en": "Channel 1367",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1367_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 154,
+    "name_ar": "الوسط",
+    "name_en": "Channel 1383",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1383_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 155,
+    "name_ar": "أو إس إن موفيز ...",
+    "name_en": "Channel 1213",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1213_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 156,
+    "name_ar": "ماسة",
+    "name_en": "Channel 1401",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1401_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 157,
+    "name_ar": "ال دي سي",
+    "name_en": "Channel 1246",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1246_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 158,
+    "name_ar": "العراقية",
+    "name_en": "Channel 1349",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1349_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 159,
+    "name_ar": "الثانية",
+    "name_en": "Channel 1398",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1398_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 160,
+    "name_ar": "نتورك بالعربية",
+    "name_en": "Channel 1242",
+    "category": "news",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1242_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 161,
+    "name_ar": "وان دراما",
+    "name_en": "Channel 1405",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1405_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 162,
+    "name_ar": "إم بي سي مصر دراما",
+    "name_en": "Channel 1399",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1399_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 163,
+    "name_ar": "إم بي سي بوليوود",
+    "name_en": "Channel 1259",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1259_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 164,
+    "name_ar": "أو إس إن ياهلا ...",
+    "name_en": "Channel 1285",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1285_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 165,
+    "name_ar": "أو إٍس إن ناو",
+    "name_en": "Channel 1396",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1396_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 166,
+    "name_ar": "تن",
+    "name_en": "Channel 1280",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1280_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 167,
+    "name_ar": "عَمان",
+    "name_en": "Channel 1298",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1298_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 168,
+    "name_ar": "قناة مصر الأولى",
+    "name_en": "Channel 1101",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1101_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 169,
+    "name_ar": "إم تي في",
+    "name_en": "Channel 1296",
+    "category": "general",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1296_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 170,
+    "name_ar": "ناشيونال جيوجرافيك",
+    "name_en": "Channel 1275",
+    "category": "documentary",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1275_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 171,
+    "name_ar": "إم بي سي دراما +",
+    "name_en": "Channel 1131",
+    "category": "drama",
+    "logo_url": "https://media0106.elcinema.com/tvguide/1131_2.png",
+    "frequency": "11747 V",
+    "frequencies": [
+      {
+        "fec": "5/6",
+        "frequency": "11747",
+        "polarization": "V",
+        "quality": "HD",
+        "satellite": "Nilesat 7.0°W",
+        "symbol_rate": "27500"
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 172,
+    "name_ar": "OSNtv Pop Up",
+    "name_en": "OSNtv Pop Up",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-Pop-Up_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 173,
+    "name_ar": "OSNtv Showcase Classics",
+    "name_en": "OSNtv Showcase Classics",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-SHOWCASE-CLASSICS.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 174,
+    "name_ar": "OSNtv Now",
+    "name_en": "OSNtv Now",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-NOW.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 175,
+    "name_ar": "OSNtv Mezze",
+    "name_en": "OSNtv Mezze",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MEZZE.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 176,
+    "name_ar": "Fatafeat",
+    "name_en": "Fatafeat",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Fatafeat_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 177,
+    "name_ar": "OSNtv iQIYI",
+    "name_en": "OSNtv iQIYI",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-iQIYI_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 178,
+    "name_ar": "MOTORVISION",
+    "name_en": "MOTORVISION",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Motorvision_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 179,
+    "name_ar": "Padel TV",
+    "name_en": "Padel TV",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/PadelTime-TV_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 187,
+    "name_ar": "OSNtv Yahala Bil Arabi",
+    "name_en": "OSNtv Yahala Bil Arabi",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-YAHALA-BIL-ARABI.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 188,
+    "name_ar": "Alfa Series HD",
+    "name_en": "Alfa Series HD",
+    "category": "series",
+    "logo_url": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Musalsalat_Legacy.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 189,
+    "name_ar": "Alfa Series +2 HD",
+    "name_en": "Alfa Series +2 HD",
+    "category": "series",
+    "logo_url": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Musalsalat_2_Legacy.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 190,
+    "name_ar": "Alfa Al Yawm HD",
+    "name_en": "Alfa Al Yawm HD",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Al-yawm_Legacy.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 191,
+    "name_ar": "Alfa Al Safwa",
+    "name_en": "Alfa Al Safwa",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Al-Safwat_Legacy.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 192,
+    "name_ar": "Alfa Fann",
+    "name_en": "Alfa Fann",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Fan_Legacy.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 193,
+    "name_ar": "Alfa Cinema 1",
+    "name_en": "Alfa Cinema 1",
+    "category": "movies",
+    "logo_url": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Cinema-1_Legacy.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 194,
+    "name_ar": "Alfa Cinema 2",
+    "name_en": "Alfa Cinema 2",
+    "category": "movies",
+    "logo_url": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Cinema-2_Legacy.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 195,
+    "name_ar": "Alfa Music HD",
+    "name_en": "Alfa Music HD",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Music-Now_Legacy.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 196,
+    "name_ar": "STV1 HD",
+    "name_en": "STV1 HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/STV-1-HD_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 197,
+    "name_ar": "KTV Channel 1 HD",
+    "name_en": "KTV Channel 1 HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/ktv-1.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 198,
+    "name_ar": "Abu Dhabi TV HD",
+    "name_en": "Abu Dhabi TV HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Abu-Dhabi-TV-HD.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 199,
+    "name_ar": "Dubai TV HD",
+    "name_en": "Dubai TV HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Dubia-Tv.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 200,
+    "name_ar": "Bahrain TV",
+    "name_en": "Bahrain TV",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Bahrain-TV-png.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 201,
+    "name_ar": "Roya TV HD",
+    "name_en": "Roya TV HD",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/Roya-TV_HD.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 202,
+    "name_ar": "TLC HD",
+    "name_en": "TLC HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/TLC.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 203,
+    "name_ar": "MCM TOP",
+    "name_en": "MCM TOP",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/MCM-TOP_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 204,
+    "name_ar": "RFM TV",
+    "name_en": "RFM TV",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/RFM-TV_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 205,
+    "name_ar": "Cartoon Network HD",
+    "name_en": "Cartoon Network HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Cartoon-Network_android.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 206,
+    "name_ar": "Nickelodeon HD",
+    "name_en": "Nickelodeon HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Nickelodeon_N1ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 207,
+    "name_ar": "Nick Jr HD",
+    "name_en": "Nick Jr HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/NickJr_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 208,
+    "name_ar": "NickToons HD",
+    "name_en": "NickToons HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Nick-TOONS.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 209,
+    "name_ar": "Moonbug Kids",
+    "name_en": "Moonbug Kids",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Moonbug-ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 210,
+    "name_ar": "Blippi and Friends",
+    "name_en": "Blippi and Friends",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Blippi-and-Friends_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 211,
+    "name_ar": "CN Arabia",
+    "name_en": "CN Arabia",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v3/Cartoon_Network_Arabic_logo.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 212,
+    "name_ar": "Sky News Arabia HD",
+    "name_en": "Sky News Arabia HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Sky_news_arabia-HD.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 213,
+    "name_ar": "BBC World",
+    "name_en": "BBC World",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/BBC-World-News.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 214,
+    "name_ar": "CNN HD",
+    "name_en": "CNN HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/CNN-png.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 215,
+    "name_ar": "Bloomberg",
+    "name_en": "Bloomberg",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Bloomberg.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 216,
+    "name_ar": "RT English",
+    "name_en": "RT English",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Rusiya-Al-Yawm.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 217,
+    "name_ar": "RT Arabic",
+    "name_en": "RT Arabic",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Rusiya-Al-Yawm.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 218,
+    "name_ar": "Al Araby TV",
+    "name_en": "Al Araby TV",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/Vodafone/Al_Arabi_TV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 219,
+    "name_ar": "Al Hadath",
+    "name_en": "Al Hadath",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Al-Hadath_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 220,
+    "name_ar": "OSNtv Documentary",
+    "name_en": "OSNtv Documentary",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNTV-DOCUMENTARY_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 221,
+    "name_ar": "Discovery Channel HD",
+    "name_en": "Discovery Channel HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Discovery.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 222,
+    "name_ar": "Discovery IDX HD",
+    "name_en": "Discovery IDX HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/ID.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 223,
+    "name_ar": "C & I",
+    "name_en": "C & I",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v3/CI.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 224,
+    "name_ar": "History HD",
+    "name_en": "History HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/History.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 225,
+    "name_ar": "H2 HD",
+    "name_en": "H2 HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/History2.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 226,
+    "name_ar": "Animal Planet HD",
+    "name_en": "Animal Planet HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Animal-Planet_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 227,
+    "name_ar": "Bloomberg Originals",
+    "name_en": "Bloomberg Originals",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Bloomberg-Originals_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 228,
+    "name_ar": "AD Sports 1 HD",
+    "name_en": "AD Sports 1 HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/AbuDhabi-sports-1-png.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 229,
+    "name_ar": "KSA Sports 1 HD",
+    "name_en": "KSA Sports 1 HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/KSA-Sports-1-HD-png.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 230,
+    "name_ar": "Al Kass One",
+    "name_en": "Al Kass One",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Al_Kass_One_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 231,
+    "name_ar": "Oman TV Sport",
+    "name_en": "Oman TV Sport",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/oman-sport-tv.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 232,
+    "name_ar": "TFC HD",
+    "name_en": "TFC HD",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0011_TFC.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 233,
+    "name_ar": "Cinema One Global",
+    "name_en": "Cinema One Global",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0031_CINEMA-ONE.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 234,
+    "name_ar": "ANC",
+    "name_en": "ANC",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0030_Vector-Smart-Object.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 235,
+    "name_ar": "DZMM TeleRadyo",
+    "name_en": "DZMM TeleRadyo",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/Rebrand/Test/DZMM-Teleradyo_Legacy.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 236,
+    "name_ar": "MOR Global Radio",
+    "name_en": "MOR Global Radio",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/Rebrand/Test/MOR-png.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 237,
+    "name_ar": "Myx",
+    "name_en": "Myx",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0014_MYX-TV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 238,
+    "name_ar": "Kapatid TV5 International",
+    "name_en": "Kapatid TV5 International",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/KAPATID-TV5.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 239,
+    "name_ar": "CineMo",
+    "name_en": "CineMo",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/CineMo.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 240,
+    "name_ar": "GMA Pinoy TV",
+    "name_en": "GMA Pinoy TV",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0024_Layer-5.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 241,
+    "name_ar": "GMA Life TV",
+    "name_en": "GMA Life TV",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0023_Layer-6.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 242,
+    "name_ar": "GMA News TV",
+    "name_en": "GMA News TV",
+    "category": "general",
+    "logo_url": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0022_Layer-7.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 243,
+    "name_ar": "Al Quran Al Kareem TV HD",
+    "name_en": "Al Quran Al Kareem TV HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Al-Quran-Al-Kareem-TV-HD.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 244,
+    "name_ar": "MBC Masr2",
+    "name_en": "MBC Masr2",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/MBC-MASR-2_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 245,
+    "name_ar": "DMC HD",
+    "name_en": "DMC HD",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/DMC.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 246,
+    "name_ar": "Oman TV Mubashir",
+    "name_en": "Oman TV Mubashir",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Oman-TV-Mubashir_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 247,
+    "name_ar": "MBC+ Drama",
+    "name_en": "MBC+ Drama",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/MBC_Plus_DRAMA_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 248,
+    "name_ar": "Al Rai TV",
+    "name_en": "Al Rai TV",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v1/alrai-tv-png.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 249,
+    "name_ar": "MBC Mood",
+    "name_en": "MBC Mood",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/MBC-Mood_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": false
+      }
+    ],
+    "quality": "HD",
+    "is_paid": false,
+    "is_encrypted": false
+  },
+  {
+    "id": 250,
+    "name_ar": "OSNtv Pop Up",
+    "name_en": "OSNtv Pop Up",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-Pop-Up_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 251,
+    "name_ar": "OSNtv Mezze",
+    "name_en": "OSNtv Mezze",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MEZZE.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 252,
+    "name_ar": "OSNtv iQIYI",
+    "name_en": "OSNtv iQIYI",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-iQIYI_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 253,
+    "name_ar": "OSNtv Documentary",
+    "name_en": "OSNtv Documentary",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNTV-DOCUMENTARY_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 254,
+    "name_ar": "OSNtv Pop Up",
+    "name_en": "OSNtv Pop Up",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-Pop-Up_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 255,
+    "name_ar": "OSNtv Mezze",
+    "name_en": "OSNtv Mezze",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MEZZE.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 256,
+    "name_ar": "OSNtv iQIYI",
+    "name_en": "OSNtv iQIYI",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-iQIYI_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 257,
+    "name_ar": "OSNtv Documentary",
+    "name_en": "OSNtv Documentary",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNTV-DOCUMENTARY_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 258,
+    "name_ar": "OSNtv Pop Up",
+    "name_en": "OSNtv Pop Up",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-Pop-Up_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 259,
+    "name_ar": "OSNtv Mezze",
+    "name_en": "OSNtv Mezze",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MEZZE.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 260,
+    "name_ar": "OSNtv iQIYI",
+    "name_en": "OSNtv iQIYI",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-iQIYI_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 261,
+    "name_ar": "OSNtv Documentary",
+    "name_en": "OSNtv Documentary",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNTV-DOCUMENTARY_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 261,
+    "name_ar": "OSNtv Pop Up",
+    "name_en": "OSNtv Pop Up",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-Pop-Up_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 262,
+    "name_ar": "OSNtv Mezze",
+    "name_en": "OSNtv Mezze",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MEZZE.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 263,
+    "name_ar": "OSNtv iQIYI",
+    "name_en": "OSNtv iQIYI",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-iQIYI_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  },
+  {
+    "id": 265,
+    "name_ar": "OSNtv Documentary",
+    "name_en": "OSNtv Documentary",
+    "category": "general",
+    "logo_url": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNTV-DOCUMENTARY_ATV.png",
+    "frequency": "11555 V (Nilesat 7°W)",
+    "frequencies": [
+      {
+        "satellite": "Nilesat 7.0°W",
+        "frequency": "11555",
+        "polarization": "V",
+        "symbol_rate": "27500",
+        "fec": "5/6",
+        "quality": "HD",
+        "system": "DVB-S2",
+        "is_encrypted": true
+      }
+    ],
+    "quality": "HD",
+    "is_paid": true,
+    "is_encrypted": true
+  }
+]

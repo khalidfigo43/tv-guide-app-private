@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">دليل التلفزيون</string>
+    <string name="now_airing">يعرض حالياً</string>
+    <string name="next_airing">التالي على القنوات</string>
+    <string name="cinema_library">مكتبة العروض الحية</string>
+    <string name="channels">القنوات الفضائية</string>
+    <string name="search_hint">ابحث عن فيلم، مسلسل، برنامج أو قناة...</string>
+    <string name="remind_me">ذكرني</string>
+</resources>
+

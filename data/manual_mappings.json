@@ -1,0 +1,80 @@
+{
+  "العميل صفر": {
+    "tmdb_id": 1157303,
+    "tmdb_type": "movie",
+    "content_type": "movie",
+    "notes": "الفيلم الكوميدي بطولة أكرم حسني وبيومي فؤاد 2023",
+    "status": "MANUAL_CONFIRMED"
+  },
+  "ب 100 راجل": {
+    "tmdb_id": 246787,
+    "tmdb_type": "tv",
+    "content_type": "series",
+    "notes": "مسلسل درامي مصري بطولة سمية الخشاب 2024",
+    "status": "MANUAL_CONFIRMED"
+  },
+  "صبايا": {
+    "tmdb_id": 93636,
+    "tmdb_type": "tv",
+    "content_type": "series",
+    "notes": "المسلسل السوري الكوميدي الشهير صبايا",
+    "status": "MANUAL_CONFIRMED"
+  },
+  "خير وبركة": {
+    "tmdb_id": 543248,
+    "tmdb_type": "movie",
+    "content_type": "movie",
+    "notes": "فيلم كوميدي بطولة علي ربيع ومحمد عبد الرحمن 2017",
+    "status": "MANUAL_CONFIRMED"
+  },
+  "ريا وسكينة": {
+    "tmdb_id": 514363,
+    "tmdb_type": "movie",
+    "content_type": "movie",
+    "notes": "فيلم ريا وسكينة الكوميدي بطولة شريهان ويونس شلبي وحسن عابدين 1983",
+    "status": "MANUAL_CONFIRMED"
+  },
+  "٣٠ يوم في السجن": {
+    "tmdb_id": 320981,
+    "tmdb_type": "movie",
+    "content_type": "movie",
+    "notes": "الفيلم الكوميدي الكلاسيكي بطولة فريد شوقي وماري منيب وعادل إمام 1966",
+    "status": "MANUAL_CONFIRMED"
+  },
+  "الشياطين الثلاثة": {
+    "tmdb_id": 1022341,
+    "tmdb_type": "movie",
+    "content_type": "movie",
+    "notes": "فيلم كلاسيكي 1964 بطولة رشدي أباظة وأحمد رمزي وحسن يوسف",
+    "status": "MANUAL_CONFIRMED"
+  },
+  "المطارد": {
+    "tmdb_id": 421347,
+    "tmdb_type": "movie",
+    "content_type": "movie",
+    "notes": "فيلم المطارد 1985 بطولة نور الشريف وبوسي",
+    "status": "MANUAL_CONFIRMED"
+  },
+  "ماكو": {
+    "tmdb_id": 772307,
+    "tmdb_type": "movie",
+    "content_type": "movie",
+    "notes": "فيلم ماكو 2021 بطولة بسمة ونيقولا معوض وناهد السباعي",
+    "status": "MANUAL_CONFIRMED"
+  },
+  "همسات": {
+    "tmdb_id": null,
+    "tmdb_type": null,
+    "content_type": "program",
+    "notes": "برنامج ديني / توعوي على قناة الرسالة",
+    "status": "MANUAL_CONFIRMED"
+  },
+  "قدوة": {
+    "tmdb_id": null,
+    "tmdb_type": null,
+    "content_type": "program",
+    "notes": "برنامج ديني وثقافي على قناة الرسالة",
+    "status": "MANUAL_CONFIRMED"
+  }
+}
+

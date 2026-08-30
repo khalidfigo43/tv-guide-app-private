@@ -1,0 +1,3175 @@
+{
+  "1": {
+    "content_id": 1,
+    "source_title": "جعلتني مجرماً",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 48658,
+      "type": "movie",
+      "title": "جعلتني مجرماً",
+      "original_title": "جعلتني مجرماً",
+      "release_date": "2006-03-15",
+      "poster_path": "/9InvbMsehKRhHMSbPvAJrK0boCz.jpg",
+      "overview": "لفقت ملك(غادة عادل) قصة اختطافها وطلب فدية من والدها رجل الاعمال الثرى ادهم الشاذلى (حسن حسنى) لتسترد الاموال التى ورثتها عن والدتها من ابيها البخيل واستعانت برشدى(احمد حلمى) لتنفيذ هذا المخطط بعد ان اقنعته انها مشلولة وتحتاج عملية",
+      "popularity": 1.6825,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "2": {
+    "content_id": 2,
+    "source_title": "العارف",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 823353,
+      "type": "movie",
+      "title": "العارف",
+      "original_title": "العارف",
+      "release_date": "2021-07-12",
+      "poster_path": "/8VW9mR2YIS2YORfTHcJy9VLZmeu.jpg",
+      "overview": "يجلب يونس لنفسه المتاعب عندما يلجأ إلى سرقة أحد البنوك لإعالة عائلته، وتزداد حياته تعقيدا عندما يجد نفسه قد أصبح هدفا لإحدى العصابات الخطرة.",
+      "popularity": 1.0701,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 1524536,
+      "type": "movie",
+      "title": "أنا العارف الميت",
+      "original_title": "أنا العارف الميت",
+      "release_date": "2008-01-01",
+      "poster_path": "/r3PeYODwrA0AFM4nUbNNwK0jtxE.jpg",
+      "overview": "",
+      "popularity": 0.4897,
+      "score": 54.55,
+      "reasons": []
+    },
+    "candidate_count": 2
+  },
+  "3": {
+    "content_id": 3,
+    "source_title": "بني آدم",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 542156,
+      "type": "movie",
+      "title": "بني ادم",
+      "original_title": "بني آدم",
+      "release_date": "2018-08-20",
+      "poster_path": "/alSgjBanQZvxBCVk6voGOWwJ7Jo.jpg",
+      "overview": "تدور الأحداث  في إطار بوليسي تشويقي مثير حول رجل الأعمال (آدم) الذي يتهم بأعمال إجرامية، في الوقت الذي تلجأ إليه الشرطة في مهمة خطيرة، فهل الأحداث ستتطور وتجعله متورط، أم هناك جانب غامض غير معروف عنه؟.",
+      "popularity": 0.8878,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "4": {
+    "content_id": 4,
+    "source_title": "اللص والكلاب",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 258663,
+      "type": "movie",
+      "title": "اللص والكلاب",
+      "original_title": "اللص والكلاب",
+      "release_date": "1962-11-12",
+      "poster_path": "/yqROZKGOVBQKMXMbDYLzjinbFqg.jpg",
+      "overview": "سعيد مهران لص عتيد اﻹجرام، يتخذ من رؤوف علوان قدوته في الحياة، خاصة بعدما نصحه أن الانسان لابد أن يحصل علي مايريد بأي وسيلة يراها، وأثناء تنفيذه إحدى السرقات، يبلغ صبيه عليش سدره عنه لكي يتزوج من زوجة سعيد بعد سجنه، وبعد خروج سعيد من السجن يقابله رؤوف علوان بتكبر شديد بعد أن صار صحافيًا لامعًا، ويصبح كل من رؤوف ونبوية زوجة سعيد السابقة وعليش سدره صبيه ألد خصومه له ويسعي إلي الانتقام منهم.",
+      "popularity": 0.9228,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "5": {
+    "content_id": 5,
+    "source_title": "الراقصة والسياسي",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 263217,
+      "type": "movie",
+      "title": "الراقصة والسياسي",
+      "original_title": "الراقصة والسياسي",
+      "release_date": "1990-04-26",
+      "poster_path": "/7v5zpTrHxD2KIHyY5Of5YXEEIuL.jpg",
+      "overview": "سونيا سليم راقصة شهيرة، تقرر فضح أمر أحد الوزراء والذي كانت تعرفه وامتنع عن دفع أجرها بعد اتفاقه معها وتهدده بنشر مذكراتها مما يصيب عدد من المسئولين بالذعر.",
+      "popularity": 0.828,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "6": {
+    "content_id": 6,
+    "source_title": "العميل صفر",
+    "status": "REVIEW",
+    "best_match": {
+      "tmdb_id": 1383247,
+      "type": "movie",
+      "title": "العميل صفر",
+      "original_title": "Badh",
+      "release_date": "2025-08-06",
+      "poster_path": "/sLjHm8eKrC27wykgmih6vVCxjbi.jpg",
+      "overview": "تدور أحداث الفيلم العميل صفر حول ألما، التي تضطر إلى العودة لهويتها السابقة كعميلة استخبارات وقاتلة محترفة تُعرف باسم \"باض\"، بعد إصابة ضابط الشرطة إلياس بطلق ناري ودخوله في غيبوبة. وبينما تسعى للانتقام وكشف الحقيقة، تبدأ بتعقب أفراد عائلة الخوري والقضاء عليهم واحدًا تلو الآخر، ما يثير غضب زعيم العائلة منصور. لكن مع انكشاف الأسرار، تكتشف أن منصور يعمل مع جوانا، الضابطة السابقة في وحدتها الاستخباراتية، لتجد نفسها في مواجهة مؤامرة أخطر مما كانت تتوقع.",
+      "popularity": 6.6104,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 1157303,
+      "type": "movie",
+      "title": "العميل صفر",
+      "original_title": "العميل صفر",
+      "release_date": "2023-08-16",
+      "poster_path": "/weiM771BhB6LvvaYUlGUICvmGpD.jpg",
+      "overview": "يحلم صفر، وهو حارس أمن متحف، أن يكون بطلا مثل جيمس بوند، ولكنه يقع في مشاكل ومواقف كوميدية عدة عندما يفشل في أداء عمله بشكل صحيح.",
+      "popularity": 1.0376,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "candidate_count": 2
+  },
+  "7": {
+    "content_id": 7,
+    "source_title": "الزواج على الطريقة الحديثة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 537225,
+      "type": "movie",
+      "title": "الزواج على الطريقة الحديثة",
+      "original_title": "الزواج على الطريقة الحديثة",
+      "release_date": "1968-10-14",
+      "poster_path": "/gw2OYJ23KXoKpNlgLff3StAKcwc.jpg",
+      "overview": "أحمد ونهى أولاد خالة تربوا وتعلموا معًا حتى وصلوا إلى الجامعة، وبينما هم في رحلة معسكر الجامعة على الشاطيء في الاجازة الصيفية يندلع الحب بينهم. ويقرران الزواج، ولكن الظروف لا تساعدهم على الزواج خاصة مع ظهور عريس مهندس يطلب الزواج من نهى فتقوم بعمل حيل حتى يهرب منها.",
+      "popularity": 0.6908,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "8": {
+    "content_id": 8,
+    "source_title": "مين فينا الحرامي",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 514001,
+      "type": "movie",
+      "title": "مين فينا الحرامي",
+      "original_title": "مين فينا الحرامي",
+      "release_date": "1984-12-03",
+      "poster_path": "/xX1zfClvzRl7UdVGr6PJp4oPjC7.jpg",
+      "overview": "تلتقي الصحفية الشابة الحسناء (سحر) مع (حسين) في لندن ويعودان الى مصر حيث يتعرّف على والدها (عاصم) مدير الشركة التي اختلس منه اخوه التوأم (شريف) مبلغا كبيرا واخفاه في السرير إلى ان يبيع (حسين) أثاث الشقة حتي يتمكن من اخراج اخيه (شريف) من السجن بعض القبض عليه وتدور الاحداث حول رحلة البحث عن السرير المخبئ به الاموال من (شريف).",
+      "popularity": 0.8704,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "9": {
+    "content_id": 9,
+    "source_title": "ياباني أصلي",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 445681,
+      "type": "movie",
+      "title": "ياباني أصلي",
+      "original_title": "ياباني أصلي",
+      "release_date": "2017-01-18",
+      "poster_path": "/c0o25aE7Jwk1DQ4SA01zHOTtvVn.jpg",
+      "overview": "تدور احداث فيلم حول (محرم) مندوب شركة سياحية يعيش بمنطقة شعبية، يقع في حب دبلوماسية يابانية تُدعى (ساكورا)، يتزوجا وينجبا طفلين توأم، وفي ظل الظروف المعيشية الصعبة تطلب العودة لليابان، لكنه يرفض؛ فتأخذ الطفلين، وتسافر دون علمه، وبعد مرور 7 سنوات، يتوصلا لاتفاق ينص على مجيء الطفلين لمدة 6 شهور للإقامة معه، لكن بشروط.",
+      "popularity": 1.1205,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "10": {
+    "content_id": 10,
+    "source_title": "شاومينج",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 791494,
+      "type": "movie",
+      "title": "شاومينج",
+      "original_title": "شاومينج",
+      "release_date": "2021-02-03",
+      "poster_path": "/70t6MwShYLbVDiexi6hdXg7kGyn.jpg",
+      "overview": "",
+      "popularity": 2.3686,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "11": {
+    "content_id": 11,
+    "source_title": "حريم كريم",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 48653,
+      "type": "movie",
+      "title": "حريم كريم",
+      "original_title": "حريم كريم",
+      "release_date": "2005-08-15",
+      "poster_path": "/MdRbjpqRn5WOvwjJukRKuTRAfd.jpg",
+      "overview": "تدور أحداث الفيلم حول زوجين تم الطلاق بينهم فيحاول الزوج ان يعمل على مصلاحة زوجته عن طريق زملائه القدامى أثناء الجامعة",
+      "popularity": 0.9826,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 1129293,
+      "type": "movie",
+      "title": "أولاد حريم كريم",
+      "original_title": "اولاد حريم كريم",
+      "release_date": "2023-08-30",
+      "poster_path": "/1BbYw0r94sIN93hgSNzf7MUsVvu.jpg",
+      "overview": "تدور احداث حين تنشأ علاقة حب بين (كريم حسين) و(آيلا)، وعندما يتقدم للزواج منها يكتشف والدها (كريم الحسيني) أنه ابن زميلته وحبيبته السابقة (مها)، ثم يستعيدان علاقة الصداقة القديمة مع صديقتيهما (هالة) و(دينا).",
+      "popularity": 0.8539,
+      "score": 75.0,
+      "reasons": [
+        "high title similarity"
+      ]
+    },
+    "candidate_count": 2
+  },
+  "12": {
+    "content_id": 12,
+    "source_title": "اللي بالي بالك",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 42319,
+      "type": "movie",
+      "title": "اللي بالي بالك",
+      "original_title": "اللي بالي بالك",
+      "release_date": "2003-03-23",
+      "poster_path": "/txstnOjizjPhtTeVN8pyY8OU8lZ.jpg",
+      "overview": "يحكي الفيلم قصة اللمبي تلك الشخصية التي جسدها محمد سعد في فيلم سينمائي، ويعد هذ الفيلم تكملة للفيلم السابق ويجسد محمد سعد فيه شخصيتين أحدهما لرياض المنفلوطي الضابط الحازم واللمبي الذي سيحل محل رياض بعد وفاته في حادث سيارة ومن هنا تنشأ المفارقات الكوميدية.",
+      "popularity": 0.967,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "13": {
+    "content_id": 13,
+    "source_title": "الظالم والمظلوم",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 572115,
+      "type": "movie",
+      "title": "الظالم والمظلوم",
+      "original_title": "الظالم والمظلوم",
+      "release_date": "1989-03-27",
+      "poster_path": "/m3WS5x8BDK8E1WX6c3bkEpptb4h.jpg",
+      "overview": "",
+      "popularity": 0.8734,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "14": {
+    "content_id": 14,
+    "source_title": "رغدة متوحشة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 546922,
+      "type": "movie",
+      "title": "رغدة متوحشة",
+      "original_title": "رغدة متوحشة",
+      "release_date": "2018-01-06",
+      "poster_path": "/7mSAUtjBMdyWYgq8GQSnxmgLFTQ.jpg",
+      "overview": "عندما يعلم إسماعيل وهو شاب يعمل بأحد مراكز التجميل أن مخرج إعلانات يبحث عن وجه جديد، يحول نفسه إلى فتاة ليشارك في تصوير الإعلان.",
+      "popularity": 0.9482,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "15": {
+    "content_id": 15,
+    "source_title": "برا المنهج",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 892306,
+      "type": "movie",
+      "title": "برا المنهج",
+      "original_title": "برا المنهج",
+      "release_date": "2021-12-09",
+      "poster_path": "/mp6PDqcdVFNxDbODQ9CJeM0lf8A.jpg",
+      "overview": "يحاول الطفل اليتيم نور، الذي يبلغ من العمر 13 سنة، اكتساب احترام زملائه؛ من خلال دخول منزل مهجور أمام المدرسة، يخاف الأولاد المرور بقربه ليكتشف أن الذي يسكنه رجل عجوز يعيش هناك مختبئاً من العالم. تنشأ صداقة وعلاقة تربوية بين الصبي والرجل العجوز، ما يدفعهما إلى رحلة لاكتشاف الذات.",
+      "popularity": 0.762,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "16": {
+    "content_id": 16,
+    "source_title": "لخمة راس",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 514018,
+      "type": "movie",
+      "title": "لخمة راس",
+      "original_title": "لخمة راس",
+      "release_date": "2006-06-07",
+      "poster_path": "/joagsrOpT7uBttyMMdUbdUkPXfR.jpg",
+      "overview": "يحلم صابران يلتحق ابنه يوسف بكلية الشرطة ولكن كلية الشرطة لم تقبل يوسف لسمنته الزائدة ، ويقع صابرفي مشكلة كبيرة لانه اقترض مال من اهل الحته فيتظاهر يوسف بانه قبل فى الكليه ويلبس بدلة طالب بكلية الشرطة ويسافر الى والدته , وفى الاوتوبيس تتبدل حقيبته مع حقيبة المجرم نخنوخ التى تحتوى على رأس قتيل ، وتقوم العصابة بإختطاف خطيبة يوسف لاسترجاع الحقيبة.",
+      "popularity": 0.8056,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "17": {
+    "content_id": 17,
+    "source_title": "يا أنا يا خالتي",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 406854,
+      "type": "movie",
+      "title": "يا أنا يا خالتي",
+      "original_title": "يا أنا يا خالتي",
+      "release_date": "2005-05-22",
+      "poster_path": "/etUDmMO1lobnCG5cqOAu8pJpj5z.jpg",
+      "overview": "تدور القصة حول (تيمور) الطالب بمعهد الموسيقى، والمرتبط عاطفيًا بزميلته (نوال)، ويسعى للزواج منها، لكن والدة نوال تؤمن بالسحر والشعوذة، فيلجأ تيمور إلى وضع قناع إصطناعي ليمثل شخصية الساحرة (الخالة نوسة) حتى يتمكن من نيل رضاها ومباركتها لإرتباطهما، فهل سينجح؟",
+      "popularity": 1.4147,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "18": {
+    "content_id": 18,
+    "source_title": "الحناكيش",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 418423,
+      "type": "movie",
+      "title": "الحناكيش",
+      "original_title": "الحناكيش",
+      "release_date": "1986-09-08",
+      "poster_path": "/lOBQX004DhWDP7lO1SYuqMXvPnO.jpg",
+      "overview": "يعود (طاهر) من المنفى ويطلع ولديه (عصام)، و(عمر) على سر دفنه لحقيبة مليئة بالذهب والمجوهرات في حديقة الفيلا التي كان يمتلكها قبل نفيه، ويضع خطة لإستعادتها بأن يوقع (عصام) بالخادمة (عواطف) في حبه، ليتمكن من دخول الفيلا، وتتوالى الأحداث.",
+      "popularity": 0.7044,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "19": {
+    "content_id": 19,
+    "source_title": "جواب اعتقال",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 463905,
+      "type": "movie",
+      "title": "جواب اعتقال",
+      "original_title": "جواب اعتقال",
+      "release_date": "2017-06-25",
+      "poster_path": "/3x4AQyeNvzoDMw3DGCMoQMU1Scf.jpg",
+      "overview": "ينضم (خالد الدجوي) إلى صفوف إحدى الجماعات الإرهابية، وعندما يحاول أخيه (أحمد) الانضمام لهذه الجماعة، يرفض (خالد) ذلك، ويحاول منعه، إلا أنه ينضم، وفي أحد الأيام يُقتل (أحمد) على يد عضو بالجماعة، ويجن جنون (خالد) الذي يسعى للانتقام من الجماعة، وهى نفس اللحظة التي يصدر فيها جواب اعتقال ضد (خالد).",
+      "popularity": 1.0665,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "20": {
+    "content_id": 20,
+    "source_title": "البدلة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 532108,
+      "type": "movie",
+      "title": "البدلة",
+      "original_title": "البدلة",
+      "release_date": "2018-08-21",
+      "poster_path": "/qYmdApNCqwDN6Q09NQeJBQPUAFs.jpg",
+      "overview": "تدور القصة حول حمادة، ووليد اللذين ولدا في نفس اليوم فاشلين في الحياة، يقرران الذهاب إلى حفلة تنكرية، ويتنكران في زي رجال الشرطة لمقابلة زملائهم القدامى، الأمر الذي يجعل الجميع يعتقد بأنهما شرطيين حقيقيين، وتقع لهما العديد من الأحداث والمشاكل.",
+      "popularity": 1.1929,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 10771,
+      "type": "movie",
+      "title": "البدلة الرسمية",
+      "original_title": "The Tuxedo",
+      "release_date": "2002-09-27",
+      "poster_path": "/lTMnOx7E2zEzIGY0og1KkfgYMhY.jpg",
+      "overview": "يتعلم جيمي تونغ، سائق التاكسي الذي تحول إلى سائق خاص، أن هناك قاعدة واحدة فقط عند العمل لدى المليونير كلارك ديفلين: لا تلمس بذلة ديفلين الثمينة. ولكن عندما يُصاب ديفلين بعطل مؤقت في حادث انفجار، يرتدي جيمي البذلة ويكتشف سريعًا أن هذه البدلة الاستثنائية قد تكون أكثر تعقيدًا من مجرد ربطة عنق رسمية. وبمساعدة شريك عديم الخبرة مثله، يصبح جيمي عميلًا سريًا دون علمه",
+      "popularity": 9.1161,
+      "score": 60.0,
+      "reasons": [
+        "moderate title similarity"
+      ]
+    },
+    "candidate_count": 3
+  },
+  "21": {
+    "content_id": 21,
+    "source_title": "حصل خير",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 170823,
+      "type": "movie",
+      "title": "حصل خير",
+      "original_title": "حصل خير",
+      "release_date": "2012-05-29",
+      "poster_path": "/fZo5j5NHeOZLgBqbFxDQ9DBqX1U.jpg",
+      "overview": "راقصة شعبية (قمر) تسكن عمارة تضم مجموعة من الأسر، وفور وصول الساكنة الجديدة، يتهافت عليها الأزواج ومنهم موظف مصلحة الضرائب فوزي (كريم محمود عبد العزيز)، ومدرس اللغة العربية (محمد رمضان)، والمطرب (سعد الصغير)، وينقلب حال الأسر، فتحاول الزوجات الحفاظ على أزواجهن منها في قالب من الأحداث الكوميدية.",
+      "popularity": 0.9039,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "22": {
+    "content_id": 22,
+    "source_title": "صايع بحر",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 56336,
+      "type": "movie",
+      "title": "صايع بحر",
+      "original_title": "صايع بحر",
+      "release_date": "2004-08-17",
+      "poster_path": "/qScs2RwHuTfNTILX89ssYiiClCr.jpg",
+      "overview": "حسن حنتيرة وهيمة وعبده، ثلاث أصدقاء من الإسكندرية يغنون في الأفراح الشعبية، يٌتهم حنتيرة بالتورط في جريمة قتل، ويحاولون إثبات براءته لكي يتمكن من الزواج بخطيبته.",
+      "popularity": 1.1054,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "23": {
+    "content_id": 23,
+    "source_title": "كراكون في الشارع",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 514146,
+      "type": "movie",
+      "title": "كراكون في الشارع",
+      "original_title": "كراكون في الشارع",
+      "release_date": "1986-10-20",
+      "poster_path": "/nnHFW4I27UxBOUllGRxBFIhwYjj.jpg",
+      "overview": "يقيم المهندس شريف وزوجته سعاد المُدرّسة وابنتهما سارة وابنهما هانى ووالدته بمساكن الإيواء بعد هدم منزلهم، ونظرا للمستوى غير الإنسانى للمعيشة في مساكن الإيواء يلجأون إلى فناء حوش الأسرة ويفاجأون بإقامة أبو دومة فيه فيشب الخلاف بين الطرفين . تأمر النيابة بأن يتقاسموا الحوش. يتمكن شريف من تصميم مسكن متنقل من الأخشاب والإقامة فيه. يتعرّض لمضايقات عديدة وتنجب زوجته ولدا يسميه كراكون، من وحى استدعائه المتكرر للكراكون بتهم كثيرة، كسرقة التيار الكهربائي وإشغال الطريق. يقتنع عدد كبير من الشباب بفكرة المسكن المتنقل بعد إذاعة برنامج تليفزيوني عن تجربة شريف. يشرعون فى إقامة عدد من هذه المساكن بالصحراء، لكن شرطة المرافق تقوم بإزالتها بناء على أمر سلطات المحافظة تتدخل السلطات العيا وتآمر بالإبقاء عليها.",
+      "popularity": 0.6877,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "24": {
+    "content_id": 24,
+    "source_title": "الأنسة مامي",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "25": {
+    "content_id": 25,
+    "source_title": "حدث في 2 طلعت حرب",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 949962,
+      "type": "movie",
+      "title": "حدث فى٢ طلعت حرب",
+      "original_title": "حدث في ٢ طلعت حرب",
+      "release_date": "2022-03-07",
+      "poster_path": "/nEUJO3KSiQnGrFwHqIPV0FsQGa1.jpg",
+      "overview": "يعيش أربعة أشخاص في الشقة نفسها خلال فترات زمنية مختلفة، ويحمل كل منهم حكاية تعرض في إطار تأثير الحالة السياسية على المجتمع المحيط بهم",
+      "popularity": 1.2359,
+      "score": 100.0,
+      "reasons": [
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "26": {
+    "content_id": 26,
+    "source_title": "عرب وود",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "27": {
+    "content_id": 27,
+    "source_title": "ظل",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 196596,
+      "type": "series",
+      "title": "ظل",
+      "original_title": "ظل",
+      "release_date": "2022-04-02",
+      "poster_path": "/jRahxaSiq6S00wZa8EmVfmbSwar.jpg",
+      "overview": "متجاهلا قيمه الأخلاقية، ينشر محامي باسمه رواية توفي كاتبها، ليكتشف بعد أن يحقق نجاحا شاسعا أن أحداث الرواية حقيقية ويصبح المتهم الأساسي في جريمة قتل.",
+      "popularity": 1.3901,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 1235286,
+      "type": "movie",
+      "title": "ظل بدويS",
+      "original_title": "ظل بدويS",
+      "release_date": "2026-10-02",
+      "poster_path": "/dWCw1yu22YKf6cdrWBFEqpMK6PY.jpg",
+      "overview": "",
+      "popularity": 2.1381,
+      "score": 50.0,
+      "reasons": []
+    },
+    "candidate_count": 20
+  },
+  "28": {
+    "content_id": 28,
+    "source_title": "صبايا ج5",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "29": {
+    "content_id": 29,
+    "source_title": "ريتسا",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 807282,
+      "type": "movie",
+      "title": "ريتسا",
+      "original_title": "ريتسا",
+      "release_date": "2021-12-15",
+      "poster_path": "/xlbD3qUZWxGoZQxonrf0qQegmpr.jpg",
+      "overview": "",
+      "popularity": 0.8606,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "30": {
+    "content_id": 30,
+    "source_title": "ب 100 راجل",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 246787,
+      "type": "series",
+      "title": "ب100 راجل",
+      "original_title": "ب100 راجل",
+      "release_date": "2024-03-11",
+      "poster_path": "/f1ByO8pPnGlOi1eW4RnMXwG2WFI.jpg",
+      "overview": "",
+      "popularity": 1.4121,
+      "score": 94.74,
+      "reasons": [
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "31": {
+    "content_id": 31,
+    "source_title": "جوما",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 283744,
+      "type": "series",
+      "title": "جوما",
+      "original_title": "جوما",
+      "release_date": "2025-03-01",
+      "poster_path": "/6EYZBAtPKar7fmPKHQt9gcRnFcW.jpg",
+      "overview": "تتقاطع حياة طبيب نفسي مع العديد من الأشخاص من حوله، لكن تؤدي عقدهم النفسية والماضي السيئ والمشوه لكل منهم إلى حدوث صراعات خفية وأُخرى معلنة، وتدفعهم لارتكاب جرائم بشعة، لتتسبب في خسائر كبيرة للكل.",
+      "popularity": 1.477,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 8844,
+      "type": "movie",
+      "title": "جومانجي",
+      "original_title": "Jumanji",
+      "release_date": "1995-12-15",
+      "poster_path": "/bdHG5Mo83VPobeZZdlSz0Y7HQHB.jpg",
+      "overview": "عندما يكتشف الأشقاء جودي وبيتر لعبة لوحية ساحرة تفتح الباب أمام عالم سحري ، فإنهم يدعون آلان عن غير قصد - وهو شخص بالغ محاصر داخل اللعبة لمدة 26 عامًا - إلى غرفة المعيشة. أمل آلان الوحيد في الحرية هو إنهاء اللعبة ، الأمر الذي يثبت أنه محفوف بالمخاطر لأن الثلاثة يجدون أنفسهم يهربون من وحيد القرن العملاق والقرود الشريرة ومخلوقات مرعبة أخرى.",
+      "popularity": 4.4864,
+      "score": 72.73,
+      "reasons": [
+        "moderate title similarity"
+      ]
+    },
+    "candidate_count": 7
+  },
+  "32": {
+    "content_id": 32,
+    "source_title": "من أجل زيكو",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 911622,
+      "type": "movie",
+      "title": "من أجل زيكو",
+      "original_title": "من أجل زيكو",
+      "release_date": "2022-01-05",
+      "poster_path": "/okcbyzM7bNakeUUVAJCWYYcc1id.jpg",
+      "overview": "عندما تتسنى الفرصة لزيكو أن يشارك في مسابقة أذكى طفل في مصر، ينطلق مع عائلته في رحلة على الطريق، ولكن سرعان ما يتعرضون لتحديات عديدة تصعب عليهم الوصول.",
+      "popularity": 1.2373,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "33": {
+    "content_id": 33,
+    "source_title": "كيرة و الجن",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "34": {
+    "content_id": 34,
+    "source_title": "حفلات روتانا",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "35": {
+    "content_id": 35,
+    "source_title": "ثانية واحدة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 827818,
+      "type": "movie",
+      "title": "ثانية واحدة",
+      "original_title": "ثانية واحدة",
+      "release_date": "2021-05-13",
+      "poster_path": "/lGVkh5Ur6TZKTgj36hFkyTZdZLo.jpg",
+      "overview": "تدور أحداث الفيلم في إطار رومانسي كوميدي، حيث يتعرف شاب على فتاة ويتسبب لها في الكثير من المشاكل، ثم يتعرض لحادث يقلب حياته بشكل كبير.",
+      "popularity": 1.2338,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "36": {
+    "content_id": 36,
+    "source_title": "مش رايحين في داهية",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 1037728,
+      "type": "movie",
+      "title": "مش رايحين في داهية",
+      "original_title": "مش رايحين في داهية",
+      "release_date": "2017-04-12",
+      "poster_path": "/pOdGG9smkAnQmeSxaqKs7CR6x30.jpg",
+      "overview": "يعيش مجموعة من الشباب حياة فخمة وخالية من الهموم إلى أن يقوم واحد منهم بتمني أمنية سرعان ما تنقلب عليه وعلى رفاقه.",
+      "popularity": 0.6868,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "37": {
+    "content_id": 37,
+    "source_title": "بلا تصنيف",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "38": {
+    "content_id": 38,
+    "source_title": "في الطريق",
+    "status": "REVIEW",
+    "best_match": {
+      "tmdb_id": 838154,
+      "type": "movie",
+      "title": "إمضِ في الطريق",
+      "original_title": "جاده خاکی",
+      "release_date": "2021-10-29",
+      "poster_path": "/lmZIuttHocThKhETWQxDyOndTNq.jpg",
+      "overview": "في إطار من الدراما، يتبع العمل مغامرة على الطريق لعائلة تتسم بالفوضى والعديد من الصراعات والاختلافات فيما بينهم، بينما يحاولون جميعًا التأقلم مع الحياة من حولهم.",
+      "popularity": 1.8268,
+      "score": 81.82,
+      "reasons": [
+        "high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 330855,
+      "type": "movie",
+      "title": "امرأة في الطريق",
+      "original_title": "امرأة في الطريق",
+      "release_date": "1958-12-22",
+      "poster_path": "/w6EDHrMvbfsnFZGWsT3fdB6S09g.jpg",
+      "overview": "المعلم فرج لديه ولدان من زوجتين مختلفتين ولكنه يحب واحد عن الأخر بسبب ما فعلته أمه فيه، تقع حادثة للأب ويعتقد الأب أن صابر هو من فعلها ليفقد الأب على أثرها البصر ورغم أن صابر بريء من فعلته إلا أن الأب يصر على أنه هو من فعلها، ومع ذللك يحاول صابر الاستمرار في عمله حتى يساعد والده.",
+      "popularity": 0.6436,
+      "score": 75.0,
+      "reasons": [
+        "high title similarity"
+      ]
+    },
+    "candidate_count": 8
+  },
+  "39": {
+    "content_id": 39,
+    "source_title": "حرب كرموز",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 521784,
+      "type": "movie",
+      "title": "حرب كرموز",
+      "original_title": "حرب كرموز",
+      "release_date": "2018-06-15",
+      "poster_path": "/utBRzHlnl0yJaaLvNnPdZHJpz0m.jpg",
+      "overview": "خلال فترة اﻷربعينات، تتعرض فتاة للاغتصاب على يد مجموعة من الجنود اﻹنجليز، فيثأر لها ثلاث شباب مصريين، يموت أحدهم، ويحتجز الجندي الانجليزي الحي في قسم شرطة كرموز الذي يرأسه الجنرال يوسف المصري، ويطالب الجنرال آدمز بتسليمه إليه، لكن يوسف يرفض، ويحرك الجنرال جنود لمحاصرة قسم الشرطة.",
+      "popularity": 3.0615,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "40": {
+    "content_id": 40,
+    "source_title": "صبايا",
+    "status": "REVIEW",
+    "best_match": {
+      "tmdb_id": 1675029,
+      "type": "movie",
+      "title": "صبايا",
+      "original_title": "صبايا",
+      "release_date": "2009-08-22",
+      "poster_path": "/aG9ByQq9lAb84FpHkpXd4rX0o1H.jpg",
+      "overview": "",
+      "popularity": 1.5089,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 93636,
+      "type": "series",
+      "title": "صبايا",
+      "original_title": "صبايا",
+      "release_date": "2009-08-22",
+      "poster_path": "/5I3DU11Z5nelQMO1FUkN6dReaVK.jpg",
+      "overview": "صبايا هو مسلسل كوميدي سوري يحكي مسلسل صبايا قصة خمس فتيات يعشن في منزل واحد وما يتخلل ذلك من أحداث ومغامرات متفرقة نتعرف فيها على العديد من الشخصيات التي تحتك بالفتيات ضمن إطار اجتماعي كوميدي خفيف ليشكل هذا العمل عبر ثلاثين حلقة نموذجاً لعدة شرائح اجتماعية وتفاعلها مع بعضها البعض وما يرافق ذلك من مواقف تأتي انعكاساً حقيقياً للحياة الواقعية.",
+      "popularity": 6.0643,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "candidate_count": 3
+  },
+  "41": {
+    "content_id": 41,
+    "source_title": "يلا نحكي 4",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "42": {
+    "content_id": 42,
+    "source_title": "صيف بارد",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 279540,
+      "type": "series",
+      "title": "صيف بارد",
+      "original_title": "صيف بارد",
+      "release_date": "2018-12-15",
+      "poster_path": "/c5niYzUKGNMlOnkxMhSf0NQJ0Vy.jpg",
+      "overview": "في إطار درامي، تعيش ياسمين مع عائلتها وتتولى إدارة شركة والدها عقب وفاته، وتغار منها ليلى، متطلعة لثرائها الفاحش، فتنتحل شخصيتها وتتعرف على خالد للزج بياسمين في علاقة عابرة، ولكن تتحول الأمور لصالح ياسمين، في الوقت ذاته تتعرف جود على بدر وتنشأ بينهما قصة حب.",
+      "popularity": 0.731,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "43": {
+    "content_id": 43,
+    "source_title": "خير وبركة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 543248,
+      "type": "movie",
+      "title": "خير و بركة",
+      "original_title": "خير و بركة",
+      "release_date": "2017-08-30",
+      "poster_path": "/gaFlG2WTtEBQDIeoLrUSrgjKl4E.jpg",
+      "overview": "تدور أحداث الفيلم في إطار كوميدي يتناول قصة شقيقين يحاولان البحث عن فرصة عمل، وخلال رحلة البحث يواجهان العديد من المواقف الكوميدية عندما يعملان في مهن لا يعرفان عنها شيئًا.",
+      "popularity": 1.0705,
+      "score": 94.74,
+      "reasons": [
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "44": {
+    "content_id": 44,
+    "source_title": "روتانا سبورت مع وليد - الموسم الأول",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "45": {
+    "content_id": 45,
+    "source_title": "سدف",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 285156,
+      "type": "series",
+      "title": "سدف",
+      "original_title": "سدف",
+      "release_date": "2025-03-01",
+      "poster_path": "/n2HY1veB2O7HR31KI6TiR3t44ID.jpg",
+      "overview": "",
+      "popularity": 1.0463,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "46": {
+    "content_id": 46,
+    "source_title": "السبع",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 284424,
+      "type": "series",
+      "title": "السبع",
+      "original_title": "السبع",
+      "release_date": "2025-03-01",
+      "poster_path": "/vVsvR3IJOJhlJ8Y45ayeOyiMJRF.jpg",
+      "overview": "في إطار خيالي، يتناول العمل حياة الغجر، ويسلط الضوء على الصراعات بين عائلتين بسبب المال والنفوذ، حيث يقع حادث مأساوي يؤثر على الجميع، يجعل الانتقام السبيل الوحيد لتغيير مجرى الأمور.",
+      "popularity": 1.6868,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 720714,
+      "type": "movie",
+      "title": "السبع بنات",
+      "original_title": "السبع بنات",
+      "release_date": "1961-01-16",
+      "poster_path": "/yRa2qOfKhGxr0VIi8jvJIcmcoZl.jpg",
+      "overview": "تدور القصة حول رجل مكافح في عمله لديه سبع بنات، وهو مسؤول عنهم بعد وفاة والدتهم، وتدور الأحداث لتحكي ظروف ثلاث من بناته الكبار، (أحلام، وداد، وسلوى)، واللاتي يقعن في الحب، لتواجه كل واحدة منهن العديد من المشكلات، وتتوالى الأحداث.",
+      "popularity": 0.6095,
+      "score": 66.67,
+      "reasons": [
+        "moderate title similarity"
+      ]
+    },
+    "candidate_count": 20
+  },
+  "47": {
+    "content_id": 47,
+    "source_title": "حفلة",
+    "status": "NO_MATCH",
+    "best_match": {
+      "tmdb_id": 223702,
+      "type": "movie",
+      "title": "حفلة نقانق",
+      "original_title": "Sausage Party",
+      "release_date": "2016-07-11",
+      "poster_path": "/vNgdPJQ5CI60oEiiHLKRNrsDhMy.jpg",
+      "overview": "فيلم رسومي في إطار كوميدي مشوق، تدور أحداثه حول واحدة من النقانق التي يُحيّرها تفكيرها حول مسألة وجودها وكيف وُجدَت، فتشرع في البحث عن الإجابة لتكتشف حقيقة وجودها.",
+      "popularity": 11.1951,
+      "score": 57.14,
+      "reasons": []
+    },
+    "second_match": {
+      "tmdb_id": 578518,
+      "type": "movie",
+      "title": "الدنيا حفلة",
+      "original_title": "الدنيا حفلة",
+      "release_date": "2019-01-24",
+      "poster_path": "/zi4HAP1J0NZHwgRpeQw4GDDBaGU.jpg",
+      "overview": "",
+      "popularity": 0.5598,
+      "score": 53.33,
+      "reasons": []
+    },
+    "candidate_count": 11
+  },
+  "48": {
+    "content_id": 48,
+    "source_title": "حريم طارق",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 196052,
+      "type": "series",
+      "title": "حريم طارق",
+      "original_title": "حريم طارق",
+      "release_date": "2022-04-02",
+      "poster_path": "/A4pdIDeuXKGJJpJQdSaQyv5DpN7.jpg",
+      "overview": "في إطار كوميدي، يتناول المسلسل قصة طارق الذي تكتشف زوجته ريما خيانته لها، وزواجه من المذيعة ميسة، وتحاول كلا منهما دفع طارق لطلاق الأخرى، حتى يكتشفان زواجه من أخريات.",
+      "popularity": 1.1908,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "49": {
+    "content_id": 49,
+    "source_title": "سبع البرمبة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 620631,
+      "type": "movie",
+      "title": "سبع البرمبة",
+      "original_title": "سبع البرمبة",
+      "release_date": "2019-06-04",
+      "poster_path": "/rJ66ooiC5NKto86Nkyr7YCdr4yF.jpg",
+      "overview": "في إطار كوميدي رومانسي يتزوج عمر من حبيبته نسمة رغم رفض والدها الشديد للأمر، وبعد انتهاء حفل الزفاف، إذا ببعض الرجال المجهولين يعتدون على سيارة العروسين، فيطلب عمر من زوجته أن تهرب، وأثناء هروبها يقع لها حادث سيارة، وتنقل إلى المستشفى وبعد إفاقتها من الغيبوبة، تُصاب بصدمة شديدة، وترفض رؤية زوجها عمر لعدم شعورها بالأمان برفقته، فيضطر عمر للتوجه لطبيب نفسي لمساعدته في حل المشكلة.",
+      "popularity": 1.1617,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "50": {
+    "content_id": 50,
+    "source_title": "السيرة النبوية المختصرة ج2",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "51": {
+    "content_id": 51,
+    "source_title": "يوم لا ينفع مال ولا بنون",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "52": {
+    "content_id": 52,
+    "source_title": "صلاة الجمعة",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "53": {
+    "content_id": 53,
+    "source_title": "وينك موسم 2023-2022",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "54": {
+    "content_id": 54,
+    "source_title": "أسوار القمر",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 321761,
+      "type": "movie",
+      "title": "أسوار القمر",
+      "original_title": "أسوار القمر",
+      "release_date": "2015-01-24",
+      "poster_path": "/kuO3FxaqDjkduoKvIaoTkm3eq8U.jpg",
+      "overview": "تستفيق (زينة) من إغماءة تعرضت لها لتجد نفسها فاقدة للبصر، ولا تتذكر أي شيء، لينتهي بها الأمر بصحبة (أحمد) على مركبه، والذي يدخل في مطاردة محمومة مع (رشيد)، وبعد جلوسها وحيدة في إحدى غرف المركب، تحاول أن تسترجع كل ما حدث معها من خلال تسجيلاتها، بما في ذلك تفاصيل مثلث الحب الذي كانت هي نفسها أحد أضلاعه.",
+      "popularity": 0.7828,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "55": {
+    "content_id": 55,
+    "source_title": "لف ودوران",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 415813,
+      "type": "movie",
+      "title": "لف ودوران",
+      "original_title": "لف ودوران",
+      "release_date": "2016-09-11",
+      "poster_path": "/ypSuDI9EFtZl2nk5CYyAST03IlM.jpg",
+      "overview": "مرشد سياحي يستغل عرضا تقدمه الشركة لقضاء شهر العسل في شرم الشيخ في سبيل مقابلة فتاة إيطالية، لكنه يفاجأ بوجود فتاة في الفيلا تدعي أنها العروس المقدم لها العرض.",
+      "popularity": 1.2979,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "56": {
+    "content_id": 56,
+    "source_title": "دنيا تانية",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 196031,
+      "type": "series",
+      "title": "دنيا تانية",
+      "original_title": "دنيا تانية",
+      "release_date": "2022-04-02",
+      "poster_path": "/H66rQ35Bw1LzRxbSnoFAApbg26.jpg",
+      "overview": "دنيا سالم مديرة لإحدى المدارس الدولية، ومتزوجة من \"بدر\"، ولديها اثنين من الابناء تتعرض \"دنيا\" لصدمة بعد غرق ابنها في حمام السباحة، وفقدان ابنها الثاني النطق بسبب صدمة وفاة أخيه، فتتهم زوجها بالإهمال وتسعى لخلعه",
+      "popularity": 1.6981,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "57": {
+    "content_id": 57,
+    "source_title": "قلوب من ماء",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 248718,
+      "type": "series",
+      "title": "قلوب من ماء",
+      "original_title": "قلوب من ماء",
+      "release_date": "2024-03-11",
+      "poster_path": "/vrhqU848CZcQyzdzsZw2gwi9662.jpg",
+      "overview": "تدور الأحداث حول مجموعة من الشبان والشابات والعائلات التي جاءت واستقرت في دولة الإمارات العربية المتحدة، أملًا في البحث عن السعادة، والهروب من الماضي الموجع والحاضر الصعب إلى المستقبل الأكثر اطمئنانًا واستقرارًا.",
+      "popularity": 0.7005,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "58": {
+    "content_id": 58,
+    "source_title": "ملكة في المنفى",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 263154,
+      "type": "series",
+      "title": "ملكة في المنفى",
+      "original_title": "ملكة في المنفى",
+      "release_date": "2010-08-30",
+      "poster_path": "/hs5Koz4TW6xnSS9O4zmymSsLqGj.jpg",
+      "overview": "تدور احداث العمل حول حياة الملكة نازلي بداية من زواجها من الملك فؤاد واختيار البريطانيين له ليحكم مصر، وكيف استخدمها كواجهة حضارية أثناء رحلته التاريخية إلي أوروبا عام 1972، وبعد إنجاب الملك فاروق للأميرة فريال تشعر الملكة نازلي بالقلق على ابنها والعرش وتتوالى الأحداث.",
+      "popularity": 1.2323,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "59": {
+    "content_id": 59,
+    "source_title": "الكندوش الجزء الثاني",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "60": {
+    "content_id": 60,
+    "source_title": "طارق ونوف",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 249198,
+      "type": "series",
+      "title": "طارق ونوف",
+      "original_title": "طارق ونوف",
+      "release_date": "2024-03-11",
+      "poster_path": "/wdtAeZm7WWN0SsioJ2hATvqIw5v.jpg",
+      "overview": "في إطار من الدراما الممزوجة بالكوميديا، تقع أحداث المسلسل حول يوميات (طارق) و(نوف)، اللذين يتعرضان للعديد من المواقف والمفارقات اليومية في حياتهما، ويسعان لمواجهتها.",
+      "popularity": 1.5906,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "61": {
+    "content_id": 61,
+    "source_title": "كده رضا",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 43405,
+      "type": "movie",
+      "title": "كده رضا",
+      "original_title": "كده رضا",
+      "release_date": "2007-07-31",
+      "poster_path": "/eNSxF2OgoT3UBp8FQK6EHkPQH4P.jpg",
+      "overview": "فيلم كوميدي مصري تدور أحداثه حول ثلاث توائم أنجبتهم أمهم وماتت وتركتهم مع أب نصاب وأوصته ان لا يعطيهم إلا المال الحلال ويدع عنه النصب والإحتيال فإمتثل ولكن لخوفه من حسد الناس قرر أن لا يظهرهم إلا كشخص واحد وأخرج لهم جميعا أوراق رسمية بإسم شخص واحد رضا(أحمد حلمي) وكان يخرج في كل يوم من المنزل شخص واحد وهكذا .. الغريب أنهم بعد أن كبروا عملوا بالنصب والإحتيال مستغلين التشابه الكبير بينهم كان الثلاث توائم لكل شخصيته فالأول يحب الأكشن والعنف وذو شخصية صلبة ويدعى \"البرنس\" الثاني متعصب للنادي الأهلى وعاشق لكرة القدم ويدعى \"بيبو\" الثالث منطوي على نفسه ومكتئب يبحث عن شخصيته بين أخويه ويدعى \"سمسم\" و يقع الثلاثة في حب فتاة واحدة تدعى ندى (منة شلبي) ولا تعرف أنهم ثلاث أشخاص .",
+      "popularity": 1.0778,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "62": {
+    "content_id": 62,
+    "source_title": "عقدة الخواجة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 533734,
+      "type": "movie",
+      "title": "عقدة الخواجة",
+      "original_title": "عقدة الخواجة",
+      "release_date": "2018-01-06",
+      "poster_path": "/kaQil3JARxEdszUvxkORbYaD4RA.jpg",
+      "overview": "تدور أحداث الفيلم حول شاب من الطبقة المتوسطة طموح يٌدعى فارس، تجمعه قصة حب بابنة رجل أعمال ذو نفوذ تٌدعى سالي، يخوض الثنائي العديد من المفارقات التي تحدث لهما، ويُخفى وراءها رغبة فارس في الانتقام لوفاة شقيقه.",
+      "popularity": 0.7523,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "63": {
+    "content_id": 63,
+    "source_title": "الفانوس السحري",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 419598,
+      "type": "movie",
+      "title": "الفانوس السحري",
+      "original_title": "الفانوس السحري",
+      "release_date": "1960-05-29",
+      "poster_path": "/bOVUNXSPE9ykxd4N4uCcq4MFHeg.jpg",
+      "overview": "يعمل مصطفى (إسماعيل ياسين) فراشًا بإحدى الشركات، وتربطه علاقة حب بإحدى الموظفات في الشركة، لكنه يعاني من سوء معاملة مديره المستمرة له، وفي أحد أيام شهر رمضان، يعثر مصطفى على فانوس سحري يوجد بداخله جني محبوس، وعندما يخرج هذا الجني، يرد لمصطفى الجميل ويقرر أن يحقق له سبع أمنيات، ولكن يقع حدث عارض يحول دون تحقيق كل أمنيات مصطفى.",
+      "popularity": 0.7549,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "64": {
+    "content_id": 64,
+    "source_title": "البنات عايزة إيه",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 549763,
+      "type": "movie",
+      "title": "البنات عايزة إيه",
+      "original_title": "البنات عايزة إيه",
+      "release_date": "1980-09-19",
+      "poster_path": "/l93u1fiPpWqnpIzUYEO4UDbELXA.jpg",
+      "overview": "ترفض ليلى رفضًا باتًا الزواج بأي رجل له تجارب نسائية سابقة، ويرسل الأب مشكلتها بعد طول حيرة إلى إحدى الجرائد التي يشرف على باب المشاكل بها صحافي يدعى أحمد، ويقرر صديقه كمال الزواج منها فهو يريد الاستقرار بعد حياة مليئة بالعلاقات النسائية، وتعجب به ليلى وتتم خطبتهما، إلا أنها تكتشف علاقاته السابقة.",
+      "popularity": 0.6259,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "65": {
+    "content_id": 65,
+    "source_title": "عفريت مراتي",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 713847,
+      "type": "movie",
+      "title": "عفريت مراتي",
+      "original_title": "عفريت مراتي",
+      "release_date": "1968-10-07",
+      "poster_path": "/y101vFQjUCvC2AcHts0Vlw7Rhmz.jpg",
+      "overview": "نتيجة انشغال صالح بعمله، تعاني عايدة زوجته من الوحدة، لتنصرف إلى مشاهدة الأفلام وتبدأ بتقمص شخصيات البطلات اللاتي تشاهدهن في الأفلام، مما يوقع زوجها في مشاكل جديدة، ليحاول بمساعدة أصدقائه تخليصها من تلك الحالة.",
+      "popularity": 0.7562,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "66": {
+    "content_id": 66,
+    "source_title": "ريا وسكينة",
+    "status": "REVIEW",
+    "best_match": {
+      "tmdb_id": 260112,
+      "type": "movie",
+      "title": "ريا وسكينة",
+      "original_title": "ريا وسكينة",
+      "release_date": "1952-02-23",
+      "poster_path": "/cuBzpQvemLeckKjkH1Iidw7wJRC.jpg",
+      "overview": "تسود الإسكندرية ظاهرة اختفاء السيدات ويتسلل الرعب في القلوب، يهتم البوليس بهذه الظاهرة والعمل على فك أسرارها، ويعد الضابط أحمد خطة للكشف عما وراء هذه الظاهرة، وهم عصابة ريا وسكينة اللاتي كن يستهدفن السيدات لسرقة مصوغاتهن.",
+      "popularity": 0.87,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 514363,
+      "type": "movie",
+      "title": "ريا وسكينة",
+      "original_title": "ريا وسكينة",
+      "release_date": "1983-09-12",
+      "poster_path": "/dihgpkiqMUzBAaId4C5Y0couuiX.jpg",
+      "overview": "فى العشرينات عزوز ممسل مسرحى فاشل وخطيبته فلة تعمل خادمة فى منزل برعى حكمدار البوليس بالاسكندرية وهو المسئول عن القبض على السفاحتين ريا وسكينة تفشل جميع الخطط التى توضع للقبض عليهما بواسطة الضابط فتحى يهدد برعى ريا وسكينة تليفونيا مما يثير الرعب فى قلب زوجته عصمت هانم ترى عصمت هانم عزوز متنكرا فى زى نسائى لمقابلة فلة فتعتقد انهما ريا وسكينة وتعطيهما مصوغاتها يتفق عزوز وفلة على التنكر والسرقة باعتبار انهما السافحتان لكنهما يقعان فى ايدى ريا وسكينة الحقيقيتينيتمكن عزوز من الهرب من منزلهما ليبلغ البوليس ويتم القبض عليهما يحصل عزوز وفلة على المكافاة ويتزوجان.",
+      "popularity": 0.6122,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "candidate_count": 7
+  },
+  "67": {
+    "content_id": 67,
+    "source_title": "قلب أمه",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 527735,
+      "type": "movie",
+      "title": "قلب أمه",
+      "original_title": "قلب أمه",
+      "release_date": "2018-06-13",
+      "poster_path": "/b04eCPftbA6nhfIwkT8qB0gi4DS.jpg",
+      "overview": "تدور الأحداث في إطار كوميدي حول زعيم عصابة يُدعى (مجدي تختوخ) يدخل في مشاجرة يُصاب على إثرها؛ وينُقل إلى المستشفى في حالة خطيرة حيث يحتاج إلى نقل قلب، وفي ذات الوقت تتوفى والدة الشاب (يونس)؛ فيلجأ اﻷطباء إلى نقل قلب والدته إلى (تختوخ) ﻹنقاذ حياته، فيتعامل مع (يونس) بطريقة حنان الأم وخوفها عليه.",
+      "popularity": 1.4116,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "68": {
+    "content_id": 68,
+    "source_title": "٣٠ يوم في السجن",
+    "status": "REVIEW",
+    "best_match": {
+      "tmdb_id": 848965,
+      "type": "movie",
+      "title": "٣٠ يوم في السجن",
+      "original_title": "٣٠ يوم في السجن",
+      "release_date": "1959-07-09",
+      "poster_path": "/tcvL98Q0JOwAbqFmiGV86ExWVqD.jpg",
+      "overview": "يزور (أمشير) صديقه الثري (مدحت)، الذي يطلب منه دخول السجن شهرًا بدلًا منه لحكم صدر ضده بعد إصابته أحد الأشخاص، وبينما يحاول (مدحت) التودد لـ(أزهار)، تكتشف خطيبته (سهير) نزواته وجرائمه وتتوالى الأحداث.",
+      "popularity": 0.619,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 320981,
+      "type": "movie",
+      "title": "٣٠ يوم في السجن",
+      "original_title": "30 يوم في السجن",
+      "release_date": "1966-09-21",
+      "poster_path": "/vbAl3Hh1rgHrHjqUZMnQHpwZETc.jpg",
+      "overview": "يعمل أمشير (فريد شوقي) فتوة في الكباريه الذي يمتلكه صديقه الثري مدحت الشماشيري (أبو بكر عزت)، ويصدر حكم قضائي على مدحت بالسجن شهرًا بعد أن تسبب في حرق شارب رجل من أثرياء الصعيد يدعى النجعاوي، ويدخل أمشير السجن بدلاً منه ليقضي مدة العقوبة مقابل مبلغ من المال، وفي تلك الأثناء يتودد مدحت لأزهار، وتكتشف خطيبته سهير نزواته لتتوالي الأحداث الكوميدية التي تكشف حقيقة مدحت.",
+      "popularity": 1.0877,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "candidate_count": 2
+  },
+  "69": {
+    "content_id": 69,
+    "source_title": "إحترس من الخط",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "70": {
+    "content_id": 70,
+    "source_title": "حبيبي نائماً",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "71": {
+    "content_id": 71,
+    "source_title": "محمد حسين",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 620635,
+      "type": "movie",
+      "title": "محمد حسين",
+      "original_title": "محمد حسين",
+      "release_date": "2019-07-25",
+      "poster_path": "/fjeKROek3rdpfdqaZZkZoHSgZyf.jpg",
+      "overview": "يعود الرسام العالمي شريف كمال (سمير صبري) إلى وطنه (مصر) بعد 37 عامًا ليُقرر أن يرسم رسمته الأخيرة تكريمًا للوطن، ولكن تأبى لوجين ابنة زوجته (فريال يوسف) أن يحدث ذلك فتدبر خطة للانتقام منه، ويجن جنون لوجين بعدما تعلم أن أخر لوحة رسمها (شريف) قبل مقتله كانت على ظهر محمد حسين (السائق)، فتساومه لكي تحصل على الرسمة بأي طريقة كانت، ولكن محمد حسين له رأي أخر.",
+      "popularity": 1.0885,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "72": {
+    "content_id": 72,
+    "source_title": "بلبل أفندي",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 619032,
+      "type": "movie",
+      "title": "بلبل أفندي",
+      "original_title": "بلبل أفندي",
+      "release_date": "1948-01-01",
+      "poster_path": "/uFlmdRNrCKYRa0sXIwGHcjN2nAW.jpg",
+      "overview": "",
+      "popularity": 0.6766,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "73": {
+    "content_id": 73,
+    "source_title": "إنهم يسرقون الأرانب",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 757609,
+      "type": "movie",
+      "title": "إنهم يسرقون الأرانب",
+      "original_title": "إنهم يسرقون الأرانب",
+      "release_date": "1983-04-25",
+      "poster_path": "/6jJxGlkxgEOGMGYKJbCAtm2hXzl.jpg",
+      "overview": "",
+      "popularity": 0.5028,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "74": {
+    "content_id": 74,
+    "source_title": "توم وجيمي",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 446508,
+      "type": "movie",
+      "title": "توم وجيمي",
+      "original_title": "توم وجيمي",
+      "release_date": "2013-08-07",
+      "poster_path": "/pEik1o2w2D3Zlh0udWSX2zyhWTL.jpg",
+      "overview": "يرصد الفيلم حياة رجلٍ معاقٍ ذهنيًا، حيث إن عقله لا يتعدى عقل طفلٍ في السابعة من عمره ،بالرغم من أن جسده يبدو للجميع أنه ناضج ولكن من يقترب منه يكتشف عكس ذلك تمامًا، تتعقد الأحداث كثيرًا ذهابًا وإيابًا في جوٍ لا يخلو من الكوميديا والمرح، لينكشف لنا كثيرٌ من الجوانب الإنسانية لهذا الرجل ولكل من حوله.",
+      "popularity": 0.6637,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "75": {
+    "content_id": 75,
+    "source_title": "أعز الولد",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 802243,
+      "type": "movie",
+      "title": "أعز الولد",
+      "original_title": "أعز الولد",
+      "release_date": "2021-03-19",
+      "poster_path": "/j3K9ouT6MB7imylv7GQ7UVQHBhM.jpg",
+      "overview": "عندما يُختطف خمسة أطفال وهم في طريقهم إلى المدرسة، يلجأ الأهالي إلى الشرطة، في حين تقرّر جدّاتهم تولّي زمام الأمور بأنفسهنّ.",
+      "popularity": 1.0875,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "76": {
+    "content_id": 76,
+    "source_title": "إسماعيل يس في الطيران",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 407340,
+      "type": "movie",
+      "title": "إسماعيل يس في الطيران",
+      "original_title": "إسماعيل يس في الطيران",
+      "release_date": "1959-06-14",
+      "poster_path": "/fHDSmgBC636fl3lWY8F0VppBfEk.jpg",
+      "overview": "تدور أحداث الفيلم حول شخصين توأم، واحد يعمل في السينما والأخر يعمل في الطيران ولكن الأخ الذي يعمل في السينما يقع في حب راقصة ولكنها لا تشعر به لانها تأمل أن تتزوج من طيار، ولذلك يحاول الأخ انتحال شخصية أخيه الطيار لكي يفوز بقلب هذه الراقصة.",
+      "popularity": 0.88,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "77": {
+    "content_id": 77,
+    "source_title": "صراع الزوجات",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 638142,
+      "type": "movie",
+      "title": "صراع الزوجات",
+      "original_title": "صراع الزوجات",
+      "release_date": "1992-09-01",
+      "poster_path": "/s50QRg6JK9O4zJTiULULz7guSAA.jpg",
+      "overview": "",
+      "popularity": 0.7691,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "78": {
+    "content_id": 78,
+    "source_title": "الحرامي والعبيط",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 265002,
+      "type": "movie",
+      "title": "الحرامي والعبيط",
+      "original_title": "الحرامي والعبيط",
+      "release_date": "2013-05-22",
+      "poster_path": "/yLyCNE1IxXJKLE1i2XF5vJCfhYV.jpg",
+      "overview": "دراما إنسانية ترصد الكثير من القضايا الاجتماعية من خلال حياة رجلين فتحي (خالد صالح)، وصلاح روسي (خالد الصاوي). يفقد فتحي عقله بسبب ظروف الحياة القاسية والظلم الذي يطعنه من كل صوب. أما صلاح روسي رجلٌ لئيم يفقد عينه في إحدى المشاجرات. يتعرف فتحي على صلاح روسي وتنشأ بينهما علاقةُ صداقةٍ قويةٍ، ولكن هناك مؤامرة تحاك من وراء ظهر فتحي من قبل صلاح روسي بمعاونة صديقته الممرضة (روبي) من أجل سرقة عين فتحي . فهل سينجح الحرامي في سرقة عين العبيط؟ وإلي أين ستتجه الأحداث؟.",
+      "popularity": 0.7082,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "79": {
+    "content_id": 79,
+    "source_title": "عفريت ترانزيت",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 798558,
+      "type": "movie",
+      "title": "عفريت ترانزيت",
+      "original_title": "عفريت ترانزيت",
+      "release_date": "2020-09-11",
+      "poster_path": "/chZTuQPmz0b9k88A9LbW6z9qzC5.jpg",
+      "overview": "بائع مخدرات يتعرض للعديد من المشاكل واتهامه في جريمة قتل، الأمر الذي يدفعه لمحاولة البحث عن براءته والسير في طريق التوبة",
+      "popularity": 1.0661,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "80": {
+    "content_id": 80,
+    "source_title": "حفل أم كلثوم",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "81": {
+    "content_id": 81,
+    "source_title": "أجازة غرام",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 789659,
+      "type": "movie",
+      "title": "أجازة غرام",
+      "original_title": "أجازة غرام",
+      "release_date": "1967-09-11",
+      "poster_path": "/qXZZmap2tfK7LOroB5Ezi6HaoTb.jpg",
+      "overview": "يعمل مجدي مهندسًا في السد العالي، ويقوم بإجازة من العمل لكي يسافر إلى القاهرة ويلتقي بأسرته من جديد، ويخطط لقضاء المزيد من الوقت مع زوجته ليلى التي تعمل طبيبة بإحدى المستشفيات، لكنها كانت طيلة الوقت مشغولة عنه بعملها، وهو ما يجعله منجذبًا في هذه الفترة للحديث مع جارته إلهام ويقوم بزيارتها طوال الوقت في شقتها مستغلًا سفر زوجها، وتتطور الأمور بينهما على نحو متسارع.",
+      "popularity": 0.5877,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "82": {
+    "content_id": 82,
+    "source_title": "الشياطين الثلاثة",
+    "status": "REVIEW",
+    "best_match": {
+      "tmdb_id": 1022341,
+      "type": "movie",
+      "title": "الشياطين الثلاثة",
+      "original_title": "الشياطين الثلاثة",
+      "release_date": "1964-02-10",
+      "poster_path": "/h488cknXgMGk2VqAVYZ50S0ZSSe.jpg",
+      "overview": "يقرر (سعداوي) و(فتوح) و(عزب)، المساجين بسجن أبو زعبل عقب قضائهم لفترة عقوبتهم التوبة عن حياة الجريمة، وبعد خروجهم من السجن يجدوا أنفسهم في مواجهة مع المعلم عبدالرازق الذي يرفض رد الحقوق لعزب.",
+      "popularity": 1.0239,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 830905,
+      "type": "movie",
+      "title": "الشياطين الثلاثة",
+      "original_title": "الشياطين الثلاثة",
+      "release_date": "1988-07-12",
+      "poster_path": "/nXcL2GXYswexCZPiJG4L0tbOlV8.jpg",
+      "overview": "مسرحية الشياطين الثلاثة",
+      "popularity": 0.5643,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "candidate_count": 2
+  },
+  "83": {
+    "content_id": 83,
+    "source_title": "روائع النجوم الزمن الجميل",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "84": {
+    "content_id": 84,
+    "source_title": "اغانى من حفلات قديمة",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "85": {
+    "content_id": 85,
+    "source_title": "الراعي والنساء",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 469347,
+      "type": "movie",
+      "title": "الراعي والنساء",
+      "original_title": "الراعى والنساء",
+      "release_date": "1991-10-14",
+      "poster_path": "/7vM2mXIVMQMA5wWoNccJmIEkOEQ.jpg",
+      "overview": "تعيش الأرملة وفاء مع ابنتها الوحيدة المراهقة سلمى وعزة شقيقة زوجها في منزل كامل الصحراوى المنعزل، يصل للمنزل حسن خريج السجون وزميل المهندس كامل زوج وفاء الراحل في زنزانته ليعرض مساعداته على النساء الثلاثة وبعد تردد يوافقن على إقامته معهن، ولكنهن يقعن في حبه وتتنافس كل منهن للفوز به.",
+      "popularity": 1.0766,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "86": {
+    "content_id": 86,
+    "source_title": "إشاعة حب",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 330493,
+      "type": "movie",
+      "title": "إشاعة حب",
+      "original_title": "إشاعة حب",
+      "release_date": "1960-11-21",
+      "poster_path": "/dtgKri4Nx4JtXiD1IjHGv0xYakc.jpg",
+      "overview": "حسين شاب خجول، يحب ابنه عمه سميحة التي لا تعيره أي اهتمام، وتحب ابن خالتها لوسي الشاب الذي يجيد الرقص والغناء، ولكن عم حسين عبدالقادر النشاشجي معجب بشخصية حسين، فيبدأ في تحويله ظاهريًا إلى شخصية أخرى تستطيع أن تجذب ابنته عن طريق رسم خطة ماكرة بأن ينشر إشاعة مفادها أن حسين على علاقة بهند رستم.",
+      "popularity": 0.9754,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "87": {
+    "content_id": 87,
+    "source_title": "جوليو وروميت",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "88": {
+    "content_id": 88,
+    "source_title": "المدبح",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 622664,
+      "type": "movie",
+      "title": "المدبح",
+      "original_title": "المدبح",
+      "release_date": "1985-10-21",
+      "poster_path": "/9cy0P1YGG7ctpzwYmhuP6VxVbVv.jpg",
+      "overview": "",
+      "popularity": 0.7079,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "89": {
+    "content_id": 89,
+    "source_title": "اغانى افلام ابيض واسود",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "90": {
+    "content_id": 90,
+    "source_title": "المطارد",
+    "status": "REVIEW",
+    "best_match": {
+      "tmdb_id": 421347,
+      "type": "movie",
+      "title": "المطارد",
+      "original_title": "المطارد",
+      "release_date": "1985-08-19",
+      "poster_path": "/ogV2mm5NfdN45trXSlSFivoU6ts.jpg",
+      "overview": "في الحكاية الرابعة من (ملحمة الحرافيش)، يقرر سماحة الناجي حفيد عاشور الناجي أن يتزوج من مهلبية، لكن المشكلة أن هناك من يطمع في الزواج منها، وهو القللي فتوة الحي، وعندما يحاول سماحة ومهلبية الهرب من الحي، يقتل رجال القللي مهلبية وتلفق التهمة لسماحة، فيهرب نحو الصعيد.",
+      "popularity": 0.6595,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 13855,
+      "type": "movie",
+      "title": "المطارد",
+      "original_title": "추격자",
+      "release_date": "2008-02-14",
+      "poster_path": "/574WioDX9AC6VwbmhPGpwsH8waN.jpg",
+      "overview": "جونغ هو محقق فاسد تحوّل إلى قواد، وهو يعاني من ضائقة مالية بعد اختفاء عدد من فتياته مؤخرًا دون سداد ديونهن. أثناء محاولته العثور عليهن، يعثر على دليل يشير إلى أن الفتيات المختفيات تم الاتصال بهن جميعًا من قبل نفس العميل، الذي تلتقي به إحدى فتياته الآن",
+      "popularity": 6.8059,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "candidate_count": 6
+  },
+  "91": {
+    "content_id": 91,
+    "source_title": "سهرة طربية من اغانى الافلام",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "92": {
+    "content_id": 92,
+    "source_title": "طأطأ وريكا وكاظم بيه",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 549977,
+      "type": "movie",
+      "title": "طأطأ وريكا وكاظم بيه",
+      "original_title": "طأطأ وريكا وكاظم بيه",
+      "release_date": "1995-03-02",
+      "poster_path": "/alaA9j1CngbmWXwDUr2ENy3w87j.jpg",
+      "overview": "",
+      "popularity": 0.7037,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "93": {
+    "content_id": 93,
+    "source_title": "ياسمين",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 334430,
+      "type": "movie",
+      "title": "ياسمين",
+      "original_title": "ياسمين",
+      "release_date": "1950-12-11",
+      "poster_path": "/kx4CU0jY2dqoAKLtJufZ7SCB0wf.jpg",
+      "overview": "",
+      "popularity": 0.6898,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 227736,
+      "type": "series",
+      "title": "ياسمينة",
+      "original_title": "ياسمينة",
+      "release_date": "2014-06-03",
+      "poster_path": "/iwnQEiPTKYon17dxe0C4arp5utw.jpg",
+      "overview": "تدور القصة حول الفتاة (ياسمينة) التي يتركها والدها، بعد أن أخذه الجيش التركي في التجنيد، فتربيها إحدى السيدات، وبعد ذلك تنتقل (ياسمينة) للعيش في أحد القصور عند عائلة ثرية،",
+      "popularity": 1.1386,
+      "score": 92.31,
+      "reasons": [
+        "very high title similarity"
+      ]
+    },
+    "candidate_count": 10
+  },
+  "94": {
+    "content_id": 94,
+    "source_title": "الستات",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 758207,
+      "type": "movie",
+      "title": "الستات",
+      "original_title": "الستات",
+      "release_date": "1992-09-28",
+      "poster_path": "/ucFRA877995T7Zlr7yExenQVbEW.jpg",
+      "overview": "",
+      "popularity": 0.6212,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 591949,
+      "type": "movie",
+      "title": "ست الستات",
+      "original_title": "ست الستات",
+      "release_date": "1998-06-29",
+      "poster_path": "/upqKatTDdVTbIhAZKH2Y3nnCM3S.jpg",
+      "overview": "",
+      "popularity": 0.7095,
+      "score": 80.0,
+      "reasons": [
+        "high title similarity"
+      ]
+    },
+    "candidate_count": 10
+  },
+  "95": {
+    "content_id": 95,
+    "source_title": "استعراضات الوان",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "96": {
+    "content_id": 96,
+    "source_title": "عفريته هانم",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 284726,
+      "type": "movie",
+      "title": "عفريته هانم",
+      "original_title": "عفريتة هانم",
+      "release_date": "1949-11-28",
+      "poster_path": "/vl5OIrNpkEo8434u7vhD4Yu8j2G.jpg",
+      "overview": "يحب المطرب (عصفور) ابنة صاحب الملهى الذي يعمل به (علية) الراقصة، ولكنها تميل إلى (ميمي بك) الشاب الثري، يعثر فيها عصفور على مصباح سحري يلمسه لتخرج منه عفريتة، تبدأ في تحقيق كل رغبات عصفور فتهبه قصرًا، لكنه مازال يبحث على الحب، فهل سيجده؟",
+      "popularity": 0.6998,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "97": {
+    "content_id": 97,
+    "source_title": "سر طاقية الإخفاء",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 514356,
+      "type": "movie",
+      "title": "سر طاقية الاخفاء",
+      "original_title": "سر طاقية الاخفاء",
+      "release_date": "1959-05-26",
+      "poster_path": "/5rLU2iF4h7dZhRraqXLqLxPrfdK.jpg",
+      "overview": "يلهو \"فصيح\" في معمل والده العطار، فيتسبب في ظهور عفريت، يحترق العفريت مخلفاً بودرة تخفي ما تقع عليه، تتعرض طاقية لهذه البودرة وتكتسب خاصية تخفي من يرتديها، ليكتشف \"عصفور\" قدرات الطاقية، فيقوم بإستعمالها، لكن يكتشف عدوه السر، ويبدا بإستخدام الطاقية ضده",
+      "popularity": 0.6614,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "98": {
+    "content_id": 98,
+    "source_title": "من غير ميعاد",
+    "status": "REVIEW",
+    "best_match": {
+      "tmdb_id": 771337,
+      "type": "movie",
+      "title": "من غير ميعاد",
+      "original_title": "من غير ميعاد",
+      "release_date": "1962-12-10",
+      "poster_path": "/oxaOX9DGGjPj7VEElxZxkdmt8bo.jpg",
+      "overview": "تقع سلوى في حب وحيد، ولا تخبر أحدًا بذلك، بينما هو لا يبادلها نفس الشعور، حيث أنه يحب نادية، وفي نفس الوقت يقع كمال في حب نادية، ولا يخبر أحدًا بذلك، ولا يعلم أن صديقه وحيد يحبها هو الأخر، وعندما يعلم كمال بذلك، يقرر الابتعاد، والسؤال هو: هل ستعرف نادية بحب كمال لها، وحب سلوى لوحيد أم لا؟",
+      "popularity": 0.7625,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 295889,
+      "type": "series",
+      "title": "من غير ميعاد",
+      "original_title": "من غير ميعاد",
+      "release_date": "2005-10-04",
+      "poster_path": "/e6EhmdWaOwlPRelom6g8PjwiXKd.jpg",
+      "overview": "",
+      "popularity": 1.4934,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "candidate_count": 2
+  },
+  "99": {
+    "content_id": 99,
+    "source_title": "الكيت كات",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 68738,
+      "type": "movie",
+      "title": "الكيت كات",
+      "original_title": "الكيت كات",
+      "release_date": "1991-09-09",
+      "poster_path": "/bRY2zqXOk1kjH4wlSKK2rCP2cJt.jpg",
+      "overview": "في حى الكيت كات، تبدو شخصية الشيخ حسنى الكفيف كراصد ليوميات أبناء الحى ونبض لهمومه الحقيقية التي يتسامى عليها رغم فقدانه البصر وزوجته وعمله، يعش مع أمه المسنة وأبنه الشاب المحبط، دون أن يتخلى عن الأمل والبسمة والضحكة، وينطق للتعبير عن هوايته للغناء ليلا في جلسات تدخين المخدرات لينسى واقعه المظلم بعد بيع منزله.. لا يجد يوسف ابن حسنى وظيفة عقب تخرجه من الجامعة، كما يفشل في العثور على عقد عمل بالخارج وتكشف علاقته بجارته الشابة المطلقة فاطمة عن اصابته بعجز جنسى، عندما يموت أحد أبناء الحى، يحضر الشيخ حسنى واجب العزاء ومع أغفال غلق مكبر السوت عقب انتهاء تلاوة القرآن يكشف الشيخ حسنى عن فضائح بعض أهالي الكيت كات ليسمعها الجميع، ومنها خيانة المعلم هرم لصديقه المريض مع زوجته الحسناء، وهروب روايح من زوجها الصائغ متبلد الإحساس، وحتى علاقته الخاصة بأم روايح وعلاقة ابنه بفاطمة.",
+      "popularity": 1.2936,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "100": {
+    "content_id": 100,
+    "source_title": "ابن ذوات",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 619029,
+      "type": "movie",
+      "title": "ابن ذوات",
+      "original_title": "ابن ذوات",
+      "release_date": "1953-10-01",
+      "poster_path": "/ePF65F94YxuZpXNI9g8B6jp9mFb.jpg",
+      "overview": "",
+      "popularity": 0.6115,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "101": {
+    "content_id": 101,
+    "source_title": "بورتريه",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 227577,
+      "type": "series",
+      "title": "بورتريه",
+      "original_title": "بورتريه",
+      "release_date": "2020-05-24",
+      "poster_path": "/1HxvPFoqEy1oWolIhNUtXjsXvZD.jpg",
+      "overview": "يصير حازم رئيس تحرير مجلة متخصصة في مجال الاقتصاد بتشجيع من حبيبة والده السابقة، ويقع في حب ابنة شقيقتها ريما، لكن المشكلة أن هناك عداء قديم بين والدي حازم وريما بسبب راندا.",
+      "popularity": 1.3371,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "102": {
+    "content_id": 102,
+    "source_title": "الحلال يكسب",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 1326416,
+      "type": "movie",
+      "title": "الحلال يكسب",
+      "original_title": "الحلال يكسب",
+      "release_date": "1985-01-07",
+      "poster_path": "/2BHoPJSSxHWkBwbNj6gePDvyHTJ.jpg",
+      "overview": "بعد أن يجري الطبيب فؤاد عملية لشمس وينقذ حياتها، تتعلق به وتطلب منه الزواج، ليخفي عنها بأنه مرتبط بنرجس، خوفًا من تدهور حالتها الصحية، ليتزوج منها ومن نرجس بنفس الوقت، ويقنع شمس أن نرجس هي شقيقته، لتتصاعد الأحداث.",
+      "popularity": 0.6709,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "103": {
+    "content_id": 103,
+    "source_title": "خلف الكواليس و نجوم كلاسيك",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "104": {
+    "content_id": 104,
+    "source_title": "أدهم الشرقاوي",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 759643,
+      "type": "movie",
+      "title": "أدهم الشرقاوي",
+      "original_title": "أدهم الشرقاوي",
+      "release_date": "1964-06-28",
+      "poster_path": "/wZhYML9YeIDmmWW5xtkIW7KgeLO.jpg",
+      "overview": "",
+      "popularity": 0.7114,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "105": {
+    "content_id": 105,
+    "source_title": "عروس النيل",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 414010,
+      "type": "movie",
+      "title": "عروس النيل",
+      "original_title": "عروس النيل",
+      "release_date": "1963-11-02",
+      "poster_path": "/OTC3YzVrMwtjkk5DAy4kFczCz8.jpg",
+      "overview": "يذهب الجيولوجي (سامي) إلى الأقصر لمتابعة عمليات التنقيب عن البترول. ويُمنع على أساس أن المنطقة تستخدم كمقبرة لعرائس النيل، يرى سامي فتاة جميلة في زي عروس النيل تدعى هاميس تطالبه بوقف الحفر ، وأخبرته أنها ابنة آتون إلة الشمس وآخر عروس نيل وأن والدها أرسلها إلى الأرض لتمنع انتهاك حرمات مقابر عرائس النيل.",
+      "popularity": 0.6452,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "106": {
+    "content_id": 106,
+    "source_title": "حكاية جواز",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 722235,
+      "type": "movie",
+      "title": "حكاية جواز",
+      "original_title": "حكاية جواز",
+      "release_date": "1964-10-18",
+      "poster_path": "/fUj8DWlej4bFz6OphRVszVk48IN.jpg",
+      "overview": "في ليلة زفاف محمد (شكري سرحان) وعديله (سعاد حسني)، يصل خطاب لمحمد يفيد بترقيته ونقله للعمل في جبل عتاقة، تعارض أمها عزيزة (ماري منيب) أن تذهب ابنتها معه لمكان عمله فيسافر محمد بمفرده، تتصدى عديله لأمها وتلحق بزوجها، كذلك يتزوج أخوها حسن (حسن يوسف) من حبيبته منى (آمال فريد) رغم اعتراض أمها التي تريد تزويجها من أحد أقاربها، وتتوالى الأحداث مابين شد وجذب الزوج والزوجة والحماه.",
+      "popularity": 0.5883,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "107": {
+    "content_id": 107,
+    "source_title": "حاحا وتفاحة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 48651,
+      "type": "movie",
+      "title": "حاحا وتفاحة",
+      "original_title": "حاحا وتفاحة",
+      "release_date": "2005-12-31",
+      "poster_path": "/4bS2Af3FDSiZZKsv4fEPvmbvIew.jpg",
+      "overview": "في أحد المنازل الشعبية بمنطقة عابدين يعيش حاحا وشقيقته تفاحة ، حاحا يعمل \"نوباتشي\" أفراح وهو الشخص الذي يجمع النقطة من أمام العوالم في الافراح الشعبية ، بينما تعمل تفاحة ممرضة في إحدى المستشفيات ، يدور الصراع بينهما حول إمتلاك المنزل ، حيث يسعى حاحا للزواج فيه ، أما تفاحة فتسعى للزواج من فوزي بائع الانابيب بينما حاحا يرفض هذا الزواج ، وتمر الاحداث إلى أن يكتشف كل منهما أن الاخوة أسمى من أن يعكرها أي صراع .",
+      "popularity": 1.162,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "108": {
+    "content_id": 108,
+    "source_title": "عشان خارجين",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 445841,
+      "type": "movie",
+      "title": "عشان خارجين",
+      "original_title": "عشان خارجين",
+      "release_date": "2016-09-08",
+      "poster_path": "/zhNDHD7G5I2m9eqwk87pJReUe0I.jpg",
+      "overview": "رمزي الدسوقي شاب مستهتر في علاقاته النسائية، يقرر رئيسه في العمل تعريفه على ابنته ليلى مراد بغرض تزويجها منه والخلاص من مشاكلها التي لا تنتهي، ومع لقائهما، يترك رجل مجهول حقيبة مليئة باﻷموال على طاولتهما، وهو ما يدخلهما في سلسلة لا تنتهي من المطاردات والمغامرات الكوميدية مع صاحب الحقيبة.",
+      "popularity": 1.1081,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "109": {
+    "content_id": 109,
+    "source_title": "عيار ناري",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 545514,
+      "type": "movie",
+      "title": "عيار ناري",
+      "original_title": "عيار ناري",
+      "release_date": "2018-10-03",
+      "poster_path": "/kfZpfCTcWppRjm8bZeV9WGlQlep.jpg",
+      "overview": "عقب مصادمات في مظاهرة احتجاج تنتهي بإراقة الدماء، يباشر طبيب شرعي بالتعاون مع صحفية بالبحث عن الحقيقة المحيّرة... فهل للحادثة أبعاد أخرى؟",
+      "popularity": 0.9889,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "110": {
+    "content_id": 110,
+    "source_title": "كركر",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 514025,
+      "type": "movie",
+      "title": "كركر",
+      "original_title": "كركر",
+      "release_date": "2007-07-01",
+      "poster_path": "/rRdZi3MOf54SZtbTjGHtOSFZkWl.jpg",
+      "overview": "تدور أحداث الفلم في قالب كوميدي درامي حول كركر (محمد سعد) الشاب الثري الذي تسببت له صعقة كهربائية بالجنون ، وبعد موت والده يحاول عمه عاصم (حسن حسني) استغلال مرضه والاحتيال عليه للحصول على أمواله ، وفي نفس الوقت تحاول عمته (رجاء الجداوي) هي الأخرى الاستيلاء على أمواله ، فيتفق الاثنان على خداع (كركر) ، وتتوالى الأحداث في الصراع بين الخير والشر .",
+      "popularity": 1.1232,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 8123,
+      "type": "series",
+      "title": "كركرتون",
+      "original_title": "The Wacky World of Tex Avery",
+      "release_date": "1997-09-29",
+      "poster_path": "/gSP3XK3yknjJln9LinTmsvECHYI.jpg",
+      "overview": "",
+      "popularity": 11.8022,
+      "score": 72.73,
+      "reasons": [
+        "moderate title similarity"
+      ]
+    },
+    "candidate_count": 3
+  },
+  "111": {
+    "content_id": 111,
+    "source_title": "إبن الحاج أحمد",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "112": {
+    "content_id": 112,
+    "source_title": "حملة فرعون",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 620632,
+      "type": "movie",
+      "title": "حملة فرعون",
+      "original_title": "حملة فرعون",
+      "release_date": "2019-06-04",
+      "poster_path": "/9MsNf5FhkYvZtLFN1ajQFv775aY.jpg",
+      "overview": "تدور أحداث الفيلم في إطار تشويقي مثير حول الشاب يحيى الشهير بفرعون، والذي يدير أكبر شبكة اغتيالات منظمة في مصر، ويضطر إلى التوجه إلى سوريا لتحرير ابنه من قبل إحدى العصابات الداعشية، وإنقاذه برفقة مجموعة من أصدقائه، الذين يظن بعضهم أنهم سافروا إلى هناك للبحث عن كنز كبير في منطقة الصراع.",
+      "popularity": 1.9557,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "113": {
+    "content_id": 113,
+    "source_title": "الراقصة والطبال",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 418432,
+      "type": "movie",
+      "title": "الراقصة والطبال",
+      "original_title": "الراقصة والطبال",
+      "release_date": "1984-02-27",
+      "poster_path": "/7zq1WRnPy8R8iq5UZo26s6Ev3E7.jpg",
+      "overview": "يكتشف الطبال عبده بعد متاعب مع الراقصة التي عملت معة من عدة شهور مباهج الراقصة الشابة في أحد الموالد والتي تعيش مع أختها زوجة صابر ويتفق أن يدربها ويحولها إلى راقصة مشهورة كي ترقص على إيقاعه البالغ المهارة، توافق مباهج على شروط الطبال ومنها أن تدفع له مبلغ عشرة الآف جنيه في حالة انفصالها عنه فنيًا تسير مباهج في طريق الشهرة حتى تصبح من أشهر الراقصات.",
+      "popularity": 0.8252,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "114": {
+    "content_id": 114,
+    "source_title": "ابن حميدو",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 337198,
+      "type": "movie",
+      "title": "ابن حميدو",
+      "original_title": "ابن حميدو",
+      "release_date": "1957-08-07",
+      "poster_path": "/wTmap1VscyKJzKwzONnwEMsOlvb.jpg",
+      "overview": "و يعملان في سلك الشرطة، ويفدان إلى السويس من أجل إحباط عملية مخدرات كبرى يتورط فيها الباز أفندي، ويقعان في الحب مع بنات المعلم حنفي شيخ الصيادين",
+      "popularity": 0.9349,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "115": {
+    "content_id": 115,
+    "source_title": "تايه في أمريكا",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 534355,
+      "type": "movie",
+      "title": "تايه في أمريكا",
+      "original_title": "تايه في أمريكا",
+      "release_date": "2002-03-09",
+      "poster_path": "/7sfcIxIIwHHN9aagkgLSi7SG3X3.jpg",
+      "overview": "",
+      "popularity": 0.6151,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "116": {
+    "content_id": 116,
+    "source_title": "مراتي وزوجتي",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 300821,
+      "type": "movie",
+      "title": "مراتي وزوجتي",
+      "original_title": "مراتي و زوجتي",
+      "release_date": "2014-04-20",
+      "poster_path": "/tfPg7UYZBMEbdLLy6yAR858tod.jpg",
+      "overview": "تدور أحداث الفيلم في إطار كوميدي ساخر حول شاب (رامز جلال) والذي يتزوج إحدى الفتيات المهتمين بحقوق المرأة ومواجهة التحديات التي تعيقها في تحقيق أحلامها، ولكن ذلك ساعد على عدم تواجدها مع زوجها الوقت الكافي وعدم اهتمامها بحياتها الزوجية، مما أدى به إلى أن يتزوج مرة أخرى، الأمر الذي ورطة في العديد من المشاكل والمفارقات الكوميدية والتي تحول حياته إلى كتلة من الجحيم.",
+      "popularity": 1.106,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "117": {
+    "content_id": 117,
+    "source_title": "ماكو",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 772307,
+      "type": "movie",
+      "title": "ماكو",
+      "original_title": "ماكو",
+      "release_date": "2021-09-01",
+      "poster_path": "/AqdLsMSMenIcjHYuHvQG0Rt4q1N.jpg",
+      "overview": "",
+      "popularity": 1.2258,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 1628477,
+      "type": "movie",
+      "title": "ماكون",
+      "original_title": "ماكون",
+      "release_date": "2024-02-03",
+      "poster_path": "/gZvTLpOyhUfhJU4OjENHMe6IWPI.jpg",
+      "overview": "",
+      "popularity": 1.644,
+      "score": 88.89,
+      "reasons": [
+        "high title similarity"
+      ]
+    },
+    "candidate_count": 4
+  },
+  "118": {
+    "content_id": 118,
+    "source_title": "حب في الزنزانة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 514332,
+      "type": "movie",
+      "title": "حب في الزنزانة",
+      "original_title": "حب في الزنزانة",
+      "release_date": "1983-02-14",
+      "poster_path": "/hQaybEsWcD7niqjktJ62s4d8i24.jpg",
+      "overview": "رجل أعمال يدعى الشرنوبي (جميل راتب) يتاجر في الأغذية الفاسدة يدفعه جشعه وجبروته للاتفاق مع أحد الشباب (عادل إمام) للاعتراف بجريمة بدلا منه ويحكم عليه بالسجن. وخلف أبواب الزنزانة يتعرف على سجينة تدعى فايزة (سعاد حسني) بسجن النساء وقع في حبها وتبادلا كل منهما مشاعر الحب من خلال الرسائل، وعندما تم الإفراج عنهما تزوجا وقررا الانتقام من ذلك التاجر الجشع، فيتسلل لبيته ويقتله في نفس لحظة ولادة ابنه من فايزة، لينتهي مستقبل الأب لحظة ولادة إبنه.",
+      "popularity": 0.6889,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "119": {
+    "content_id": 119,
+    "source_title": "غصن الزيتون",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 797420,
+      "type": "movie",
+      "title": "غصن الزيتون",
+      "original_title": "غصن الزيتون",
+      "release_date": "1962-04-26",
+      "poster_path": "/jwy30z2F7wvfQzjXyYghgi1X0z3.jpg",
+      "overview": "تدور أحداث الفيلم حول عبده (أحمد مظهر) الذي يعمل مدرسًا في إحدى مدارس الفتيات بدلا من زميله جمال (عمر الحريري) الذي نال شعبية واسعة بين الفتيات، وخاصة عطيات (سعاد حسني). يتزوج عبده من تلميذته عطيات، ولكن علاقتهما الزوجية ينتابها الكثير من التوتر بسبب شك عبده الدائم في زوجته، واعتقاده بأنها على علاقة بجمال.",
+      "popularity": 0.7484,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "120": {
+    "content_id": 120,
+    "source_title": "صباحو كدب",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 181441,
+      "type": "movie",
+      "title": "صباحو كدب",
+      "original_title": "صباحو كدب",
+      "release_date": "2006-03-29",
+      "poster_path": "/a7bAAoXxIVW0XcJhcl1AIByNp2X.jpg",
+      "overview": "نعناع (احمد ادم) مدرس موسيقى كفيف , يعيش فى منزل ورثه عن والدته مع زوج امه ( سعيد طرابيك) و زوجته الجديدة(ميسرة), يعلمان بأن قطعة الارض التى ورثها قد تضاعف ثمنها , فيقرران خداعه واقناعه بالزواج بفتاة ليل (اميرة فتحى) على أنهاممرضة , ولكنه يكتشف الحقيقة",
+      "popularity": 0.8601,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "121": {
+    "content_id": 121,
+    "source_title": "سمير أبو النيل",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 172420,
+      "type": "movie",
+      "title": "سمير أبو النيل",
+      "original_title": "سمير أبو النيل",
+      "release_date": "2013-04-01",
+      "poster_path": "/arXNfRFPCoXMCa1juie0Nl5LE6Q.jpg",
+      "overview": "في إطار كوميدي تدور أحداث الفيلم حول الشاب البخيل سمير أبو النيل (أحمد مكي) الذي يقطن بحي شعبي، ونتيجة لبخله الشديد تقع له العديد من المفارقات والمشاكل مع أهل منطقته، ويزيد من كرههم له لسوء معاملته",
+      "popularity": 0.8774,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "122": {
+    "content_id": 122,
+    "source_title": "خيال مآتة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 621333,
+      "type": "movie",
+      "title": "خيال مآتة",
+      "original_title": "خيال مآتة",
+      "release_date": "2019-08-22",
+      "poster_path": "/vhfdoYKSecU4wiN3qEgc4WCa6WH.jpg",
+      "overview": "تدور أحداث العمل حول جد قام بسرقة تحفة فنية نادرة تخص المطربة الراحلة (أم كلثوم) في شبابه، ولكن بعد مرور السنوات يجد الجد نفسه مطارد من قبل الطامعين في الحصول على هذه القطعة، ولذلك يلجأ لمساعدة حفيده الوحيد.",
+      "popularity": 0.8406,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "123": {
+    "content_id": 123,
+    "source_title": "وكالة البلح",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 406857,
+      "type": "movie",
+      "title": "وكالة البلح",
+      "original_title": "وكالة البلح",
+      "release_date": "1982-09-20",
+      "poster_path": "/aiali1LPJN1QrSzC9jWerCeKGU6.jpg",
+      "overview": "تدور قصة العمل في وكالة البلح، حول المعلمة نعمة الله والتي تسيطر على التجارة في المنطقة ولتحقيق ذلك تتخلص من جميع منافسيها، إلى أن تتعرف على عبد الله الشاب الفقير وتتزوجه وتجعله المالك لكل شيء، لتنقلب الأحداث رأساً على عقب",
+      "popularity": 0.6888,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "124": {
+    "content_id": 124,
+    "source_title": "مقلب حرامية",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 57807,
+      "type": "movie",
+      "title": "مقلب حرامية",
+      "original_title": "مقلب حرامية",
+      "release_date": "2009-02-28",
+      "poster_path": "/m3LM64Y1kOW639cnqtB85Z6GMbO.jpg",
+      "overview": "عصابة من اللصوص الظرفاء تلتقي وتقرر القيام بسرقة العمر ..فهل ينجحوا ؟؟",
+      "popularity": 1.1765,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "125": {
+    "content_id": 125,
+    "source_title": "بدل فاقد",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 514345,
+      "type": "movie",
+      "title": "بدل فاقد",
+      "original_title": "بدل فاقد",
+      "release_date": "2009-06-03",
+      "poster_path": "/A2FCFh84mcmAfCpgLqnSyz4wMyQ.jpg",
+      "overview": "تدور أحداث الفيلم حول توأم فارقت بينهم الأيام حيث كل واحد فيهم تربى في بيئة مختلفة واحد تبنته راقصة وعاش معها فى منطقة عشوائية حياة فقيرة مهمشة، والأخر تبنته عائلة طيبة رفيعة المستوى، فيصبح الأول تاجرا للمخدرات والثانى ضابط شرطة",
+      "popularity": 0.9933,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "126": {
+    "content_id": 126,
+    "source_title": "تتح",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 189017,
+      "type": "movie",
+      "title": "تتح",
+      "original_title": "تتح",
+      "release_date": "2013-05-05",
+      "poster_path": "/rF3diGnjQrxkDEFjyv1yiz5PoZS.jpg",
+      "overview": "تدور أحداث الفيلم حول تتح (محمد سعد)؛ الرجل الفقير ضيق الرزق الذي يعيش في أحد أحياء عابدين، والذي يتعرف على فتاة جميلة عن طريق الإنترنت (دوللي شاهين) بمساعدة ابن أخته (عمر مصطفى متولي) الذي يعيش معه، تبدأ حياة تتح في التغير تمامًا، عندما تتعرض هذه الفتاة للاختطاف من قبل مجهولين ويحاول هو  إنقاذها.",
+      "popularity": 1.1492,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 1063877,
+      "type": "movie",
+      "title": "لا تتحرّكي",
+      "original_title": "Don't Move",
+      "release_date": "2024-10-24",
+      "poster_path": "/cRDJxdnRb7ikKd6fVJTrGeaL34v.jpg",
+      "overview": "تواجه امرأة مكلومة قاتلًا في غابة معزولة، يحقنها بعقار يشلّ الجسم، وفيما يُنهَك جسدها وينهار، تبدأ رحلة كفاحها من أجل البقاء على قيد الحياة.",
+      "popularity": 5.4949,
+      "score": 50.0,
+      "reasons": []
+    },
+    "candidate_count": 3
+  },
+  "127": {
+    "content_id": 127,
+    "source_title": "تيتة رهيبة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 246823,
+      "type": "movie",
+      "title": "تيتة رهيبة",
+      "original_title": "تيتة رهيبة",
+      "release_date": "2012-02-16",
+      "poster_path": "/2tIgs4MC3TPH84srRjCfuVruw27.jpg",
+      "overview": "يهرب روؤف (محمد هنيدي) من أشباح سيطرة جدته راوية هانم (سميحة أيوب) عليه بعد سفرها إلى ألمانيا ويقيم مع جده رمان (عبد الرحمن أبو زهرة)، وعقب وفاته يقرر الزواج من الفتاة منار (إيمي سمير غانم) التي تعلق بها قلبه، لكن عودة جدته وإقامتها معه تقلب حياته رأسا على عقب فتعود للسيطرة عليه مرة أخرى وتتحكم في حياته وحياة زوجته بشكل كبير.",
+      "popularity": 0.8694,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "128": {
+    "content_id": 128,
+    "source_title": "عروسة وجوز عرسان",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 751052,
+      "type": "movie",
+      "title": "عروسة وجوز عرسان",
+      "original_title": "عروسة وجوز عرسان",
+      "release_date": "1982-05-17",
+      "poster_path": "/sdUhNi4kLlnK7vkr8wsy40NoLZL.jpg",
+      "overview": "",
+      "popularity": 0.6078,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "129": {
+    "content_id": 129,
+    "source_title": "دكان شحاتة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 63362,
+      "type": "movie",
+      "title": "دكان شحاته",
+      "original_title": "دكان شحاتة",
+      "release_date": "2009-07-10",
+      "poster_path": "/8mPlmM4vLd6i4chNs0YpnWjN7JM.jpg",
+      "overview": "يناقش الفيلم في دراما اجتماعية، ضياع القيم الأصيلة في الأسرة المصرية، وما يترتب على ذهابها، من خلال قصة شحاتة (عمرو سعد) الذي شب على إهمال أشقائه له، وسطوتهم عليه، ومعاملتهم السيئة له، بالرغم من حبه الشديد لهم، وكيف أدت الغيرة المشتعلة بينهم إلى مأساة.",
+      "popularity": 1.7948,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "130": {
+    "content_id": 130,
+    "source_title": "عسل إسود",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 84250,
+      "type": "movie",
+      "title": "عسل أسود",
+      "original_title": "عسل أسود",
+      "release_date": "2010-05-25",
+      "poster_path": "/7IRqRKyPth00lITljHES4zAsdyk.jpg",
+      "overview": "بعد غياب طويل، يعود شاب مصري يحمل الجنسية الأمريكية إلى وطنه مصر، وهو يحمل في قلبه الكثير من الحنين والصور الجميلة عن بلده الأم. لكن زيارته تكشف له واقعًا مختلفًا عمّا تخيله، وتضعه في مواقف تختبر فهمه للهوية والانتماء.",
+      "popularity": 1.7859,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "131": {
+    "content_id": 131,
+    "source_title": "أشباح أوروبا",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 635604,
+      "type": "movie",
+      "title": "أشباح أوروبا",
+      "original_title": "اشباح اوروبا",
+      "release_date": "2022-09-21",
+      "poster_path": "/y92cTW9pIw3K2AX7l9R6GS1FKZ2.jpg",
+      "overview": "ينطلق ثلاثة توائم من صعيد مصر إلى إسبانيا باحثين عن إرث والدتهم الراحلة، وهناك تقربهم سلسلة من الأحداث الخطرة من فهم جذورهم.",
+      "popularity": 1.1658,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "132": {
+    "content_id": 132,
+    "source_title": "أولاد حريم كريم",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 1129293,
+      "type": "movie",
+      "title": "أولاد حريم كريم",
+      "original_title": "اولاد حريم كريم",
+      "release_date": "2023-08-30",
+      "poster_path": "/1BbYw0r94sIN93hgSNzf7MUsVvu.jpg",
+      "overview": "تدور احداث حين تنشأ علاقة حب بين (كريم حسين) و(آيلا)، وعندما يتقدم للزواج منها يكتشف والدها (كريم الحسيني) أنه ابن زميلته وحبيبته السابقة (مها)، ثم يستعيدان علاقة الصداقة القديمة مع صديقتيهما (هالة) و(دينا).",
+      "popularity": 1.0359,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "133": {
+    "content_id": 133,
+    "source_title": "مسافر مع القرآن",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "134": {
+    "content_id": 134,
+    "source_title": "مع الرسول في القرآن",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "135": {
+    "content_id": 135,
+    "source_title": "كتاب الإحسان",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "136": {
+    "content_id": 136,
+    "source_title": "علمني رسول الله",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "137": {
+    "content_id": 137,
+    "source_title": "جمال البيان النبوي",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "138": {
+    "content_id": 138,
+    "source_title": "صلاة الفجر",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "139": {
+    "content_id": 139,
+    "source_title": "المصحف المختصر",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "140": {
+    "content_id": 140,
+    "source_title": "اسماء الله الحسني",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "141": {
+    "content_id": 141,
+    "source_title": "يستفتونك",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "142": {
+    "content_id": 142,
+    "source_title": "صحح تلاوتك",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "143": {
+    "content_id": 143,
+    "source_title": "الشفاء بحقوق المصطفى",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "144": {
+    "content_id": 144,
+    "source_title": "ليلة مع النبي",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "145": {
+    "content_id": 145,
+    "source_title": "مع السيرة والمسيرة",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "146": {
+    "content_id": 146,
+    "source_title": "دعوة",
+    "status": "NO_MATCH",
+    "best_match": {
+      "tmdb_id": 155088,
+      "type": "series",
+      "title": "دعوة خاصة",
+      "original_title": "دعوة خاصة",
+      "release_date": "2022-01-07",
+      "poster_path": "/vDUwq5xhL17aW0xfJZulrvyteaz.jpg",
+      "overview": "من منطلق أن جميع الناس يتمنون أن يكونوا شخصيات مهمة، تتم في كل حلقة دعوة أربعة أشخاص غرباء لحضور حفل عشاء حصري ومميز، ولكن يتوجب عليهم اتباع قواعد محددة",
+      "popularity": 0.8335,
+      "score": 61.54,
+      "reasons": [
+        "moderate title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 258230,
+      "type": "movie",
+      "title": "دعوة الوحش",
+      "original_title": "A Monster Calls",
+      "release_date": "2016-10-07",
+      "poster_path": "/vNzWJwVqjszWwXrA7ZfsrJmhgV9.jpg",
+      "overview": "يعاني (كونر) بشكل مستمر في المدرسة وفي المنزل، خاصة مع وجود أم مريضة في المنزل، فيكافح (كونر) من أجل التغلب على شعوره بالذنب والغضب ومواجهة من يقوم بالاعتداء عليه من أقرانه، لكنه يواجه مشكلة أكبر وهي القدرة على إخبار الحقيقة والاعتراف بالمشكلات، وهنا يبرز وحش متنكر في شكل شجرة ويصير صديقًا له.",
+      "popularity": 7.6818,
+      "score": 57.14,
+      "reasons": []
+    },
+    "candidate_count": 9
+  },
+  "147": {
+    "content_id": 147,
+    "source_title": "كيف عاملهم النبي؟",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "148": {
+    "content_id": 148,
+    "source_title": "نهضة امة",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "149": {
+    "content_id": 149,
+    "source_title": "النبي مربيا",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "150": {
+    "content_id": 150,
+    "source_title": "همسات",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 408685,
+      "type": "movie",
+      "title": "همسات",
+      "original_title": "Whispers",
+      "release_date": "1980-01-01",
+      "poster_path": "/leZx5qKCBHYKTQ7QUKP31sZT54Z.jpg",
+      "overview": "بعدما دمّرت الحرب موطن شاعرة لبنانية، تنطلق في جولة برّية عبر أرجاء البلد بحثًا عن بصيص من الأمل من خلال ذكريات وشِعر الحنين إلى الماضي.",
+      "popularity": 1.3346,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": {
+      "tmdb_id": 750798,
+      "type": "movie",
+      "title": "همسات الليل",
+      "original_title": "همسات الليل",
+      "release_date": "1977-12-12",
+      "poster_path": "/xZpM1tL0qWIrxdAH7AidlhKUN7Z.jpg",
+      "overview": "يجمع الحب بين كريمة ومحسن، إلا أن الابن طارق يقف حائلًا بينهما لأنه يرغب أن تكون أمه له وحده وليس لأحدًا غيره، تتفق كريمة مع محسن على الزواج، تحاول الأم إخراج ابنها من هذا الموقف من خلال دفعه للزواج من مديحة، وبعد زواج طارق من مديحة يفشل في القيام بواجباته كزوج، تحاول والدته مساعدة ابنها بالأخذ بنصيحة أحد الأطباء بدفع ابنها لإقامة علاقة مع فتاة من بائعات الهوى لتحفيزه على القيام بواجباته الزوجية.",
+      "popularity": 0.5762,
+      "score": 62.5,
+      "reasons": [
+        "moderate title similarity"
+      ]
+    },
+    "candidate_count": 4
+  },
+  "151": {
+    "content_id": 151,
+    "source_title": "قدوة",
+    "status": "AUTO_MATCH",
+    "best_match": {
+      "tmdb_id": 102551,
+      "type": "series",
+      "title": "قدوة",
+      "original_title": "قدوة",
+      "release_date": "2020-04-25",
+      "poster_path": "/bXQ8t5YgMBk9rWCwsbVay8Y1fTS.jpg",
+      "overview": "قدوة\n\nقدوة\n\nقدوة",
+      "popularity": 0.568,
+      "score": 100,
+      "reasons": [
+        "exact Arabic title",
+        "very high title similarity"
+      ]
+    },
+    "second_match": null,
+    "candidate_count": 1
+  },
+  "152": {
+    "content_id": 152,
+    "source_title": "جؤنة عطار في سيرة النبي المختار",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "153": {
+    "content_id": 153,
+    "source_title": "على فكرة",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "154": {
+    "content_id": 154,
+    "source_title": "مقرأ نافع",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "155": {
+    "content_id": 155,
+    "source_title": "صلاة العصر",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "156": {
+    "content_id": 156,
+    "source_title": "نفوس مطمئنة",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "157": {
+    "content_id": 157,
+    "source_title": "صلاة المغرب",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "158": {
+    "content_id": 158,
+    "source_title": "الأرقام في القرآن",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "159": {
+    "content_id": 159,
+    "source_title": "الكلم الطيب",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "160": {
+    "content_id": 160,
+    "source_title": "لأجل هذا نحبه",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "161": {
+    "content_id": 161,
+    "source_title": "صلاة الظهر",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "162": {
+    "content_id": 162,
+    "source_title": "محاضرة الأسبوع",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "163": {
+    "content_id": 163,
+    "source_title": "نحن هنا",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "164": {
+    "content_id": 164,
+    "source_title": "همس الزهور",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "165": {
+    "content_id": 165,
+    "source_title": "قيمنا",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "166": {
+    "content_id": 166,
+    "source_title": "من أخلاقه تعلمنا",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "167": {
+    "content_id": 167,
+    "source_title": "حياة صحية",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  },
+  "168": {
+    "content_id": 168,
+    "source_title": "ملتقى القلوب",
+    "status": "NO_MATCH",
+    "best_match": null,
+    "second_match": null,
+    "candidate_count": 0
+  }
+}

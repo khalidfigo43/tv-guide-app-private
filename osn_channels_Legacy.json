@@ -1,0 +1,2497 @@
+[
+  {
+    "title": "OSNtv Movies Premiere",
+    "guid": "301",
+    "otaChannelNumber": "01",
+    "isFreeToAir": false,
+    "genre": [
+      "Movies"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MOVIES-PREMIERE.png"
+  },
+  {
+    "title": "OSNtv Showcase",
+    "guid": "304",
+    "otaChannelNumber": "02",
+    "isFreeToAir": false,
+    "genre": [
+      "Series"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-SHOWCASE.png"
+  },
+  {
+    "title": "OSNtv One",
+    "guid": "204",
+    "otaChannelNumber": "03",
+    "isFreeToAir": false,
+    "genre": [
+      "Series"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-ONE.png"
+  },
+  {
+    "title": "OSNtv Movies Action",
+    "guid": "302",
+    "otaChannelNumber": "04",
+    "isFreeToAir": false,
+    "genre": [
+      "Movies"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MOVIES-ACTION.png"
+  },
+  {
+    "title": "OSNtv Movies Horror",
+    "guid": "225",
+    "otaChannelNumber": "05",
+    "isFreeToAir": false,
+    "genre": [
+      "Movies"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MoviesHorror_ATV.png"
+  },
+  {
+    "title": "OSNtv Movies Hollywood",
+    "guid": "4503",
+    "otaChannelNumber": "06",
+    "isFreeToAir": false,
+    "genre": [
+      "Movies"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MOVIES-HOLLYWOOD.png"
+  },
+  {
+    "title": "OSNtv Pop Up",
+    "guid": "5672",
+    "otaChannelNumber": "07",
+    "isFreeToAir": false,
+    "genre": [
+      "Movies"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-Pop-Up_ATV.png"
+  },
+  {
+    "title": "OSNtv Crime",
+    "guid": "307",
+    "otaChannelNumber": "08",
+    "isFreeToAir": false,
+    "genre": [
+      "Series"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-CRIME.png"
+  },
+  {
+    "title": "OSNtv Comedy",
+    "guid": "4508",
+    "otaChannelNumber": "09",
+    "isFreeToAir": false,
+    "genre": [
+      "Series"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-COMEDY.png"
+  },
+  {
+    "title": "OSNtv Showcase Classics",
+    "guid": "208",
+    "otaChannelNumber": "10",
+    "isFreeToAir": false,
+    "genre": [
+      "Series"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-SHOWCASE-CLASSICS.png"
+  },
+  {
+    "title": "OSNtv Now",
+    "guid": "4502",
+    "otaChannelNumber": "11",
+    "isFreeToAir": false,
+    "genre": [
+      "Lifestyle"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-NOW.png"
+  },
+  {
+    "title": "OSNtv Mezze",
+    "guid": "4501",
+    "otaChannelNumber": "12",
+    "isFreeToAir": false,
+    "genre": [
+      "Lifestyle"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MEZZE.png"
+  },
+  {
+    "title": "Fatafeat",
+    "guid": "4510",
+    "otaChannelNumber": "13",
+    "isFreeToAir": false,
+    "genre": [
+      "Lifestyle"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Fatafeat_ATV.png"
+  },
+  {
+    "title": "OSNtv Movies Comedy",
+    "guid": "5669",
+    "otaChannelNumber": "14",
+    "isFreeToAir": false,
+    "genre": [
+      "Movies"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNTV-Movies-Comedy-ATV.png"
+  },
+  {
+    "title": "OSNtv Movies Family",
+    "guid": "5666",
+    "otaChannelNumber": "16",
+    "isFreeToAir": false,
+    "genre": [
+      "Movies",
+      "Kids"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-MOVIES-FAMILY.png"
+  },
+  {
+    "title": "OSNtv iQIYI",
+    "guid": "221",
+    "otaChannelNumber": "33",
+    "isFreeToAir": false,
+    "genre": [
+      "Series",
+      "Entertainment"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNtv-iQIYI_ATV.png"
+  },
+  {
+    "title": "MBC 2",
+    "guid": "",
+    "otaChannelNumber": "45",
+    "isFreeToAir": false,
+    "genre": [
+      "Movies"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/MBC2.png"
+  },
+  {
+    "title": "B4U Plus",
+    "guid": "",
+    "otaChannelNumber": "46",
+    "isFreeToAir": false,
+    "genre": [],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/B4U-plus.png"
+  },
+  {
+    "title": "MOTORVISION",
+    "guid": "305",
+    "otaChannelNumber": "80",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Motorvision_ATV.png"
+  },
+  {
+    "title": "Padel TV",
+    "guid": "6611",
+    "otaChannelNumber": "81",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/PadelTime-TV_ATV.png"
+  },
+  {
+    "title": "eClutch LIVE",
+    "guid": "6610",
+    "otaChannelNumber": "82",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/eCLUTCH-Live-1_ATV.png"
+  },
+  {
+    "title": "eClutch LIVE 2",
+    "guid": "6612",
+    "otaChannelNumber": "83",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/eCLUTCH-Live-2_ATV.png"
+  },
+  {
+    "title": "eClutch Arabic",
+    "guid": "6613",
+    "otaChannelNumber": "84",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/eClutch-Arabic_ATV.png"
+  },
+  {
+    "title": "eClutch Access",
+    "guid": "6607",
+    "otaChannelNumber": "85",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/eCLUTCH-Access_ATV.png"
+  },
+  {
+    "title": "Esport 24",
+    "guid": "6609",
+    "otaChannelNumber": "86",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Esports-24_ATV.png"
+  },
+  {
+    "title": "Gametoon",
+    "guid": "6606",
+    "otaChannelNumber": "87",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Gametoon_ATV.png"
+  },
+  {
+    "title": "Ginx",
+    "guid": "6604",
+    "otaChannelNumber": "88",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/GINX-TV_ATV.png"
+  },
+  {
+    "title": "OSNtv Yahala",
+    "guid": "4509",
+    "otaChannelNumber": "100",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-YAHALA.png"
+  },
+  {
+    "title": "OSNtv Yahala Bil Arabi",
+    "guid": "309",
+    "otaChannelNumber": "107",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-YAHALA-BIL-ARABI.png"
+  },
+  {
+    "title": "OSNtv Yahala Aflam",
+    "guid": "306",
+    "otaChannelNumber": "110",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic",
+      "Movies"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-YAHALA-AFLAM.png"
+  },
+  {
+    "title": "Alfa Series HD",
+    "guid": "4514",
+    "otaChannelNumber": "112",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Musalsalat_Legacy.png"
+  },
+  {
+    "title": "Alfa Series +2 HD",
+    "guid": "4513",
+    "otaChannelNumber": "114",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Musalsalat_2_Legacy.png"
+  },
+  {
+    "title": "Alfa Al Yawm HD",
+    "guid": "5673",
+    "otaChannelNumber": "116",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Al-yawm_Legacy.png"
+  },
+  {
+    "title": "Alfa Al Safwa",
+    "guid": "5674",
+    "otaChannelNumber": "118",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Al-Safwat_Legacy.png"
+  },
+  {
+    "title": "Alfa Fann",
+    "guid": "311",
+    "otaChannelNumber": "120",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Fan_Legacy.png"
+  },
+  {
+    "title": "Alfa Cinema 1",
+    "guid": "5675",
+    "otaChannelNumber": "122",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Cinema-1_Legacy.png"
+  },
+  {
+    "title": "Alfa Cinema 2",
+    "guid": "5676",
+    "otaChannelNumber": "124",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Cinema-2_Legacy.png"
+  },
+  {
+    "title": "Alfa Music HD",
+    "guid": "312",
+    "otaChannelNumber": "125",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Music-Now_Legacy.png"
+  },
+  {
+    "title": "Al Saudiah Now",
+    "guid": "",
+    "otaChannelNumber": "135",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/alsaudiah_now.png"
+  },
+  {
+    "title": "Al Araby 2",
+    "guid": "",
+    "otaChannelNumber": "136",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rebrand/Test/Al-Araby-2_Legacy.png"
+  },
+  {
+    "title": "MBC 1",
+    "guid": "9908",
+    "otaChannelNumber": "137",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic",
+      "Series"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/mbc-1-logo.png"
+  },
+  {
+    "title": "Al Mashhad",
+    "guid": "",
+    "otaChannelNumber": "138",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al-Mashhad_Legacy.png"
+  },
+  {
+    "title": "MBC Drama",
+    "guid": "9976",
+    "otaChannelNumber": "139",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic",
+      "Series"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/MBC-Drama.png"
+  },
+  {
+    "title": "STV1 HD",
+    "guid": "9957",
+    "otaChannelNumber": "141",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/STV-1-HD_ATV.png"
+  },
+  {
+    "title": "Thekrayat HD",
+    "guid": "",
+    "otaChannelNumber": "142",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Thekrayat_TV.png"
+  },
+  {
+    "title": "KTV Channel 1 HD",
+    "guid": "1101",
+    "otaChannelNumber": "145",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/ktv-1.png"
+  },
+  {
+    "title": "KTV Channel 2 HD",
+    "guid": "",
+    "otaChannelNumber": "146",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/KTV2-116x48.png"
+  },
+  {
+    "title": "Al-Akhbar",
+    "guid": "",
+    "otaChannelNumber": "149",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/KTV-Akhbar-116x48.png"
+  },
+  {
+    "title": "Marina TV",
+    "guid": "",
+    "otaChannelNumber": "151",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Marina_TV.png"
+  },
+  {
+    "title": "Ajman TV",
+    "guid": "",
+    "otaChannelNumber": "153",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Ajman_TV.png"
+  },
+  {
+    "title": "Sharjah TV HD",
+    "guid": "",
+    "otaChannelNumber": "154",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Sharjah-TV_HD.png"
+  },
+  {
+    "title": "Sharqiya from Kalba HD",
+    "guid": "",
+    "otaChannelNumber": "155",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Sharqiya-from-Kalba-HD.png"
+  },
+  {
+    "title": "Al Wousta from Al Dhaid HD",
+    "guid": "",
+    "otaChannelNumber": "156",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al-Wousta.png"
+  },
+  {
+    "title": "Abu Dhabi TV HD",
+    "guid": "9939",
+    "otaChannelNumber": "158",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Abu-Dhabi-TV-HD.png"
+  },
+  {
+    "title": "Al Emarat TV HD",
+    "guid": "",
+    "otaChannelNumber": "159",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Emarat_TV.png"
+  },
+  {
+    "title": "Dubai TV HD",
+    "guid": "6603",
+    "otaChannelNumber": "161",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Dubia-Tv.png"
+  },
+  {
+    "title": "Sama Dubai HD",
+    "guid": "",
+    "otaChannelNumber": "162",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Sama_Dubai.png"
+  },
+  {
+    "title": "Al Dafrah HD",
+    "guid": "",
+    "otaChannelNumber": "163",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Dafrah_TV.png"
+  },
+  {
+    "title": "Bahrain TV",
+    "guid": "9013",
+    "otaChannelNumber": "165",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Bahrain-TV-png.png"
+  },
+  {
+    "title": "Oman TV",
+    "guid": "9983",
+    "otaChannelNumber": "166",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OmanTV_ATV.png"
+  },
+  {
+    "title": "Jordan TV",
+    "guid": "",
+    "otaChannelNumber": "178",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Jordan_TV.png"
+  },
+  {
+    "title": "Roya TV HD",
+    "guid": "9393",
+    "otaChannelNumber": "179",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Roya-TV_HD.png"
+  },
+  {
+    "title": "Jordan Sport HD",
+    "guid": "",
+    "otaChannelNumber": "180",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Jordan_Sports.png"
+  },
+  {
+    "title": "Syria TV",
+    "guid": "",
+    "otaChannelNumber": "183",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rebrand/Test/Syria-TV_Legacy.png"
+  },
+  {
+    "title": "Syria Drama",
+    "guid": "",
+    "otaChannelNumber": "184",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Syria_Drama.png"
+  },
+  {
+    "title": "ON E HD",
+    "guid": "",
+    "otaChannelNumber": "187",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/ON_E.png"
+  },
+  {
+    "title": "ON Drama",
+    "guid": "",
+    "otaChannelNumber": "188",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/On_Drama.png"
+  },
+  {
+    "title": "Egypt Channel 1",
+    "guid": "",
+    "otaChannelNumber": "190",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Egypt_Ch1.png"
+  },
+  {
+    "title": "Nile Comedy",
+    "guid": "",
+    "otaChannelNumber": "191",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Nile-Comedy.png"
+  },
+  {
+    "title": "Nile Drama",
+    "guid": "",
+    "otaChannelNumber": "192",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Nile-Drama.png"
+  },
+  {
+    "title": "Nile Cinema",
+    "guid": "",
+    "otaChannelNumber": "193",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Nile-Cinema.png"
+  },
+  {
+    "title": "Nile Live",
+    "guid": "",
+    "otaChannelNumber": "194",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Nile_Live.png"
+  },
+  {
+    "title": "TLC HD",
+    "guid": "308",
+    "otaChannelNumber": "212",
+    "isFreeToAir": false,
+    "genre": [
+      "Lifestyle"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/TLC.png"
+  },
+  {
+    "title": "MBC 4",
+    "guid": "",
+    "otaChannelNumber": "244",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/MBC4.png"
+  },
+  {
+    "title": "MBC Action",
+    "guid": "",
+    "otaChannelNumber": "246",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/MBC_Action.png"
+  },
+  {
+    "title": "MBC Bollywood",
+    "guid": "",
+    "otaChannelNumber": "247",
+    "isFreeToAir": false,
+    "genre": [
+      "Movies"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/MBC_Bollywood.png"
+  },
+  {
+    "title": "B4U Aflam",
+    "guid": "",
+    "otaChannelNumber": "248",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/B4U_Aflam.png"
+  },
+  {
+    "title": "Dubai One HD",
+    "guid": "",
+    "otaChannelNumber": "251",
+    "isFreeToAir": false,
+    "genre": [
+      "Other"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Dubai_One_L.png"
+  },
+  {
+    "title": "TV 5 Monde Maghreb",
+    "guid": "",
+    "otaChannelNumber": "260",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/TV-5-Monde-Maghreb.png"
+  },
+  {
+    "title": "MCM TOP",
+    "guid": "5664",
+    "otaChannelNumber": "305",
+    "isFreeToAir": false,
+    "genre": [
+      "Music"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/MCM-TOP_ATV.png"
+  },
+  {
+    "title": "RFM TV",
+    "guid": "222",
+    "otaChannelNumber": "306",
+    "isFreeToAir": false,
+    "genre": [
+      "Music"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/RFM-TV_ATV.png"
+  },
+  {
+    "title": "Rotana Music",
+    "guid": "",
+    "otaChannelNumber": "324",
+    "isFreeToAir": false,
+    "genre": [
+      "Music"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rotana-Music.png"
+  },
+  {
+    "title": "Rotana Drama",
+    "guid": "",
+    "otaChannelNumber": "326",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rotana-Misreyaa.png"
+  },
+  {
+    "title": "Rotana Khalijia",
+    "guid": "",
+    "otaChannelNumber": "328",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rotana-Khalijia.png"
+  },
+  {
+    "title": "Rotana Clip",
+    "guid": "",
+    "otaChannelNumber": "330",
+    "isFreeToAir": false,
+    "genre": [
+      "Music"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rotana_Clip.png"
+  },
+  {
+    "title": "Mazzika",
+    "guid": "",
+    "otaChannelNumber": "332",
+    "isFreeToAir": false,
+    "genre": [
+      "Music"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Mazzika.png"
+  },
+  {
+    "title": "Alfa Tarabiyat Radio",
+    "guid": "",
+    "otaChannelNumber": "342",
+    "isFreeToAir": false,
+    "genre": [
+      "Music"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Tarabiyat_Legacy.png"
+  },
+  {
+    "title": "Alfa Khalija't Radio",
+    "guid": "",
+    "otaChannelNumber": "343",
+    "isFreeToAir": false,
+    "genre": [
+      "Music"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Alfa-new-logos/5alijeyat_Legacy.png"
+  },
+  {
+    "title": "Alfa Monawaat Radio",
+    "guid": "",
+    "otaChannelNumber": "344",
+    "isFreeToAir": false,
+    "genre": [
+      "Music"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Alfa-new-logos/Munawa3at_Legacy.png"
+  },
+  {
+    "title": "Cartoon Network HD",
+    "guid": "4507",
+    "otaChannelNumber": "350",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Cartoon-Network_android.png"
+  },
+  {
+    "title": "OSNtv Kids",
+    "guid": "4506",
+    "otaChannelNumber": "352",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSN-TV-KIDS.png"
+  },
+  {
+    "title": "Nickelodeon HD",
+    "guid": "5663",
+    "otaChannelNumber": "355",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Nickelodeon_N1ATV.png"
+  },
+  {
+    "title": "Nick Jr HD",
+    "guid": "5670",
+    "otaChannelNumber": "356",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/NickJr_ATV.png"
+  },
+  {
+    "title": "NickToons HD",
+    "guid": "5671",
+    "otaChannelNumber": "358",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Nick-TOONS.png"
+  },
+  {
+    "title": "Moonbug Kids",
+    "guid": "310",
+    "otaChannelNumber": "360",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Moonbug-ATV.png"
+  },
+  {
+    "title": "Blippi and Friends",
+    "guid": "206",
+    "otaChannelNumber": "361",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Blippi-and-Friends_ATV.png"
+  },
+  {
+    "title": "CN Arabia",
+    "guid": "9987",
+    "otaChannelNumber": "362",
+    "isFreeToAir": true,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v3/Cartoon_Network_Arabic_logo.png"
+  },
+  {
+    "title": "Majid Kids TV",
+    "guid": "",
+    "otaChannelNumber": "367",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Majid_Kids_TV.png"
+  },
+  {
+    "title": "MBC 3",
+    "guid": "9971",
+    "otaChannelNumber": "368",
+    "isFreeToAir": true,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/MBC-3.png"
+  },
+  {
+    "title": "Spacetoon Arabic",
+    "guid": "",
+    "otaChannelNumber": "370",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Spacetoon-Arabic.png"
+  },
+  {
+    "title": "Sky News Arabia HD",
+    "guid": "2015",
+    "otaChannelNumber": "402",
+    "isFreeToAir": true,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Sky_news_arabia-HD.png"
+  },
+  {
+    "title": "Sky News Arabia",
+    "guid": "",
+    "otaChannelNumber": "403",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0050_Sky-News-Arabia.png"
+  },
+  {
+    "title": "BBC World",
+    "guid": "9099",
+    "otaChannelNumber": "404",
+    "isFreeToAir": true,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/BBC-World-News.png"
+  },
+  {
+    "title": "NHK World-Japan",
+    "guid": "",
+    "otaChannelNumber": "405",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/nhk116x48.png"
+  },
+  {
+    "title": "CNN HD",
+    "guid": "4504",
+    "otaChannelNumber": "407",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/CNN-png.png"
+  },
+  {
+    "title": "Asharq News",
+    "guid": "",
+    "otaChannelNumber": "414",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/asharq_news.png"
+  },
+  {
+    "title": "Bloomberg",
+    "guid": "201",
+    "otaChannelNumber": "415",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Bloomberg.png"
+  },
+  {
+    "title": "Arirang TV",
+    "guid": "",
+    "otaChannelNumber": "416",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Arirang_TV.png"
+  },
+  {
+    "title": "TVRI World",
+    "guid": "",
+    "otaChannelNumber": "417",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rebrand/Test/TVRI-WORLD_Legacy.png"
+  },
+  {
+    "title": "CGTN",
+    "guid": "",
+    "otaChannelNumber": "419",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/CGTN.png"
+  },
+  {
+    "title": "RT English",
+    "guid": "7114",
+    "otaChannelNumber": "420",
+    "isFreeToAir": true,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Rusiya-Al-Yawm.png"
+  },
+  {
+    "title": "France 24 Eng",
+    "guid": "",
+    "otaChannelNumber": "421",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/France24_English.png"
+  },
+  {
+    "title": "Al Arabiya",
+    "guid": "9970",
+    "otaChannelNumber": "453",
+    "isFreeToAir": true,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Al-Arabiya.png"
+  },
+  {
+    "title": "AlMamlaka TV",
+    "guid": "",
+    "otaChannelNumber": "454",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Mamlaka_TV.png"
+  },
+  {
+    "title": "RT Arabic",
+    "guid": "9396",
+    "otaChannelNumber": "455",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic",
+      "News"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Rusiya-Al-Yawm.png"
+  },
+  {
+    "title": "Al Hurra Iraq HD",
+    "guid": "",
+    "otaChannelNumber": "457",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al-Hurra-Iraq_HD.png"
+  },
+  {
+    "title": "BBC Arabic",
+    "guid": "",
+    "otaChannelNumber": "458",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/BBC_News_Arabic.png"
+  },
+  {
+    "title": "France 24 Arabic",
+    "guid": "",
+    "otaChannelNumber": "459",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/France24_Arabic.png"
+  },
+  {
+    "title": "Al Araby TV",
+    "guid": "3800",
+    "otaChannelNumber": "460",
+    "isFreeToAir": false,
+    "genre": [
+      "HD"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/Vodafone/Al_Arabi_TV.png"
+  },
+  {
+    "title": "CGTN Arabic",
+    "guid": "",
+    "otaChannelNumber": "461",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/CGTN_Arabic.png"
+  },
+  {
+    "title": "CNBC Arabia",
+    "guid": "",
+    "otaChannelNumber": "463",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/CNBC_Arabia.png"
+  },
+  {
+    "title": "Al Ekhbaria HD",
+    "guid": "",
+    "otaChannelNumber": "467",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Ekhbaria_HD.png"
+  },
+  {
+    "title": "Shams",
+    "guid": "",
+    "otaChannelNumber": "468",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Shams-TV_Legacy.png"
+  },
+  {
+    "title": "Syria News",
+    "guid": "",
+    "otaChannelNumber": "489",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Syria-News.png"
+  },
+  {
+    "title": "Al Hadath",
+    "guid": "9910",
+    "otaChannelNumber": "495",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic",
+      "News"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Al-Hadath_ATV.png"
+  },
+  {
+    "title": "OSNtv Documentary",
+    "guid": "314",
+    "otaChannelNumber": "500",
+    "isFreeToAir": false,
+    "genre": [
+      "Factual"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/OSNTV-DOCUMENTARY_ATV.png"
+  },
+  {
+    "title": "Discovery Channel HD",
+    "guid": "5665",
+    "otaChannelNumber": "501",
+    "isFreeToAir": false,
+    "genre": [
+      "Factual"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Discovery.png"
+  },
+  {
+    "title": "Discovery IDX HD",
+    "guid": "5668",
+    "otaChannelNumber": "505",
+    "isFreeToAir": false,
+    "genre": [
+      "Factual"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/ID.png"
+  },
+  {
+    "title": "C & I",
+    "guid": "212",
+    "otaChannelNumber": "506",
+    "isFreeToAir": false,
+    "genre": [
+      "Factual"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v3/CI.png"
+  },
+  {
+    "title": "History HD",
+    "guid": "5661",
+    "otaChannelNumber": "508",
+    "isFreeToAir": false,
+    "genre": [
+      "Factual"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/History.png"
+  },
+  {
+    "title": "H2 HD",
+    "guid": "5667",
+    "otaChannelNumber": "509",
+    "isFreeToAir": false,
+    "genre": [
+      "Factual"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/History2.png"
+  },
+  {
+    "title": "Animal Planet HD",
+    "guid": "4505",
+    "otaChannelNumber": "515",
+    "isFreeToAir": false,
+    "genre": [
+      "Factual"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Animal-Planet_ATV.png"
+  },
+  {
+    "title": "Bloomberg Originals",
+    "guid": "4512",
+    "otaChannelNumber": "516",
+    "isFreeToAir": false,
+    "genre": [
+      "NEWS",
+      "Factual",
+      "Documentary"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Bloomberg-Originals_ATV.png"
+  },
+  {
+    "title": "Nat Geo AD HD",
+    "guid": "",
+    "otaChannelNumber": "540",
+    "isFreeToAir": false,
+    "genre": [
+      "Factual",
+      "HD"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Nat-Geo-AD-HD.png"
+  },
+  {
+    "title": "YAS Sports HD",
+    "guid": "",
+    "otaChannelNumber": "620",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/YAS_Sports_HD.png"
+  },
+  {
+    "title": "AD Sports 1 HD",
+    "guid": "9069",
+    "otaChannelNumber": "621",
+    "isFreeToAir": true,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/AbuDhabi-sports-1-png.png"
+  },
+  {
+    "title": "AD Sports 2 HD",
+    "guid": "",
+    "otaChannelNumber": "622",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/AD-Sports-2-HD.png"
+  },
+  {
+    "title": "ON Sport 2",
+    "guid": "",
+    "otaChannelNumber": "629",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/ONTIME_Sport_2.png"
+  },
+  {
+    "title": "ON Sport HD",
+    "guid": "",
+    "otaChannelNumber": "630",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/ON_Time_Sports_X.png"
+  },
+  {
+    "title": "KSA Sports 1 HD",
+    "guid": "9961",
+    "otaChannelNumber": "631",
+    "isFreeToAir": true,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/KSA-Sports-1-HD-png.png"
+  },
+  {
+    "title": "KSA Sports 2 HD",
+    "guid": "",
+    "otaChannelNumber": "632",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/ksa-Sports-2.png"
+  },
+  {
+    "title": "KSA Sports 3 HD",
+    "guid": "",
+    "otaChannelNumber": "633",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/ksa-Sports-3.png"
+  },
+  {
+    "title": "beIN SPORTS HD",
+    "guid": "",
+    "otaChannelNumber": "640",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/beIN_SPORTS.png"
+  },
+  {
+    "title": "beIN SPORTS NEWS",
+    "guid": "",
+    "otaChannelNumber": "641",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rebrand/Test/Bein-Sports-News_Legacy.png"
+  },
+  {
+    "title": "Al Kass One",
+    "guid": "2501",
+    "otaChannelNumber": "642",
+    "isFreeToAir": false,
+    "genre": [
+      "HD"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Al_Kass_One_ATV.png"
+  },
+  {
+    "title": "Dubai Sports 1 HD",
+    "guid": "",
+    "otaChannelNumber": "670",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Dubai-Sports1-HD.png"
+  },
+  {
+    "title": "Dubai Sports 2 HD",
+    "guid": "",
+    "otaChannelNumber": "671",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Dubai-Sports2.png"
+  },
+  {
+    "title": "Dubai Racing 1 HD",
+    "guid": "",
+    "otaChannelNumber": "673",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Dubai-Racing-1.png"
+  },
+  {
+    "title": "Dubai Racing 2 HD",
+    "guid": "",
+    "otaChannelNumber": "674",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Dubai-Racing-2.png"
+  },
+  {
+    "title": "Sharjah Sport HD",
+    "guid": "",
+    "otaChannelNumber": "683",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Sharjah-Sport-HD.png"
+  },
+  {
+    "title": "KTV Sport HD",
+    "guid": "",
+    "otaChannelNumber": "684",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/KTV-Riyadia-116x48.png"
+  },
+  {
+    "title": "KTV Sports 2 HD",
+    "guid": "",
+    "otaChannelNumber": "685",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/KTV-Riyadia2-116x48.png"
+  },
+  {
+    "title": "Oman TV Sport",
+    "guid": "9993",
+    "otaChannelNumber": "686",
+    "isFreeToAir": true,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/oman-sport-tv.png"
+  },
+  {
+    "title": "TFC HD",
+    "guid": "217",
+    "otaChannelNumber": "700",
+    "isFreeToAir": false,
+    "genre": [
+      "Pinoy"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0011_TFC.png"
+  },
+  {
+    "title": "Cinema One Global",
+    "guid": "216",
+    "otaChannelNumber": "702",
+    "isFreeToAir": false,
+    "genre": [
+      "Pinoy"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0031_CINEMA-ONE.png"
+  },
+  {
+    "title": "ANC",
+    "guid": "224",
+    "otaChannelNumber": "703",
+    "isFreeToAir": false,
+    "genre": [
+      "Pinoy"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0030_Vector-Smart-Object.png"
+  },
+  {
+    "title": "DZMM TeleRadyo",
+    "guid": "215",
+    "otaChannelNumber": "704",
+    "isFreeToAir": false,
+    "genre": [
+      "Pinoy"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rebrand/Test/DZMM-Teleradyo_Legacy.png"
+  },
+  {
+    "title": "MOR Global Radio",
+    "guid": "213",
+    "otaChannelNumber": "705",
+    "isFreeToAir": false,
+    "genre": [
+      "Pinoy"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rebrand/Test/MOR-png.png"
+  },
+  {
+    "title": "Myx",
+    "guid": "209",
+    "otaChannelNumber": "707",
+    "isFreeToAir": false,
+    "genre": [
+      "Pinoy"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0014_MYX-TV.png"
+  },
+  {
+    "title": "Kapatid TV5 International",
+    "guid": "220",
+    "otaChannelNumber": "710",
+    "isFreeToAir": false,
+    "genre": [
+      "Pinoy"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/KAPATID-TV5.png"
+  },
+  {
+    "title": "CineMo",
+    "guid": "223",
+    "otaChannelNumber": "711",
+    "isFreeToAir": false,
+    "genre": [
+      "Pinoy"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/CineMo.png"
+  },
+  {
+    "title": "GMA Pinoy TV",
+    "guid": "202",
+    "otaChannelNumber": "713",
+    "isFreeToAir": false,
+    "genre": [
+      "Pinoy"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0024_Layer-5.png"
+  },
+  {
+    "title": "GMA Life TV",
+    "guid": "211",
+    "otaChannelNumber": "714",
+    "isFreeToAir": false,
+    "genre": [
+      "Pinoy"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0023_Layer-6.png"
+  },
+  {
+    "title": "GMA News TV",
+    "guid": "203",
+    "otaChannelNumber": "715",
+    "isFreeToAir": false,
+    "genre": [
+      "Pinoy"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/WEBSITE-LOGOS-copy_0000s_0022_Layer-7.png"
+  },
+  {
+    "title": "Al Fateh",
+    "guid": "",
+    "otaChannelNumber": "747",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Fateh.png"
+  },
+  {
+    "title": "Khartoum TV",
+    "guid": "",
+    "otaChannelNumber": "754",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rebrand/Test/Khartoum_Legacy.png"
+  },
+  {
+    "title": "Al Iraqia (El Ekhbariya)",
+    "guid": "",
+    "otaChannelNumber": "759",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Iraqia_News.png"
+  },
+  {
+    "title": "Nile TV International",
+    "guid": "",
+    "otaChannelNumber": "762",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Nile-TV-International.png"
+  },
+  {
+    "title": "Altaghier",
+    "guid": "",
+    "otaChannelNumber": "765",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Altaghier.png"
+  },
+  {
+    "title": "Al Sharqiya HD",
+    "guid": "",
+    "otaChannelNumber": "768",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al-Sharqiya-HD.png"
+  },
+  {
+    "title": "Palestinian Channel",
+    "guid": "",
+    "otaChannelNumber": "769",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Palestinian_Channel.png"
+  },
+  {
+    "title": "Al Nile",
+    "guid": "",
+    "otaChannelNumber": "771",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Nile.png"
+  },
+  {
+    "title": "TeN",
+    "guid": "",
+    "otaChannelNumber": "776",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/TEN.png"
+  },
+  {
+    "title": "Al Saeeda",
+    "guid": "",
+    "otaChannelNumber": "777",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Saeeda.png"
+  },
+  {
+    "title": "Al-Wathaeqya",
+    "guid": "",
+    "otaChannelNumber": "778",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rebrand/Test/AlWathaeqya_Legacy.png"
+  },
+  {
+    "title": "Yemen TV",
+    "guid": "",
+    "otaChannelNumber": "780",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Yemen_TV.png"
+  },
+  {
+    "title": "Al Aoula Inter",
+    "guid": "",
+    "otaChannelNumber": "784",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Aoula_Inter.png"
+  },
+  {
+    "title": "Al Mergab TV",
+    "guid": "",
+    "otaChannelNumber": "789",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Mergab_TV.png"
+  },
+  {
+    "title": "Al-Resalah",
+    "guid": "",
+    "otaChannelNumber": "790",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al-Resalah.png"
+  },
+  {
+    "title": "Iqraa",
+    "guid": "",
+    "otaChannelNumber": "791",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Iqraa.png"
+  },
+  {
+    "title": "Nile Sport",
+    "guid": "",
+    "otaChannelNumber": "795",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Nile_Sport.png"
+  },
+  {
+    "title": "Iraqia Sport HD",
+    "guid": "",
+    "otaChannelNumber": "796",
+    "isFreeToAir": false,
+    "genre": [
+      "Sports"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Iraqia-Sport-HD.png"
+  },
+  {
+    "title": "Al Anwar TV",
+    "guid": "",
+    "otaChannelNumber": "799",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Anwar_TV.png"
+  },
+  {
+    "title": "Almajd Holy Quran",
+    "guid": "",
+    "otaChannelNumber": "801",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Almajd-Holy-Quran.png"
+  },
+  {
+    "title": "Amman TV",
+    "guid": "",
+    "otaChannelNumber": "803",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Amman-TV.png"
+  },
+  {
+    "title": "Al Quran Al Kareem TV HD",
+    "guid": "9963",
+    "otaChannelNumber": "807",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Al-Quran-Al-Kareem-TV-HD.png"
+  },
+  {
+    "title": "Al Sunnah Al Nabawiyah TV HD",
+    "guid": "",
+    "otaChannelNumber": "808",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al-Sunnah-Al-Nabawiyah-TV-HD.png"
+  },
+  {
+    "title": "Al Sharqiya News",
+    "guid": "",
+    "otaChannelNumber": "809",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al-Sharqiya_News.png"
+  },
+  {
+    "title": "Libya Al Mustaqbal HD",
+    "guid": "",
+    "otaChannelNumber": "811",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Libya-Al-Mustaqbal-HD.png"
+  },
+  {
+    "title": "INews TV HD",
+    "guid": "",
+    "otaChannelNumber": "812",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/iNews-TV_HD.png"
+  },
+  {
+    "title": "Al Watania 1",
+    "guid": "",
+    "otaChannelNumber": "813",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al-Watania-1.png"
+  },
+  {
+    "title": "MBC Masr2",
+    "guid": "9297",
+    "otaChannelNumber": "815",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic",
+      "Series"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/MBC-MASR-2_ATV.png"
+  },
+  {
+    "title": "MBC Iraq",
+    "guid": "9245",
+    "otaChannelNumber": "816",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/MBC-IRAQ_ATV.png"
+  },
+  {
+    "title": "Al Majd TV",
+    "guid": "",
+    "otaChannelNumber": "817",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Majid_TV.png"
+  },
+  {
+    "title": "Kurdistan 24",
+    "guid": "",
+    "otaChannelNumber": "822",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Kurdistan24_TV.png"
+  },
+  {
+    "title": "Kurdistan TV",
+    "guid": "",
+    "otaChannelNumber": "824",
+    "isFreeToAir": false,
+    "genre": [
+      "Other"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Kurdistan_TV.png"
+  },
+  {
+    "title": "El Mehwar Channel",
+    "guid": "",
+    "otaChannelNumber": "825",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/El-Mehwar-Channel.png"
+  },
+  {
+    "title": "DMC HD",
+    "guid": "9085",
+    "otaChannelNumber": "826",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/DMC.png"
+  },
+  {
+    "title": "DMC Drama",
+    "guid": "",
+    "otaChannelNumber": "827",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/DMC_Drama.png"
+  },
+  {
+    "title": "SBC HD",
+    "guid": "",
+    "otaChannelNumber": "830",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/SBC_HD.png"
+  },
+  {
+    "title": "Zagros TV",
+    "guid": "",
+    "otaChannelNumber": "831",
+    "isFreeToAir": false,
+    "genre": [
+      "Other"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Zagros-TV.png"
+  },
+  {
+    "title": "Ennahar TV",
+    "guid": "",
+    "otaChannelNumber": "832",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Ennahar-TV.png"
+  },
+  {
+    "title": "Payam TV",
+    "guid": "",
+    "otaChannelNumber": "833",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Payam_TV.png"
+  },
+  {
+    "title": "Rudaw TV",
+    "guid": "",
+    "otaChannelNumber": "838",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rudaw_TV.png"
+  },
+  {
+    "title": "Panorama Drama",
+    "guid": "",
+    "otaChannelNumber": "841",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/PNC_DRAMA.png"
+  },
+  {
+    "title": "Musawa",
+    "guid": "",
+    "otaChannelNumber": "844",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Musawa.png"
+  },
+  {
+    "title": "Al Ghad TV",
+    "guid": "",
+    "otaChannelNumber": "846",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rebrand/Test/Al-Ghad_Legacy.png"
+  },
+  {
+    "title": "Taha",
+    "guid": "",
+    "otaChannelNumber": "853",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Taha.png"
+  },
+  {
+    "title": "Karameesh",
+    "guid": "",
+    "otaChannelNumber": "854",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Karameesh.png"
+  },
+  {
+    "title": "KurdMax",
+    "guid": "",
+    "otaChannelNumber": "856",
+    "isFreeToAir": false,
+    "genre": [
+      "Other"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Kurdmax.png"
+  },
+  {
+    "title": "CBC",
+    "guid": "",
+    "otaChannelNumber": "866",
+    "isFreeToAir": false,
+    "genre": [],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/CBC_ATV.png"
+  },
+  {
+    "title": "NourSat",
+    "guid": "",
+    "otaChannelNumber": "867",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/NourSat.png"
+  },
+  {
+    "title": "Sat 7 Kids",
+    "guid": "",
+    "otaChannelNumber": "868",
+    "isFreeToAir": false,
+    "genre": [
+      "Kids"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Sat7_Kids.png"
+  },
+  {
+    "title": "Sat 7",
+    "guid": "",
+    "otaChannelNumber": "869",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Sat7.png"
+  },
+  {
+    "title": "Karma TV",
+    "guid": "",
+    "otaChannelNumber": "870",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Karma-TV.png"
+  },
+  {
+    "title": "Aliman",
+    "guid": "",
+    "otaChannelNumber": "876",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Aliman_TV.png"
+  },
+  {
+    "title": "CBC Extra News",
+    "guid": "",
+    "otaChannelNumber": "877",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/CBC-Extra-News.png"
+  },
+  {
+    "title": "Al Nahar",
+    "guid": "",
+    "otaChannelNumber": "880",
+    "isFreeToAir": false,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Nahar.png"
+  },
+  {
+    "title": "Althanya",
+    "guid": "",
+    "otaChannelNumber": "881",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Althanya.png"
+  },
+  {
+    "title": "Al Oula HD",
+    "guid": "",
+    "otaChannelNumber": "882",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Oula_HD.png"
+  },
+  {
+    "title": "Al Kahera wa Al Nas",
+    "guid": "",
+    "otaChannelNumber": "901",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Kahera_Wa_Al_Nas.png"
+  },
+  {
+    "title": "CBC Drama",
+    "guid": "",
+    "otaChannelNumber": "904",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/CBC-Drama.png"
+  },
+  {
+    "title": "Al Mahdi",
+    "guid": "",
+    "otaChannelNumber": "905",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Mahdi.png"
+  },
+  {
+    "title": "Al Awhad TV",
+    "guid": "",
+    "otaChannelNumber": "907",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Awhad_TV.png"
+  },
+  {
+    "title": "Oman TV Culture HD",
+    "guid": "",
+    "otaChannelNumber": "908",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Oman-Tv-culture-HD.png"
+  },
+  {
+    "title": "Noor Dubai",
+    "guid": "",
+    "otaChannelNumber": "921",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Noor-Dubai.png"
+  },
+  {
+    "title": "Fujairah TV HD",
+    "guid": "",
+    "otaChannelNumber": "924",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Fujairah_TV.png"
+  },
+  {
+    "title": "Alhayat Mosalsalat",
+    "guid": "",
+    "otaChannelNumber": "926",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al-Hayat-Mosalasalat.png"
+  },
+  {
+    "title": "AL Nahar Drama",
+    "guid": "",
+    "otaChannelNumber": "932",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Nahar_Drama.png"
+  },
+  {
+    "title": "Al-Maaly TV",
+    "guid": "",
+    "otaChannelNumber": "933",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al-Maaly-TV.png"
+  },
+  {
+    "title": "CBC Sofra",
+    "guid": "",
+    "otaChannelNumber": "934",
+    "isFreeToAir": false,
+    "genre": [],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/Cbc_sofra_logo.png"
+  },
+  {
+    "title": "Tunisia Al Wataniya 2",
+    "guid": "",
+    "otaChannelNumber": "939",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Tunisia-Al-watanya-2.png"
+  },
+  {
+    "title": "Oman TV Mubashir",
+    "guid": "9994",
+    "otaChannelNumber": "946",
+    "isFreeToAir": true,
+    "genre": [
+      "News"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v4/Oman-TV-Mubashir_ATV.png"
+  },
+  {
+    "title": "2M Monde",
+    "guid": "",
+    "otaChannelNumber": "947",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/2M-Monde.png"
+  },
+  {
+    "title": "Sharjah Radio",
+    "guid": "",
+    "otaChannelNumber": "948",
+    "isFreeToAir": false,
+    "genre": [
+      "Music"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Sharjah_Radio.png"
+  },
+  {
+    "title": "Sharjah Quran",
+    "guid": "",
+    "otaChannelNumber": "949",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Sharjah_Quran.png"
+  },
+  {
+    "title": "MBC Masr",
+    "guid": "9933",
+    "otaChannelNumber": "978",
+    "isFreeToAir": true,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://images.tv.osn.com/colossus/images/channel_logos/v1/MBC_Masr_Logo.png"
+  },
+  {
+    "title": "Zee Alwan",
+    "guid": "",
+    "otaChannelNumber": "981",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Zee_Alwan.png"
+  },
+  {
+    "title": "Al Adalah TV",
+    "guid": "",
+    "otaChannelNumber": "982",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Adalah_TV_A.png"
+  },
+  {
+    "title": "Sada Al-Balad",
+    "guid": "",
+    "otaChannelNumber": "983",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Sada-Al-Balad.png"
+  },
+  {
+    "title": "Nile Culture",
+    "guid": "",
+    "otaChannelNumber": "984",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Nile_Culture.png"
+  },
+  {
+    "title": "Rotana Cinema",
+    "guid": "",
+    "otaChannelNumber": "985",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rotana-Cinema.png"
+  },
+  {
+    "title": "Rotana Classic",
+    "guid": "",
+    "otaChannelNumber": "986",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rotana-classic.png"
+  },
+  {
+    "title": "Zee Aflam",
+    "guid": "",
+    "otaChannelNumber": "988",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Zee-Aflam.png"
+  },
+  {
+    "title": "Al Rai",
+    "guid": "",
+    "otaChannelNumber": "989",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al_Rai.png"
+  },
+  {
+    "title": "Free TV",
+    "guid": "",
+    "otaChannelNumber": "991",
+    "isFreeToAir": false,
+    "genre": [
+      "Music"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Free_TV.png"
+  },
+  {
+    "title": "Mix One",
+    "guid": "",
+    "otaChannelNumber": "992",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Mixone-116x48.png"
+  },
+  {
+    "title": "AlHayat",
+    "guid": "",
+    "otaChannelNumber": "994",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Al-Hayat.png"
+  },
+  {
+    "title": "OSNtv",
+    "guid": "",
+    "otaChannelNumber": "999",
+    "isFreeToAir": false,
+    "genre": [
+      "Arabic"
+    ],
+    "imagePath": "https://content.osn.com/bob/channellogo/Rebrand/Test/999channel_Legacy.png"
+  }
+]
