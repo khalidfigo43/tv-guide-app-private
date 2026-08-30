@@ -1,9 +1,8 @@
 {
-  "version_code": 1,
-  "version_name": "1.0.0",
-  "apk_url": "https://github.com/khalidfigo43/tv-guide-releases/releases/download/v1.0.0/TVGuide.apk",
-  "release_notes": "• تحسين الفرز والتصنيف الدقيق للأفلام والمسلسلات 100%\n• إضافة خيارات التذكيرات الثلاثية (قبل بساعة، و 10 دقائق، وعند البدء)\n• تغطية وتوفير بوسترات عالية الجودة لكافة العروض\n• ضبط أسماء البرامج والمسلسلات والوثائقيات بدقة\n• دعم التحديث التلقائي المباشر من داخل التطبيق\n• دمج شبكة إعلانات Google AdMob",
+  "version_code": 2,
+  "version_name": "1.0.1",
+  "apk_url": "https://github.com/khalidfigo43/tv-guide-releases/releases/download/v1.0.1/TVGuide.apk",
+  "release_notes": "• شاشات إرشادية توضيحية للمستخدم الجديد توضح أهم ميزات التطبيق\n• تمرير تلقائي ذكي للعرض المباشر في صفحة القناة\n• شريط بحث رفيع وأنيق يوفر مساحة الشاشة\n• تحديث شعارات قنوات أون تايم سبورت بدقة عالية HD\n• دعم كامل للتحديثات التلقائية المباشرة",
   "is_force_update": false,
   "publish_date": "2026-08-30"
 }
-

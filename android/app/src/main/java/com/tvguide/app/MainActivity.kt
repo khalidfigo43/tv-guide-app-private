@@ -63,6 +63,11 @@ class MainActivity : ComponentActivity() {
                     val viewModel: TvGuideViewModel = viewModel()
                     val uiState by viewModel.uiState.collectAsState()
 
+                    // Onboarding State
+                    var showOnboarding by remember {
+                        mutableStateOf(!com.tvguide.app.ui.screens.OnboardingPrefs.isOnboardingCompleted(context))
+                    }
+
                     // Auto-Update State
                     var availableUpdate by remember { mutableStateOf<AppUpdateInfo?>(null) }
                     var isDownloadingUpdate by remember { mutableStateOf(false) }
@@ -71,7 +76,7 @@ class MainActivity : ComponentActivity() {
                     // Check for Updates on App Start
                     LaunchedEffect(Unit) {
                         try {
-                            val currentVersionCode = 1 // Current App Version Code
+                            val currentVersionCode = 2 // v1.0.1 Version Code
                             val update = UpdateManager.checkForUpdate(currentVersionCode)
                             if (update != null) {
                                 availableUpdate = update
@@ -83,6 +88,10 @@ class MainActivity : ComponentActivity() {
 
                     if (uiState.isLoading) {
                         SplashScreen()
+                    } else if (showOnboarding) {
+                        com.tvguide.app.ui.screens.OnboardingScreen(
+                            onFinished = { showOnboarding = false }
+                        )
                     } else {
                         TVGuideNavHost(
                             selectedTab = uiState.selectedTab,
