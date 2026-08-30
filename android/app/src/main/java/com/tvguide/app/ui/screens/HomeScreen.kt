@@ -32,6 +32,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.tvguide.app.data.models.*
+import com.tvguide.app.ui.components.BannerAdView
 import com.tvguide.app.ui.theme.*
 import com.tvguide.app.ui.viewmodel.AppTab
 import com.tvguide.app.util.AppCountryTimezone
@@ -74,13 +75,16 @@ fun HomeScreen(
             )
         },
         bottomBar = {
-            BottomNavBar(
-                selectedTab = selectedTab,
-                onTabSelected = {
-                    onClearSearch()
-                    onTabSelected(it)
-                }
-            )
+            Column(modifier = Modifier.fillMaxWidth().navigationBarsPadding()) {
+                BannerAdView()
+                BottomNavBar(
+                    selectedTab = selectedTab,
+                    onTabSelected = {
+                        onClearSearch()
+                        onTabSelected(it)
+                    }
+                )
+            }
         },
         containerColor = DarkBackground
     ) { paddingValues ->

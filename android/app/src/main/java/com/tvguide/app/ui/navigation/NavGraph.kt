@@ -1,14 +1,17 @@
 package com.tvguide.app.ui.navigation
 
+import android.app.Activity
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.tvguide.app.data.models.*
 import com.tvguide.app.ui.screens.*
 import com.tvguide.app.ui.viewmodel.AppTab
+import com.tvguide.app.util.AdMobHelper
 import com.tvguide.app.util.AppCountryTimezone
 
 @Composable
@@ -37,6 +40,8 @@ fun TVGuideNavHost(
     onGetChannelById: (Long) -> Channel?
 ) {
     val navController = rememberNavController()
+    val context = LocalContext.current
+    val activity = context as? Activity
 
     NavHost(
         navController = navController,
@@ -64,8 +69,16 @@ fun TVGuideNavHost(
                 onShowCategorySelected = onShowCategorySelected,
                 selectedChannelCategory = selectedChannelCategory,
                 onChannelCategorySelected = onChannelCategorySelected,
-                onMovieClick = { id -> navController.navigate("movie/$id") },
-                onChannelClick = { id -> navController.navigate("channel/$id") }
+                onMovieClick = { id ->
+                    AdMobHelper.showInterstitialAdIfReady(activity) {
+                        navController.navigate("movie/$id")
+                    }
+                },
+                onChannelClick = { id ->
+                    AdMobHelper.showInterstitialAdIfReady(activity) {
+                        navController.navigate("channel/$id")
+                    }
+                }
             )
         }
 
