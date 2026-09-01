@@ -76,7 +76,7 @@ class MainActivity : ComponentActivity() {
                     // Check for Updates on App Start
                     LaunchedEffect(Unit) {
                         try {
-                            val currentVersionCode = 2 // v1.0.1 Version Code
+                            val currentVersionCode = 3 // v1.0.2 Version Code
                             val update = UpdateManager.checkForUpdate(currentVersionCode)
                             if (update != null) {
                                 availableUpdate = update
@@ -107,6 +107,17 @@ class MainActivity : ComponentActivity() {
                             searchQuery = uiState.searchQuery,
                             searchResults = uiState.searchResults,
                             isSearching = uiState.isSearching,
+                            isRefreshing = uiState.isRefreshing,
+                            onRefreshClick = {
+                                Toast.makeText(context, "جاري فحص وتحديث جداول العروض...", Toast.LENGTH_SHORT).show()
+                                viewModel.refreshSchedules { updated ->
+                                    Toast.makeText(
+                                        context,
+                                        if (updated) "تم تحديث جداول العروض بنجاح 🔄" else "جداول العروض محدثة بالفعل ✅",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                }
+                            },
                             onSearchQueryChange = { q -> viewModel.search(q) },
                             onClearSearch = { viewModel.clearSearch() },
                             selectedShowCategory = uiState.selectedShowCategory,

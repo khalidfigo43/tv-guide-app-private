@@ -22,6 +22,7 @@ enum class AppTab {
 
 data class TvGuideUiState(
     val isLoading: Boolean = true,
+    val isRefreshing: Boolean = false,
     val selectedTab: AppTab = AppTab.LIVE_NOW,
     val showPaidChannels: Boolean = false,
     val selectedTimezone: AppCountryTimezone = TimezoneHelper.detectDefaultCountry(),
@@ -47,6 +48,17 @@ class TvGuideViewModel(application: Application) : AndroidViewModel(application)
 
     init {
         loadData()
+        // Silently sync latest schedules from online in background on start
+        viewModelScope.launch {
+            try {
+                val updated = repository.syncLatestSchedulesOnline(force = false)
+                if (updated) {
+                    loadData()
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
     }
 
     private fun getCurrentOffset(): Int {
@@ -77,6 +89,16 @@ class TvGuideViewModel(application: Application) : AndroidViewModel(application)
                 movies = moviesRes.getOrDefault(emptyList()),
                 channels = channelsRes.getOrDefault(emptyList())
             )
+        }
+    }
+
+    fun refreshSchedules(onComplete: (Boolean) -> Unit = {}) {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isRefreshing = true)
+            val updated = repository.syncLatestSchedulesOnline(force = true)
+            loadData()
+            _uiState.value = _uiState.value.copy(isRefreshing = false)
+            onComplete(updated)
         }
     }
 

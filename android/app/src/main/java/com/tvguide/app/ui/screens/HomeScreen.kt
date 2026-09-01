@@ -53,6 +53,8 @@ fun HomeScreen(
     searchQuery: String,
     searchResults: SearchResults,
     isSearching: Boolean,
+    isRefreshing: Boolean = false,
+    onRefreshClick: () -> Unit = {},
     onSearchQueryChange: (String) -> Unit,
     onClearSearch: () -> Unit,
     selectedShowCategory: String,
@@ -71,6 +73,8 @@ fun HomeScreen(
                 onQueryChange = onSearchQueryChange,
                 onClear = onClearSearch,
                 selectedTimezone = selectedTimezone,
+                isRefreshing = isRefreshing,
+                onRefreshClick = onRefreshClick,
                 onTimezoneClick = { showTimezoneDialog = true }
             )
         },
@@ -92,10 +96,9 @@ fun HomeScreen(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(paddingValues)
-                .background(DarkBackground)
         ) {
-            if (searchQuery.isNotBlank()) {
-                // Search Results Screen (3 Cards Per Row Grid)
+            if (isSearching || searchQuery.isNotBlank()) {
+                // Search Results View
                 SearchResultsView(
                     query = searchQuery,
                     searchResults = searchResults,
@@ -153,6 +156,8 @@ fun TopSearchBar(
     onQueryChange: (String) -> Unit,
     onClear: () -> Unit,
     selectedTimezone: AppCountryTimezone,
+    isRefreshing: Boolean = false,
+    onRefreshClick: () -> Unit = {},
     onTimezoneClick: () -> Unit
 ) {
     Surface(
@@ -222,6 +227,37 @@ fun TopSearchBar(
                 }
                 Spacer(modifier = Modifier.width(4.dp))
             }
+
+            // Refresh Schedules Button 🔄
+            Surface(
+                color = if (isRefreshing) PrimaryRed.copy(alpha = 0.2f) else DarkSurfaceVariant,
+                shape = RoundedCornerShape(8.dp),
+                modifier = Modifier
+                    .height(28.dp)
+                    .clickable(enabled = !isRefreshing, onClick = onRefreshClick)
+            ) {
+                Box(
+                    modifier = Modifier.padding(horizontal = 7.dp, vertical = 4.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    if (isRefreshing) {
+                        CircularProgressIndicator(
+                            modifier = Modifier.size(12.dp),
+                            color = PrimaryRed,
+                            strokeWidth = 2.dp
+                        )
+                    } else {
+                        Icon(
+                            imageVector = Icons.Default.Refresh,
+                            contentDescription = "تحديث الجداول",
+                            tint = AccentGold,
+                            modifier = Modifier.size(14.dp)
+                        )
+                    }
+                }
+            }
+
+            Spacer(modifier = Modifier.width(5.dp))
 
             // Country & Timezone Button
             Surface(

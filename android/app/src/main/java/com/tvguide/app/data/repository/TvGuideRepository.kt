@@ -316,20 +316,59 @@ class TvGuideRepository(
         Result.success(list)
     }
 
+    suspend fun syncLatestSchedulesOnline(force: Boolean = false): Boolean = withContext(Dispatchers.IO) {
+        if (context == null) return@withContext false
+        try {
+            val url = "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/schedules.json"
+            val request = okhttp3.Request.Builder()
+                .url(url)
+                .addHeader("Cache-Control", "no-cache")
+                .build()
+
+            val client = okhttp3.OkHttpClient.Builder()
+                .connectTimeout(15, java.util.concurrent.TimeUnit.SECONDS)
+                .readTimeout(60, java.util.concurrent.TimeUnit.SECONDS)
+                .build()
+
+            client.newCall(request).execute().use { response ->
+                if (!response.isSuccessful) return@withContext false
+                val bodyStr = response.body?.string() ?: return@withContext false
+                if (bodyStr.length > 1000) {
+                    val newSchedules = json.decodeFromString<List<RawScheduleItem>>(bodyStr)
+                    if (newSchedules.isNotEmpty()) {
+                        cachedSchedules = newSchedules
+                        val internalSchedFile = File(context.filesDir, "schedules.json")
+                        internalSchedFile.writeText(bodyStr, Charsets.UTF_8)
+                        buildMasterShowsAndIndex()
+                        return@withContext true
+                    }
+                }
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+        return@withContext false
+    }
+
     suspend fun getNowAiring(includePaid: Boolean = false, timezoneOffset: Int = 0): Result<List<NowAiringItem>> = withContext(Dispatchers.IO) {
         ensureDataLoaded()
         val cal = Calendar.getInstance()
         val sdfTime = SimpleDateFormat("HH:mm", Locale.getDefault())
+        val sdfDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
         val currentTimeStr = sdfTime.format(cal.time)
+        val todayDateStr = sdfDate.format(cal.time)
         val curMinutes = cal.get(Calendar.HOUR_OF_DAY) * 60 + cal.get(Calendar.MINUTE)
 
         val items = mutableListOf<NowAiringItem>()
         val groupedByChannel = cachedSchedules.groupBy { it.channelId ?: 0L }
 
-        for ((chId, scheds) in groupedByChannel) {
+        for ((chId, allScheds) in groupedByChannel) {
             if (chId == 0L) continue
             val ch = cachedChannels.firstOrNull { it.id == chId }
             if (!includePaid && (paidChannelIds.contains(chId) || ch?.isPaidChannel == true)) continue
+
+            val todayScheds = allScheds.filter { it.date == todayDateStr }
+            val scheds = if (todayScheds.isNotEmpty()) todayScheds else allScheds
 
             // Find current show
             val current = scheds.firstOrNull { s ->
@@ -380,8 +419,8 @@ class TvGuideRepository(
                         overview = current.overview,
                         startTime = TimezoneHelper.adjustTime(st, timezoneOffset),
                         endTime = TimezoneHelper.adjustTime(et, timezoneOffset),
-                        startDatetime = "${current.date ?: "2026-08-30"}T$st:00",
-                        endDatetime = "${current.date ?: "2026-08-30"}T$et:00",
+                        startDatetime = "${current.date ?: todayDateStr}T$st:00",
+                        endDatetime = "${current.date ?: todayDateStr}T$et:00",
                         remainingMinutes = remaining,
                         progressPercent = progress
                     )
@@ -404,15 +443,18 @@ class TvGuideRepository(
         val sdfTime = SimpleDateFormat("HH:mm", Locale.getDefault())
         val sdfDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
         val currentTimeStr = sdfTime.format(cal.time)
-        val currentDateStr = sdfDate.format(cal.time)
+        val todayDateStr = sdfDate.format(cal.time)
 
         val items = mutableListOf<NextAiringItem>()
         val groupedByChannel = cachedSchedules.groupBy { it.channelId ?: 0L }
 
-        for ((chId, scheds) in groupedByChannel) {
+        for ((chId, allScheds) in groupedByChannel) {
             if (chId == 0L) continue
             val ch = cachedChannels.firstOrNull { it.id == chId }
             if (!includePaid && (paidChannelIds.contains(chId) || ch?.isPaidChannel == true)) continue
+
+            val todayScheds = allScheds.filter { it.date == todayDateStr }
+            val scheds = if (todayScheds.isNotEmpty()) todayScheds else allScheds
 
             val currentIndex = scheds.indexOfFirst { s ->
                 val st = s.startTime ?: ""
@@ -454,8 +496,8 @@ class TvGuideRepository(
                         overview = next.overview,
                         startTime = TimezoneHelper.adjustTime(st, timezoneOffset),
                         endTime = TimezoneHelper.adjustTime(et, timezoneOffset),
-                        startDatetime = "${next.date ?: currentDateStr}T$st:00",
-                        endDatetime = "${next.date ?: currentDateStr}T$et:00"
+                        startDatetime = "${next.date ?: todayDateStr}T$st:00",
+                        endDatetime = "${next.date ?: todayDateStr}T$et:00"
                     )
                 )
             }
@@ -574,7 +616,11 @@ class TvGuideRepository(
 
     fun getChannelScheduleSync(channelId: Long, timezoneOffset: Int = 0): List<Airing> {
         ensureDataLoaded()
-        val channelScheds = cachedSchedules.filter { it.channelId == channelId }
+        val cal = Calendar.getInstance()
+        val todayDateStr = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(cal.time)
+        val allChannelScheds = cachedSchedules.filter { it.channelId == channelId }
+        val todayScheds = allChannelScheds.filter { it.date == todayDateStr }
+        val channelScheds = if (todayScheds.isNotEmpty()) todayScheds else allChannelScheds
         val ch = cachedChannels.firstOrNull { it.id == channelId }
 
         return channelScheds.mapIndexed { idx, a ->
@@ -588,11 +634,11 @@ class TvGuideRepository(
                 channelName = a.channelName ?: ch?.displayName ?: "قناة",
                 channelLogo = a.channelLogo ?: ch?.logoUrl,
                 poster = a.poster,
-                date = a.date ?: "اليوم",
+                date = a.date ?: todayDateStr,
                 startTime = TimezoneHelper.adjustTime(a.startTime ?: "12:00", timezoneOffset),
                 endTime = TimezoneHelper.adjustTime(a.endTime ?: "14:00", timezoneOffset),
-                startDatetime = "${a.date ?: "2026-08-30"}T${a.startTime ?: "12:00"}:00",
-                endDatetime = "${a.date ?: "2026-08-30"}T${a.endTime ?: "14:00"}:00"
+                startDatetime = "${a.date ?: todayDateStr}T${a.startTime ?: "12:00"}:00",
+                endDatetime = "${a.date ?: todayDateStr}T${a.endTime ?: "14:00"}:00"
             )
         }
     }
