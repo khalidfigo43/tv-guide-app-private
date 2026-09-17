@@ -227,97 +227,97 @@ def collect_channel(channel_id, channel_name):
         return []
 
 
-def main():
+ROTANA_TO_CATALOG_ID = {
+    431: 1,  # روتانا سينما السعودية
+    439: 2,  # روتانا سينما مصر
+    437: 3,  # روتانا كوميدي
+    438: 4,  # روتانا كلاسيك
+    436: 5,  # روتانا دراما
+    435: 6,  # روتانا خليجية
+    434: 7,  # إل بي سي
+    446: 8,  # الرسالة
+}
 
+
+def run_collector():
+    today_str = datetime.now().strftime("%Y-%m-%d")
     all_programs = []
+    failed_channels = []
+    successful_channels = 0
 
-    # ---------------------------------------------------------
-    # Collect all channels
-    # ---------------------------------------------------------
+    print("=" * 60)
+    print("RUNNING ROTANA DYNAMIC MULTI-DATE COLLECTOR")
+    print("=" * 60)
 
     for channel_id, channel_name in CHANNELS.items():
+        programs = collect_channel(channel_id, channel_name)
+        if programs:
+            catalog_id = ROTANA_TO_CATALOG_ID.get(channel_id, channel_id)
+            for p in programs:
+                p["channelId"] = catalog_id
+                p["rotana_id"] = channel_id
+            all_programs.extend(programs)
+            successful_channels += 1
+        else:
+            failed_channels.append((channel_id, channel_name))
+        time.sleep(0.5)
 
-        programs = collect_channel(
-            channel_id,
-            channel_name,
-        )
-
-        all_programs.extend(programs)
-
-        # تقليل الضغط على المصدر
-        time.sleep(1)
-
-    # ---------------------------------------------------------
-    # Calculate end times
-    # ---------------------------------------------------------
-
-    all_programs = add_end_times(
-        all_programs
-    )
-
-    # ---------------------------------------------------------
-    # Remove duplicates
-    # ---------------------------------------------------------
+    all_programs = add_end_times(all_programs)
 
     unique = {}
-
     for program in all_programs:
-
         key = (
             program["channelId"],
-            program["sourceItemId"],
             program["date"],
             program["startTime"],
         )
-
         unique[key] = program
 
-    # ---------------------------------------------------------
-    # Result
-    # ---------------------------------------------------------
+    deduped_programs = list(unique.values())
+    dates = sorted(set(p["date"] for p in deduped_programs if p.get("date")))
+    min_date = dates[0] if dates else None
+    max_date = dates[-1] if dates else None
+
+    if successful_channels == 0:
+        status = "COLLECTOR_FAILED"
+    elif failed_channels:
+        status = "PARTIAL_DATA"
+    elif max_date and max_date > today_str:
+        status = "SUCCESS_WITH_FUTURE"
+    else:
+        status = "NO_FUTURE_DATA"
 
     result = {
-        "source": "rotana",
-        "channels": len(CHANNELS),
-        "programs": len(unique),
-        "data": list(unique.values()),
+        "collector": "rotana",
+        "status": status,
+        "channels_attempted": len(CHANNELS),
+        "channels_succeeded": successful_channels,
+        "failed_channels": failed_channels,
+        "broadcasts_count": len(deduped_programs),
+        "min_date": min_date,
+        "max_date": max_date,
+        "data": deduped_programs,
     }
 
-    # ---------------------------------------------------------
-    # Save
-    # ---------------------------------------------------------
+    output_path = Path("data/rotana_schedule.json")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    output_path = Path(
-        "data/rotana_schedule.json"
-    )
-
-    output_path.parent.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    output_path.write_text(
-        json.dumps(
-            result,
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
-
-    # ---------------------------------------------------------
-    # Summary
-    # ---------------------------------------------------------
-
-    print()
+    print("\n" + "=" * 60)
+    print("ROTANA COLLECTION SUMMARY")
     print("=" * 60)
-    print("DONE")
-    print("=" * 60)
+    print(f"Status    : {status}")
+    print(f"Channels  : {successful_channels}/{len(CHANNELS)} succeeded")
+    print(f"Date Range: {min_date} -> {max_date}")
+    print(f"Programs  : {len(deduped_programs)}")
+    print(f"Output    : {output_path}")
 
-    print(f"Channels : {len(CHANNELS)}")
-    print(f"Programs : {len(unique)}")
-    print(f"Output   : {output_path}")
+    return result
+
+
+def main():
+    run_collector()
 
 
 if __name__ == "__main__":
-    main()
+    main()

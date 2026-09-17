@@ -1,0 +1,66 @@
+{
+  "version": 107,
+  "previousVersion": 106,
+  "generatedAt": "2026-09-17 05:17:14",
+  "generatedAtUtc": "2026-09-17T02:17:14Z",
+  "timezone": "Africa/Cairo",
+  "dateRange": {
+    "min": "2026-09-14",
+    "max": "2026-10-01",
+    "totalDays": 18
+  },
+  "channelsCount": 186,
+  "broadcastsCount": 30475,
+  "uniqueProgramsCount": 7780,
+  "delta": {
+    "availableFrom": 106,
+    "filename": "delta_106_to_107.json",
+    "url": "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/deltas/delta_106_to_107.json",
+    "addedCount": 28830,
+    "updatedCount": 729,
+    "deletedCount": 187
+  },
+  "mergeStats": {
+    "existing_input": 42157,
+    "fresh_input": 34366,
+    "updated": 1712,
+    "inserted": 28328,
+    "retained_future": 2147,
+    "pruned_past": 39702
+  },
+  "collectors": {
+    "rotana": {
+      "name": "Rotana",
+      "status": "SUCCESS_WITH_FUTURE",
+      "channels_attempted": 8,
+      "channels_succeeded": 8,
+      "broadcasts_count": 2200,
+      "min_date": "2026-09-16",
+      "max_date": "2026-09-30"
+    },
+    "osn": {
+      "name": "OSN",
+      "status": "SUCCESS_WITH_FUTURE",
+      "channels_attempted": 94,
+      "channels_succeeded": 93,
+      "broadcasts_count": 27326,
+      "min_date": "2026-09-16",
+      "max_date": "2026-09-25"
+    },
+    "elcinema": {
+      "name": "ElCinema",
+      "status": "PARTIAL_DATA",
+      "channels_attempted": 118,
+      "channels_succeeded": 87,
+      "broadcasts_count": 4840,
+      "min_date": "2026-09-17",
+      "max_date": "2026-09-20"
+    }
+  },
+  "validation": {
+    "passed": true,
+    "warnings": [
+      "Dataset contains 3 past dates older than today (['2026-09-14', '2026-09-15', '2026-09-16'])"
+    ]
+  }
+}

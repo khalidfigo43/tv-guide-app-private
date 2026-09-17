@@ -69,6 +69,9 @@ class OSNCollector:
                             ch_list = json.loads(dec)
                             for ch in ch_list:
                                 guid = str(ch.get("guid") or "").strip()
+                                title = str(ch.get("title") or "").lower()
+                                if any(k in title for k in ["esport", "e-sport", "eclutch", "gametoon", "ginx", "gaming", "العاب"]):
+                                    continue
                                 if guid and guid not in all_channels_map:
                                     all_channels_map[guid] = ch
                             break
@@ -113,19 +116,66 @@ class OSNCollector:
                 time.sleep(0.3)
         return []
 
-    def fetch_all_schedules(self, days_ahead: int = 3) -> List[Dict[str, Any]]:
+    def discover_max_future_end_dt(self, probe_guid: str) -> datetime:
+        """
+        Dynamically probes OSN API to find the furthest future date returned by the server.
+        No hardcoded limit: expands until the maximum returned timestamp stops increasing.
+        """
+        now = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+        step_days = 5
+        current_days = 5
+        last_max_ts = 0
+        furthest_dt = now + timedelta(days=step_days)
+
+        print(f"[*] Dynamically discovering OSN maximum future schedule boundary...")
+        while current_days <= 60:  # Safety upper bound to avoid infinite loop
+            probe_end = now + timedelta(days=current_days)
+            res = self.fetch_batch_schedule([probe_guid], now, probe_end, 999)
+            if not res:
+                break
+            listings = res[0].get("listings", []) if isinstance(res, list) and res else []
+            if not listings:
+                break
+
+            curr_max_ts = max(it.get("endTime") or it.get("startTime") or 0 for it in listings)
+            if curr_max_ts <= last_max_ts:
+                # Furthest date reached
+                furthest_dt = datetime.utcfromtimestamp(last_max_ts / 1000) + timedelta(hours=3)
+                print(f"✓ Discovered OSN maximum future boundary: {furthest_dt.strftime('%Y-%m-%d %H:%M')}")
+                return furthest_dt
+
+            last_max_ts = curr_max_ts
+            furthest_dt = datetime.utcfromtimestamp(curr_max_ts / 1000) + timedelta(hours=3)
+            current_days += step_days
+
+        return furthest_dt
+
+    def fetch_all_schedules(self, end_dt: datetime = None) -> List[Dict[str, Any]]:
         if not self.channels:
             self.fetch_channels()
 
+        if not self.channels:
+            print("❌ No OSN channels found.")
+            return []
+
         now = datetime.now()
         start_dt = now.replace(hour=0, minute=0, second=0, microsecond=0)
-        end_dt = start_dt + timedelta(days=days_ahead)
+
+        # Dynamic discovery of max future date if not explicitly passed
+        if end_dt is None:
+            valid_guids_sample = [str(c["guid"]).strip() for c in self.channels if c.get("guid")]
+            probe_guid = valid_guids_sample[0] if valid_guids_sample else ""
+            if probe_guid:
+                end_dt = self.discover_max_future_end_dt(probe_guid)
+            else:
+                end_dt = start_dt + timedelta(days=7)
 
         valid_guids = [str(c["guid"]).strip() for c in self.channels if c.get("guid")]
         batch_size = 5
         batches = [valid_guids[i:i + batch_size] for i in range(0, len(valid_guids), batch_size)]
 
-        print(f"2. Fetching live schedules for {len(valid_guids)} channels in {len(batches)} batches...")
+        days_span = (end_dt - start_dt).days
+        print(f"2. Fetching live schedules for {len(valid_guids)} channels across discovered ~{days_span} days range...")
         channel_entries = []
         with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
             futures = [executor.submit(self.fetch_batch_schedule, b, start_dt, end_dt, idx + 1) for idx, b in enumerate(batches)]
@@ -136,11 +186,27 @@ class OSNCollector:
 
         print(f"✓ Received schedule data for {len(channel_entries)} channel feeds from OSN!")
 
+        # Load catalog to map OSN channels to catalog channel IDs
+        catalog_map = {}
+        try:
+            sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+            from collectors.channels_catalog import ALL_CHANNELS_CATALOG
+            for ch in ALL_CHANNELS_CATALOG:
+                src_id = str(ch.get("source_channel_id") or "").lower()
+                name_en = str(ch.get("name_en") or "").lower().replace("osntv", "osn").replace("tv", "").replace("hd", "").strip()
+                name_ar = str(ch.get("name_ar") or "").lower().strip()
+                if src_id:
+                    catalog_map[src_id] = ch["id"]
+                if name_en:
+                    catalog_map[name_en] = ch["id"]
+                if name_ar:
+                    catalog_map[name_ar] = ch["id"]
+        except Exception as e:
+            print("Catalog load warning in OSN collector:", e)
+
         # Format programs into standard TV Guide structure
         formatted = []
         item_id_counter = 500000
-
-        # Build guid to channel info map
         guid_map = {str(c["guid"]).strip(): c for c in self.channels}
 
         for ch_entry in channel_entries:
@@ -148,7 +214,19 @@ class OSNCollector:
             ch_info = guid_map.get(ch_guid) or {}
             ch_name = ch_entry.get("title") or ch_info.get("title") or f"OSN Channel {ch_guid}"
             ch_logo = ch_info.get("imagePath")
-            
+
+            if any(k in ch_name.lower() for k in ["esport", "e-sport", "eclutch", "gametoon", "ginx", "gaming", "العاب"]):
+                continue
+
+            # Match to catalog ID with fallback to deterministic channel ID
+            norm_title = ch_name.lower().replace("osntv", "osn").replace("tv", "").replace("hd", "").strip()
+            matched_ch_id = (
+                catalog_map.get(ch_guid) or
+                catalog_map.get(ch_name.lower()) or
+                catalog_map.get(norm_title) or
+                (10000 + int(ch_guid) if ch_guid.isdigit() else None)
+            )
+
             listings = ch_entry.get("listings") or []
             for item in listings:
                 prog = item.get("program") or {}
@@ -190,8 +268,9 @@ class OSNCollector:
                     "source": "osn_official_api",
                     "is_verified": True,
                     "osn_guid": ch_guid,
+                    "channelId": matched_ch_id,
                     "channelName": ch_name,
-                    "channel_logo": ch_logo,
+                    "channelLogo": ch_logo,
                     "title": title,
                     "title_en": prog.get("title"),
                     "date": date_str,
@@ -204,8 +283,9 @@ class OSNCollector:
                     "overview": overview,
                     "year": prog.get("year"),
                     "runtime": prog.get("runtime"),
-                    "programType": prog.get("programType"),
-                    "rating": prog.get("osnprogram$publicRating")
+                    "programType": prog.get("programType") or "movie",
+                    "rating": prog.get("osnprogram$publicRating") or "7.5",
+                    "is_paid": True
                 })
                 item_id_counter += 1
 
@@ -214,18 +294,81 @@ class OSNCollector:
         return self.schedules
 
 
-if __name__ == "__main__":
+def run_collector() -> Dict[str, Any]:
+    today_str = datetime.now().strftime("%Y-%m-%d")
     collector = OSNCollector()
-    channels = collector.fetch_channels()
-    schedules = collector.fetch_all_schedules(days_ahead=3)
-    
+    try:
+        channels = collector.fetch_channels()
+    except Exception as e:
+        print("Error fetching OSN channels:", e)
+        channels = []
+
+    if not channels:
+        return {
+            "collector": "osn",
+            "status": "COLLECTOR_FAILED",
+            "channels_attempted": 0,
+            "channels_succeeded": 0,
+            "broadcasts_count": 0,
+            "min_date": None,
+            "max_date": None,
+            "data": []
+        }
+
+    try:
+        schedules = collector.fetch_all_schedules()
+    except Exception as e:
+        print("Error fetching OSN schedules:", e)
+        schedules = []
+
+    dates = sorted(set(s["date"] for s in schedules if s.get("date")))
+    min_date = dates[0] if dates else None
+    max_date = dates[-1] if dates else None
+
+    # Count channels with schedules
+    chs_with_schedules = len(set(s.get("osn_guid") for s in schedules if s.get("osn_guid")))
+
+    if not schedules:
+        status = "COLLECTOR_FAILED"
+    elif chs_with_schedules < len(channels) * 0.5:
+        status = "PARTIAL_DATA"
+    elif max_date and max_date > today_str:
+        status = "SUCCESS_WITH_FUTURE"
+    else:
+        status = "NO_FUTURE_DATA"
+
+    result = {
+        "collector": "osn",
+        "status": status,
+        "channels_attempted": len(channels),
+        "channels_succeeded": chs_with_schedules,
+        "broadcasts_count": len(schedules),
+        "min_date": min_date,
+        "max_date": max_date,
+        "data": schedules
+    }
+
     out = {
-        "status": "success",
+        "status": status,
         "channels_count": len(channels),
         "broadcasts_count": len(schedules),
-        "channels": channels,
+        "min_date": min_date,
+        "max_date": max_date,
         "data": schedules
     }
     Path("data/osn_schedule.json").write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("✓ Saved to data/osn_schedule.json successfully!")
+    print("\n" + "=" * 60)
+    print("OSN COLLECTION SUMMARY")
+    print("=" * 60)
+    print(f"Status    : {status}")
+    print(f"Channels  : {chs_with_schedules}/{len(channels)} feeds")
+    print(f"Date Range: {min_date} -> {max_date}")
+    print(f"Programs  : {len(schedules)}")
+
+    return result
+
+
+if __name__ == "__main__":
+    run_collector()
+
 

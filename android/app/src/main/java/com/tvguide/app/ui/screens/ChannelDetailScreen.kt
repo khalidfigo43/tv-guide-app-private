@@ -26,6 +26,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -44,50 +45,71 @@ enum class AiringStatus {
     UPCOMING
 }
 
-fun calculateAiringStatus(startTime: String?, endTime: String?): AiringStatus {
-    if (startTime.isNullOrBlank() || endTime.isNullOrBlank()) return AiringStatus.UPCOMING
+private fun parseDateAndTimeToMillis(dateStr: String?, timeStr: String?, allowNextDay: Boolean = false): Long {
+    if (dateStr.isNullOrBlank() || timeStr.isNullOrBlank()) return 0L
     return try {
-        val now = Calendar.getInstance()
-        val curMinutes = now.get(Calendar.HOUR_OF_DAY) * 60 + now.get(Calendar.MINUTE)
-
-        val sParts = startTime.split(":").mapNotNull { it.toIntOrNull() }
-        val eParts = endTime.split(":").mapNotNull { it.toIntOrNull() }
-        if (sParts.size < 2 || eParts.size < 2) return AiringStatus.UPCOMING
-
-        val sMinutes = sParts[0] * 60 + sParts[1]
-        var eMinutes = eParts[0] * 60 + eParts[1]
-
-        if (eMinutes <= sMinutes) {
-            if (curMinutes >= sMinutes || curMinutes < eMinutes) AiringStatus.LIVE
-            else if (curMinutes in eMinutes until sMinutes) AiringStatus.ENDED
-            else AiringStatus.UPCOMING
-        } else {
-            when {
-                curMinutes >= eMinutes -> AiringStatus.ENDED
-                curMinutes >= sMinutes -> AiringStatus.LIVE
-                else -> AiringStatus.UPCOMING
-            }
-        }
+        val dParts = dateStr.split("-").mapNotNull { it.toIntOrNull() }
+        val tParts = timeStr.split(":").mapNotNull { it.toIntOrNull() }
+        if (dParts.size == 3 && tParts.size >= 2) {
+            val cal = Calendar.getInstance()
+            cal.set(dParts[0], dParts[1] - 1, dParts[2], tParts[0], tParts[1], 0)
+            cal.set(Calendar.MILLISECOND, 0)
+            if (allowNextDay) cal.add(Calendar.DAY_OF_MONTH, 1)
+            cal.timeInMillis
+        } else 0L
     } catch (e: Exception) {
-        AiringStatus.UPCOMING
+        0L
     }
 }
 
-fun calculateLiveMetrics(startTime: String?, endTime: String?): Pair<Int, Int> {
+fun calculateAiringStatus(date: String?, startTime: String?, endTime: String?): AiringStatus {
+    if (startTime.isNullOrBlank()) return AiringStatus.UPCOMING
+    val now = Calendar.getInstance()
+    val nowMillis = now.timeInMillis
+    val todayStr = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault()).format(now.time)
+    val d = if (!date.isNullOrBlank() && date.contains("-")) date else todayStr
+
+    val et = endTime ?: startTime
+    val sParts = startTime.split(":").mapNotNull { it.toIntOrNull() }
+    val eParts = et.split(":").mapNotNull { it.toIntOrNull() }
+    val isCrossingMidnight = if (sParts.size >= 2 && eParts.size >= 2) {
+        (eParts[0] * 60 + eParts[1]) < (sParts[0] * 60 + sParts[1])
+    } else false
+
+    val sMillis = parseDateAndTimeToMillis(d, startTime)
+    val eMillis = parseDateAndTimeToMillis(d, et, allowNextDay = isCrossingMidnight)
+
+    if (sMillis == 0L || eMillis == 0L) return AiringStatus.UPCOMING
+
+    return when {
+        nowMillis in sMillis until eMillis -> AiringStatus.LIVE
+        nowMillis >= eMillis -> AiringStatus.ENDED
+        else -> AiringStatus.UPCOMING
+    }
+}
+
+fun calculateLiveMetrics(date: String?, startTime: String?, endTime: String?): Pair<Int, Int> {
+    if (startTime.isNullOrBlank()) return Pair(50, 15)
     return try {
         val now = Calendar.getInstance()
-        val curMinutes = now.get(Calendar.HOUR_OF_DAY) * 60 + now.get(Calendar.MINUTE)
+        val nowMillis = now.timeInMillis
+        val todayStr = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault()).format(now.time)
+        val d = if (!date.isNullOrBlank() && date.contains("-")) date else todayStr
 
-        val sParts = startTime!!.split(":").mapNotNull { it.toIntOrNull() }
-        val eParts = endTime!!.split(":").mapNotNull { it.toIntOrNull() }
-        val sMinutes = sParts[0] * 60 + sParts[1]
-        var eMinutes = eParts[0] * 60 + eParts[1]
-        if (eMinutes <= sMinutes) eMinutes += 24 * 60
+        val nonNullEt = if (!endTime.isNullOrBlank()) endTime else startTime
+        val sParts = startTime.split(":").mapNotNull { it.toIntOrNull() }
+        val eParts = nonNullEt.split(":").mapNotNull { it.toIntOrNull() }
+        val isCrossingMidnight = if (sParts.size >= 2 && eParts.size >= 2) {
+            (eParts[0] * 60 + eParts[1]) < (sParts[0] * 60 + sParts[1])
+        } else false
 
-        val total = (eMinutes - sMinutes).coerceAtLeast(1)
-        val elapsed = (curMinutes - sMinutes).coerceIn(0, total)
-        val progress = ((elapsed * 100) / total).coerceIn(5, 95)
-        val remaining = (eMinutes - curMinutes).coerceIn(1, 180)
+        val sMillis = parseDateAndTimeToMillis(d, startTime)
+        val eMillis = parseDateAndTimeToMillis(d, nonNullEt, allowNextDay = isCrossingMidnight)
+
+        val totalDurationMin = ((eMillis - sMillis) / (60 * 1000)).toInt().coerceAtLeast(1)
+        val elapsedMin = ((nowMillis - sMillis) / (60 * 1000)).toInt().coerceIn(0, totalDurationMin)
+        val progress = ((elapsedMin * 100) / totalDurationMin).coerceIn(5, 95)
+        val remaining = ((eMillis - nowMillis) / (60 * 1000)).toInt().coerceIn(1, 180)
         Pair(progress, remaining)
     } catch (e: Exception) {
         Pair(50, 15)
@@ -123,7 +145,10 @@ fun ChannelDetailScreen(
 
     val listState = androidx.compose.foundation.lazy.rememberLazyListState()
     val liveIndex = remember(schedule) {
-        schedule.indexOfFirst { calculateAiringStatus(it.startTime, it.endTime) == AiringStatus.LIVE }
+        schedule.indexOfFirst { calculateAiringStatus(it.date, it.startTime, it.endTime) == AiringStatus.LIVE }
+    }
+    val groupedSchedule = remember(schedule) {
+        schedule.groupBy { it.date ?: "اليوم" }
     }
 
     LaunchedEffect(schedule, liveIndex) {
@@ -256,22 +281,128 @@ fun ChannelDetailScreen(
                         color = Color.White
                     )
                     Text(
-                        text = "${schedule.size} عروض مجدولة",
+                        text = if (schedule.isNotEmpty()) "${schedule.size} عروض مجدولة" else "غير متوفر حالياً",
                         style = MaterialTheme.typography.bodySmall,
                         color = TextSecondary
                     )
                 }
             }
 
-            // Broadcast Items
-            items(schedule) { item ->
-                val status = calculateAiringStatus(item.startTime, item.endTime)
-                val isReminderSet = ReminderManager.isReminderSet(context, item.broadcastId)
+            // Empty State Card when schedule has 0 airings
+            if (schedule.isEmpty()) {
+                item {
+                    Card(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 16.dp),
+                        shape = RoundedCornerShape(16.dp),
+                        colors = CardDefaults.cardColors(containerColor = DarkSurface)
+                    ) {
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(24.dp),
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.Center
+                        ) {
+                            Box(
+                                modifier = Modifier
+                                    .size(64.dp)
+                                    .background(DarkSurfaceVariant, CircleShape),
+                                contentAlignment = Alignment.Center
+                            ) {
+                                Icon(
+                                    imageVector = Icons.Default.EventBusy,
+                                    contentDescription = null,
+                                    tint = AccentGold,
+                                    modifier = Modifier.size(32.dp)
+                                )
+                            }
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(
+                                text = "لا يتوفر جدول بث لهذه القناة حالياً",
+                                style = MaterialTheme.typography.titleMedium,
+                                fontWeight = FontWeight.Bold,
+                                color = Color.White
+                            )
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Text(
+                                text = "يمكنك متابعة البث التلفزيوني عبر تردد القناة وبيانات الاستقبال المتاحة أدناه، وسيتم تحديث جدول العروض فور توفره.",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = TextSecondary,
+                                textAlign = TextAlign.Center
+                            )
+                            Spacer(modifier = Modifier.height(18.dp))
+                            Button(
+                                onClick = { showFrequencyModal = true },
+                                colors = ButtonDefaults.buttonColors(containerColor = DarkSurfaceVariant),
+                                shape = RoundedCornerShape(8.dp),
+                                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
+                            ) {
+                                Icon(
+                                    Icons.Default.SatelliteAlt,
+                                    contentDescription = null,
+                                    tint = AccentGold,
+                                    modifier = Modifier.size(18.dp)
+                                )
+                                Spacer(modifier = Modifier.width(8.dp))
+                                Text("عرض بيانات التردد والاستقبال", color = Color.White, fontSize = 13.sp)
+                            }
+                        }
+                    }
+                }
+            }
 
-                when (status) {
-                    AiringStatus.LIVE -> {
-                        // 🔴 LIVE AIRING CARD (Distinct Vibrant Red Highlight & Progress Bar)
-                        val (progress, remaining) = calculateLiveMetrics(item.startTime, item.endTime)
+            // Broadcast Items Grouped by Date (Multi-Day Chronological EPG)
+            groupedSchedule.forEach { (dateStr, dateItems) ->
+                item(key = "header_$dateStr") {
+                    val cal = Calendar.getInstance()
+                    val sdf = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault())
+                    val todayStr = sdf.format(cal.time)
+                    cal.add(Calendar.DAY_OF_MONTH, 1)
+                    val tomorrowStr = sdf.format(cal.time)
+
+                    val headerTitle = when (dateStr) {
+                        todayStr -> "اليوم 📅 ($dateStr)"
+                        tomorrowStr -> "غداً 📅 ($dateStr)"
+                        else -> "📅 $dateStr"
+                    }
+
+                    Surface(
+                        color = DarkSurfaceVariant,
+                        shape = RoundedCornerShape(8.dp),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 10.dp, bottom = 4.dp)
+                    ) {
+                        Row(
+                            modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text(
+                                text = headerTitle,
+                                color = AccentGold,
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 13.sp
+                            )
+                            Text(
+                                text = "${dateItems.size} عروض",
+                                color = TextSecondary,
+                                fontSize = 11.sp
+                            )
+                        }
+                    }
+                }
+
+                items(dateItems, key = { it.broadcastId }) { item ->
+                    val status = calculateAiringStatus(item.date, item.startTime, item.endTime)
+                    val isReminderSet = ReminderManager.isReminderSet(context, item.broadcastId)
+
+                    when (status) {
+                        AiringStatus.LIVE -> {
+                            // 🔴 LIVE AIRING CARD (Distinct Vibrant Red Highlight & Progress Bar)
+                            val (progress, remaining) = calculateLiveMetrics(item.date, item.startTime, item.endTime)
                         Card(
                             modifier = Modifier
                                 .fillMaxWidth()
@@ -285,15 +416,22 @@ fun ChannelDetailScreen(
                                     modifier = Modifier.fillMaxWidth(),
                                     verticalAlignment = Alignment.CenterVertically
                                 ) {
-                                    if (!item.poster.isNullOrBlank()) {
-                                        AsyncImage(
-                                            model = item.poster,
-                                            contentDescription = item.title,
+                                    val posterModel = if (!item.poster.isNullOrBlank()) item.poster else item.channelLogo
+                                    if (!posterModel.isNullOrBlank()) {
+                                        Box(
                                             modifier = Modifier
                                                 .size(54.dp, 70.dp)
-                                                .clip(RoundedCornerShape(8.dp)),
-                                            contentScale = ContentScale.Crop
-                                        )
+                                                .clip(RoundedCornerShape(8.dp))
+                                                .background(DarkSurfaceVariant),
+                                            contentAlignment = Alignment.Center
+                                        ) {
+                                            AsyncImage(
+                                                model = posterModel,
+                                                contentDescription = item.title,
+                                                modifier = if (!item.poster.isNullOrBlank()) Modifier.fillMaxSize() else Modifier.fillMaxSize().padding(6.dp),
+                                                contentScale = if (!item.poster.isNullOrBlank()) ContentScale.Crop else ContentScale.Fit
+                                            )
+                                        }
                                         Spacer(modifier = Modifier.width(12.dp))
                                     }
                                     Column(modifier = Modifier.weight(1f)) {
@@ -370,15 +508,22 @@ fun ChannelDetailScreen(
                                     .padding(12.dp),
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
-                                if (!item.poster.isNullOrBlank()) {
-                                    AsyncImage(
-                                        model = item.poster,
-                                        contentDescription = item.title,
+                                val posterModel = if (!item.poster.isNullOrBlank()) item.poster else item.channelLogo
+                                if (!posterModel.isNullOrBlank()) {
+                                    Box(
                                         modifier = Modifier
                                             .size(46.dp, 60.dp)
-                                            .clip(RoundedCornerShape(8.dp)),
-                                        contentScale = ContentScale.Crop
-                                    )
+                                            .clip(RoundedCornerShape(8.dp))
+                                            .background(DarkSurfaceVariant),
+                                        contentAlignment = Alignment.Center
+                                    ) {
+                                        AsyncImage(
+                                            model = posterModel,
+                                            contentDescription = item.title,
+                                            modifier = if (!item.poster.isNullOrBlank()) Modifier.fillMaxSize() else Modifier.fillMaxSize().padding(5.dp),
+                                            contentScale = if (!item.poster.isNullOrBlank()) ContentScale.Crop else ContentScale.Fit
+                                        )
+                                    }
                                     Spacer(modifier = Modifier.width(12.dp))
                                 }
                                 Column(modifier = Modifier.weight(1f)) {
@@ -434,15 +579,22 @@ fun ChannelDetailScreen(
                                     .padding(12.dp),
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
-                                if (!item.poster.isNullOrBlank()) {
-                                    AsyncImage(
-                                        model = item.poster,
-                                        contentDescription = item.title,
+                                val posterModel = if (!item.poster.isNullOrBlank()) item.poster else item.channelLogo
+                                if (!posterModel.isNullOrBlank()) {
+                                    Box(
                                         modifier = Modifier
                                             .size(50.dp, 65.dp)
-                                            .clip(RoundedCornerShape(8.dp)),
-                                        contentScale = ContentScale.Crop
-                                    )
+                                            .clip(RoundedCornerShape(8.dp))
+                                            .background(DarkSurfaceVariant),
+                                        contentAlignment = Alignment.Center
+                                    ) {
+                                        AsyncImage(
+                                            model = posterModel,
+                                            contentDescription = item.title,
+                                            modifier = if (!item.poster.isNullOrBlank()) Modifier.fillMaxSize() else Modifier.fillMaxSize().padding(6.dp),
+                                            contentScale = if (!item.poster.isNullOrBlank()) ContentScale.Crop else ContentScale.Fit
+                                        )
+                                    }
                                     Spacer(modifier = Modifier.width(12.dp))
                                 }
                                 Column(modifier = Modifier.weight(1f)) {
@@ -510,6 +662,7 @@ fun ChannelDetailScreen(
                 }
             }
         }
+    }
 
         // Reminder Timing Options Dialog
         airingForOptionsDialog?.let { airing ->

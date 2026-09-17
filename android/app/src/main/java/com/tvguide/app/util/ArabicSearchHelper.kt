@@ -51,5 +51,13 @@ object ArabicSearchHelper {
         val normQuery = normalizeArabic(query)
         return normTarget.contains(normQuery)
     }
+
+    /**
+     * Returns true if the string contains Arabic characters.
+     */
+    fun isArabicText(input: String?): Boolean {
+        if (input.isNullOrBlank()) return false
+        return input.any { it in '\u0600'..'\u06FF' || it in '\u0750'..'\u077F' }
+    }
 }
 

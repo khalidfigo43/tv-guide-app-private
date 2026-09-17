@@ -37,6 +37,7 @@ import com.tvguide.app.ui.theme.*
 import com.tvguide.app.ui.viewmodel.AppTab
 import com.tvguide.app.util.AppCountryTimezone
 import com.tvguide.app.util.TimezoneHelper
+import java.util.Calendar
 
 @Composable
 fun HomeScreen(
@@ -122,7 +123,8 @@ fun HomeScreen(
                         movies = movies,
                         selectedCategory = selectedShowCategory,
                         onCategorySelected = onShowCategorySelected,
-                        onMovieClick = onMovieClick
+                        onMovieClick = onMovieClick,
+                        onChannelClick = onChannelClick
                     )
                     AppTab.CHANNELS -> ChannelsTabView(
                         channels = channels,
@@ -475,7 +477,7 @@ fun LiveNowTabView(
         }
 
         items(items) { item ->
-            LiveCardGrid3(item = item, onClick = { onItemClick(item.contentId) })
+            LiveCardGrid3(item = item, onClick = { onChannelClick(item.channelId) })
         }
     }
 }
@@ -629,7 +631,7 @@ fun UpNextTabView(
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .clickable { onItemClick(item.contentId) }
+                    .clickable { onChannelClick(item.channelId) }
             ) {
                 Card(
                     shape = RoundedCornerShape(10.dp),
@@ -720,7 +722,8 @@ fun AllShowsTabView(
     movies: List<Content>,
     selectedCategory: String,
     onCategorySelected: (String) -> Unit,
-    onMovieClick: (Long) -> Unit
+    onMovieClick: (Long) -> Unit,
+    onChannelClick: (Long) -> Unit
 ) {
     val categories = listOf(
         "all" to "الكل (${movies.size})",
@@ -758,6 +761,14 @@ fun AllShowsTabView(
             }
         }
 
+        val (todayStr, tomorrowStr) = remember {
+            val cal = Calendar.getInstance()
+            val tStr = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault()).format(cal.time)
+            cal.add(Calendar.DAY_OF_MONTH, 1)
+            val tmrStr = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault()).format(cal.time)
+            tStr to tmrStr
+        }
+
         // 3 Cards Per Row Grid
         LazyVerticalGrid(
             columns = GridCells.Fixed(3),
@@ -767,14 +778,27 @@ fun AllShowsTabView(
             modifier = Modifier.fillMaxSize()
         ) {
             items(movies) { movie ->
-                MoviePosterCardGrid3(movie = movie, onClick = { onMovieClick(movie.id) })
+                val chId = movie.airings.firstOrNull()?.channelId ?: 0L
+                MoviePosterCardGrid3(
+                    movie = movie,
+                    todayStr = todayStr,
+                    tomorrowStr = tomorrowStr,
+                    onClick = {
+                        if (chId > 0) onChannelClick(chId) else onMovieClick(movie.id)
+                    }
+                )
             }
         }
     }
 }
 
 @Composable
-fun MoviePosterCardGrid3(movie: Content, onClick: () -> Unit) {
+fun MoviePosterCardGrid3(
+    movie: Content,
+    todayStr: String = "",
+    tomorrowStr: String = "",
+    onClick: () -> Unit
+) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -821,6 +845,30 @@ fun MoviePosterCardGrid3(movie: Content, onClick: () -> Unit) {
                         }
                     }
                 }
+
+                // Nearest Airing Time Badge (Top-Start)
+                val nearest = movie.airings.firstOrNull()
+                if (nearest != null && nearest.startTime.isNotBlank()) {
+                    val dateLabel = when (nearest.date) {
+                        todayStr -> "اليوم"
+                        tomorrowStr -> "غداً"
+                        else -> nearest.date.replace("2026-", "")
+                    }
+
+                    Surface(
+                        color = PrimaryRed.copy(alpha = 0.90f),
+                        shape = RoundedCornerShape(bottomEnd = 6.dp),
+                        modifier = Modifier.align(Alignment.TopStart)
+                    ) {
+                        Text(
+                            text = "$dateLabel ${nearest.startTime}",
+                            fontSize = 9.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = Color.White,
+                            modifier = Modifier.padding(horizontal = 5.dp, vertical = 2.dp)
+                        )
+                    }
+                }
             }
         }
 
@@ -836,14 +884,29 @@ fun MoviePosterCardGrid3(movie: Content, onClick: () -> Unit) {
         )
 
         if (movie.airings.isNotEmpty()) {
-            Text(
-                text = movie.airings.first().channelName,
-                style = MaterialTheme.typography.labelSmall,
-                color = AccentGold,
-                fontSize = 10.sp,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis
-            )
+            val nearest = movie.airings.first()
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = nearest.channelName,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = AccentGold,
+                    fontSize = 10.sp,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.weight(1f, fill = false)
+                )
+                Text(
+                    text = "${nearest.startTime} ⏰",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = AccentCyan,
+                    fontSize = 9.sp,
+                    fontWeight = FontWeight.Bold
+                )
+            }
         }
     }
 }
@@ -1046,6 +1109,14 @@ fun SearchResultsView(
     onMovieClick: (Long) -> Unit,
     onChannelClick: (Long) -> Unit
 ) {
+    val (todayStr, tomorrowStr) = remember {
+        val cal = Calendar.getInstance()
+        val tStr = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault()).format(cal.time)
+        cal.add(Calendar.DAY_OF_MONTH, 1)
+        val tmrStr = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault()).format(cal.time)
+        tStr to tmrStr
+    }
+
     LazyVerticalGrid(
         columns = GridCells.Fixed(3),
         contentPadding = PaddingValues(12.dp),
@@ -1120,7 +1191,15 @@ fun SearchResultsView(
             }
 
             items(searchResults.shows) { show ->
-                MoviePosterCardGrid3(movie = show, onClick = { onMovieClick(show.id) })
+                val chId = show.airings.firstOrNull()?.channelId ?: 0L
+                MoviePosterCardGrid3(
+                    movie = show,
+                    todayStr = todayStr,
+                    tomorrowStr = tomorrowStr,
+                    onClick = {
+                        if (chId > 0) onChannelClick(chId) else onMovieClick(show.id)
+                    }
+                )
             }
         }
 

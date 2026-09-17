@@ -1,5 +1,7 @@
 package com.tvguide.app
 
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -76,7 +78,16 @@ class MainActivity : ComponentActivity() {
                     // Check for Updates on App Start
                     LaunchedEffect(Unit) {
                         try {
-                            val currentVersionCode = 3 // v1.0.2 Version Code
+                            val currentVersionCode = try {
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                                    packageManager.getPackageInfo(packageName, PackageManager.PackageInfoFlags.of(0)).longVersionCode.toInt()
+                                } else {
+                                    @Suppress("DEPRECATION")
+                                    packageManager.getPackageInfo(packageName, 0).versionCode
+                                }
+                            } catch (e: Exception) {
+                                BuildConfig.VERSION_CODE
+                            }
                             val update = UpdateManager.checkForUpdate(currentVersionCode)
                             if (update != null) {
                                 availableUpdate = update
@@ -126,7 +137,9 @@ class MainActivity : ComponentActivity() {
                             onChannelCategorySelected = { cat -> viewModel.setChannelCategory(cat) },
                             onGetMovieDetails = { id -> viewModel.getMovieDetails(id) },
                             onGetChannelSchedule = { id -> viewModel.getChannelSchedule(id) },
-                            onGetChannelById = { id -> viewModel.getChannelById(id) }
+                            onGetChannelById = { id -> viewModel.getChannelById(id) },
+                            onUpdateShowCategory = { id, title, cat -> viewModel.updateShowCategory(id, title, cat) },
+                            onHideShow = { title -> viewModel.hideShow(title) }
                         )
                     }
 
