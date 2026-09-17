@@ -74,10 +74,14 @@ def publish():
             for df in deltas_src.glob("*.json"):
                 shutil.copy2(df, dest_deltas_dir / df.name)
 
+        version_src = Path("version.json")
+        if version_src.exists():
+            shutil.copy2(version_src, Path(temp_dir) / "version.json")
+
         # Git commit and push
         run_cmd('git config user.name "github-actions[bot]"', cwd=temp_dir)
         run_cmd('git config user.email "github-actions[bot]@users.noreply.github.com"', cwd=temp_dir)
-        run_cmd("git add data/", cwd=temp_dir)
+        run_cmd("git add data/ version.json", cwd=temp_dir)
 
         ok_diff, out_diff, _ = run_cmd("git diff --staged --quiet", cwd=temp_dir)
         if ok_diff:
