@@ -1,0 +1,15 @@
+{
+  "include": [
+    "collectors",
+    "classifier",
+    "scripts",
+    "generate_fresh_daily_schedules.py",
+    "sync_accurate_elcinema.py"
+  ],
+  "exclude": [
+    "**/android",
+    "**/build",
+    "**/.gradle",
+    "**/data"
+  ]
+}
