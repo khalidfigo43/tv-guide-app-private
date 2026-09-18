@@ -1,32 +1,32 @@
 {
-  "version": 108,
-  "previousVersion": 107,
-  "generatedAt": "2026-09-18 04:29:48",
-  "generatedAtUtc": "2026-09-18T01:29:48Z",
+  "version": 109,
+  "previousVersion": 108,
+  "generatedAt": "2026-09-18 02:23:18",
+  "generatedAtUtc": "2026-09-18T02:23:18Z",
   "timezone": "Africa/Cairo",
   "dateRange": {
     "min": "2026-09-15",
     "max": "2026-10-01",
     "totalDays": 17
   },
-  "channelsCount": 179,
-  "broadcastsCount": 36514,
-  "uniqueProgramsCount": 8357,
+  "channelsCount": 174,
+  "broadcastsCount": 35320,
+  "uniqueProgramsCount": 8325,
   "delta": {
-    "availableFrom": 107,
-    "filename": "delta_107_to_108.json",
-    "url": "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/deltas/delta_107_to_108.json",
-    "addedCount": 7095,
-    "updatedCount": 7993,
-    "deletedCount": 322
+    "availableFrom": 108,
+    "filename": "delta_108_to_109.json",
+    "url": "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/deltas/delta_108_to_109.json",
+    "addedCount": 2968,
+    "updatedCount": 30569,
+    "deletedCount": 3903
   },
   "mergeStats": {
-    "existing_input": 30475,
-    "fresh_input": 34859,
-    "updated": 20633,
-    "inserted": 9941,
-    "retained_future": 26573,
-    "pruned_past": 734
+    "existing_input": 36255,
+    "fresh_input": 7101,
+    "updated": 1533,
+    "inserted": 5090,
+    "retained_future": 30230,
+    "pruned_past": 0
   },
   "collectors": {
     "rotana": {
@@ -35,24 +35,24 @@
       "channels_attempted": 8,
       "channels_succeeded": 8,
       "broadcasts_count": 2011,
-      "min_date": "2026-09-16",
+      "min_date": "2026-09-17",
       "max_date": "2026-09-30"
     },
     "osn": {
       "name": "OSN",
-      "status": "SUCCESS_WITH_FUTURE",
-      "channels_attempted": 94,
-      "channels_succeeded": 93,
-      "broadcasts_count": 27756,
-      "min_date": "2026-09-17",
-      "max_date": "2026-09-26"
+      "status": "COLLECTOR_FAILED",
+      "channels_attempted": 0,
+      "channels_succeeded": 0,
+      "broadcasts_count": 0,
+      "min_date": null,
+      "max_date": null
     },
     "elcinema": {
       "name": "ElCinema",
       "status": "SUCCESS_WITH_FUTURE",
       "channels_attempted": 93,
       "channels_succeeded": 93,
-      "broadcasts_count": 5092,
+      "broadcasts_count": 5090,
       "min_date": "2026-09-18",
       "max_date": "2026-09-21"
     }
