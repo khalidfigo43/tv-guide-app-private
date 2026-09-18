@@ -197,18 +197,6 @@ def run_collector(max_workers: int = 8) -> dict:
         ch_id = ch["id"]
         el_id = ch.get("elcinema_id")
 
-        if not el_id:
-            # Try matching via ELCINEMA_NAME_MAP
-            name_ar = ch.get("name_ar", "").strip().lower()
-            name_en = ch.get("name_en", "").strip().lower()
-            src_id = str(ch.get("source_channel_id", "")).lower()
-
-            for k, v in ELCINEMA_NAME_MAP.items():
-                if k in name_ar or k in name_en or k == src_id:
-                    el_id = v
-                    ch["elcinema_id"] = v
-                    break
-
         if el_id and el_id not in seen_cids:
             seen_cids.add(el_id)
             tasks.append((ch_id, ch["name_ar"], el_id, today_str))

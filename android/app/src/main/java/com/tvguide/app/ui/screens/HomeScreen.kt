@@ -51,6 +51,7 @@ fun HomeScreen(
     nextAiring: List<NextAiringItem>,
     movies: List<Content>,
     channels: List<Channel>,
+    rawAllChannels: List<Channel> = emptyList(),
     searchQuery: String,
     searchResults: SearchResults,
     isSearching: Boolean,
@@ -62,10 +63,19 @@ fun HomeScreen(
     onShowCategorySelected: (String) -> Unit,
     selectedChannelCategory: String,
     onChannelCategorySelected: (String) -> Unit,
+    categoryOrder: List<String> = emptyList(),
+    onCategoryOrderChange: (List<String>) -> Unit = {},
+    favoriteChannelIds: List<Long> = emptyList(),
+    onToggleFavorite: (Long) -> Unit = {},
+    onMoveFavorite: (Int, Int) -> Unit = { _, _ -> },
+    hiddenChannelIds: Set<Long> = emptySet(),
+    onToggleHideChannel: (Long) -> Unit = {},
+    onUnhideAllChannels: () -> Unit = {},
     onMovieClick: (Long) -> Unit,
     onChannelClick: (Long) -> Unit
 ) {
     var showTimezoneDialog by remember { mutableStateOf(false) }
+    var showSettingsDialog by remember { mutableStateOf(false) }
 
     Scaffold(
         topBar = {
@@ -76,7 +86,8 @@ fun HomeScreen(
                 selectedTimezone = selectedTimezone,
                 isRefreshing = isRefreshing,
                 onRefreshClick = onRefreshClick,
-                onTimezoneClick = { showTimezoneDialog = true }
+                onTimezoneClick = { showTimezoneDialog = true },
+                onSettingsClick = { showSettingsDialog = true }
             )
         },
         bottomBar = {
@@ -128,6 +139,7 @@ fun HomeScreen(
                     )
                     AppTab.CHANNELS -> ChannelsTabView(
                         channels = channels,
+                        favoriteChannelIds = favoriteChannelIds,
                         selectedCategory = selectedChannelCategory,
                         showPaidChannels = showPaidChannels,
                         onTogglePaidChannels = onTogglePaidChannels,
@@ -148,6 +160,22 @@ fun HomeScreen(
                     onDismiss = { showTimezoneDialog = false }
                 )
             }
+
+            // Settings & Customization Dialog ⚙️
+            if (showSettingsDialog) {
+                com.tvguide.app.ui.components.SettingsDialog(
+                    allChannels = if (rawAllChannels.isNotEmpty()) rawAllChannels else channels,
+                    categoryOrder = categoryOrder,
+                    onCategoryOrderChange = onCategoryOrderChange,
+                    favoriteChannelIds = favoriteChannelIds,
+                    onToggleFavorite = onToggleFavorite,
+                    onMoveFavorite = onMoveFavorite,
+                    hiddenChannelIds = hiddenChannelIds,
+                    onToggleHideChannel = onToggleHideChannel,
+                    onUnhideAllChannels = onUnhideAllChannels,
+                    onDismiss = { showSettingsDialog = false }
+                )
+            }
         }
     }
 }
@@ -160,7 +188,8 @@ fun TopSearchBar(
     selectedTimezone: AppCountryTimezone,
     isRefreshing: Boolean = false,
     onRefreshClick: () -> Unit = {},
-    onTimezoneClick: () -> Unit
+    onTimezoneClick: () -> Unit,
+    onSettingsClick: () -> Unit = {}
 ) {
     Surface(
         color = DarkSurface,
@@ -283,6 +312,29 @@ fun TopSearchBar(
                         contentDescription = "Timezone",
                         tint = AccentCyan,
                         modifier = Modifier.size(12.dp)
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.width(5.dp))
+
+            // Settings & Customization Button ⚙️
+            Surface(
+                color = DarkSurfaceVariant,
+                shape = RoundedCornerShape(8.dp),
+                modifier = Modifier
+                    .height(28.dp)
+                    .clickable(onClick = onSettingsClick)
+            ) {
+                Box(
+                    modifier = Modifier.padding(horizontal = 7.dp, vertical = 4.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Tune,
+                        contentDescription = "الإعدادات والتخصيص",
+                        tint = AccentGold,
+                        modifier = Modifier.size(14.dp)
                     )
                 }
             }
@@ -917,6 +969,7 @@ fun MoviePosterCardGrid3(
 @Composable
 fun ChannelsTabView(
     channels: List<Channel>,
+    favoriteChannelIds: List<Long> = emptyList(),
     selectedCategory: String,
     showPaidChannels: Boolean,
     onTogglePaidChannels: (Boolean) -> Unit,
@@ -1089,6 +1142,24 @@ fun ChannelsTabView(
                                     fontWeight = FontWeight.Bold,
                                     color = Color.White,
                                     modifier = Modifier.padding(horizontal = 4.dp, vertical = 1.dp)
+                                )
+                            }
+                        }
+
+                        // Favorite Channel Star Badge Top-Start ⭐
+                        if (favoriteChannelIds.contains(channel.id)) {
+                            Surface(
+                                color = AccentGold,
+                                shape = RoundedCornerShape(bottomEnd = 6.dp),
+                                modifier = Modifier.align(Alignment.TopStart)
+                            ) {
+                                Icon(
+                                    imageVector = Icons.Default.Star,
+                                    contentDescription = "Favorite",
+                                    tint = Color.Black,
+                                    modifier = Modifier
+                                        .size(14.dp)
+                                        .padding(2.dp)
                                 )
                             }
                         }

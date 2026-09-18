@@ -95,6 +95,7 @@ class TvGuideRepository(
 ) {
     private val json = Json { ignoreUnknownKeys = true; isLenient = true; coerceInputValues = true }
     val database: TvGuideDatabase? = context?.let { TvGuideDatabase(it) }
+    val userSettings: com.tvguide.app.util.UserSettingsManager? = context?.let { com.tvguide.app.util.UserSettingsManager(it) }
 
     private var cachedChannels: List<Channel> = emptyList()
     private var channelMap: Map<Long, Channel> = emptyMap()
@@ -284,9 +285,20 @@ class TvGuideRepository(
         }
     }
 
+    suspend fun getAllRawChannels(): List<Channel> = withContext(Dispatchers.IO) {
+        ensureDataLoaded()
+        cachedChannels
+    }
+
     suspend fun getChannels(category: String? = null, includePaid: Boolean = false): Result<List<Channel>> = withContext(Dispatchers.IO) {
         ensureDataLoaded()
         var filtered = cachedChannels
+
+        val hiddenIds = userSettings?.getHiddenChannels() ?: emptySet()
+        if (hiddenIds.isNotEmpty()) {
+            filtered = filtered.filter { !hiddenIds.contains(it.id) }
+        }
+
         if (!includePaid) {
             filtered = filtered.filter { !it.isPaidChannel && !paidChannelIds.contains(it.id) }
         }
@@ -295,8 +307,8 @@ class TvGuideRepository(
             filtered = filtered.filter { (it.category ?: "").lowercase().trim() == catLower }
         }
         val db = database
-        if (db != null) {
-            val activeChannelIds = try {
+        val activeChannelIds = if (db != null) {
+            try {
                 val set = mutableSetOf<Long>()
                 db.readableDatabase.rawQuery("SELECT DISTINCT channel_id FROM schedules", null).use { cur ->
                     while (cur.moveToNext()) set.add(cur.getLong(0))
@@ -305,9 +317,17 @@ class TvGuideRepository(
             } catch (e: Exception) {
                 emptySet()
             }
-            if (activeChannelIds.isNotEmpty()) {
-                filtered = filtered.sortedByDescending { activeChannelIds.contains(it.id) }
-            }
+        } else emptySet()
+
+        val favIds = userSettings?.getFavoriteChannels() ?: emptyList()
+        if (favIds.isNotEmpty()) {
+            val favIndexMap = favIds.withIndex().associate { it.value to it.index }
+            filtered = filtered.sortedWith(
+                compareBy<Channel> { favIndexMap[it.id] ?: Int.MAX_VALUE }
+                    .thenByDescending { activeChannelIds.contains(it.id) }
+            )
+        } else if (activeChannelIds.isNotEmpty()) {
+            filtered = filtered.sortedByDescending { activeChannelIds.contains(it.id) }
         }
         Result.success(filtered)
     }
@@ -339,6 +359,7 @@ class TvGuideRepository(
             for ((chId, chRows) in groupedByChannel) {
                 val ch = channelMap[chId] ?: continue
                 if (isIgnoredChannel(chId, ch.displayName) || isIgnoredChannel(chId, ch.nameEn) || isIgnoredChannel(chId, ch.nameAr)) continue
+                if (userSettings?.isChannelHidden(chId) == true) continue
                 if (!includePaid && (paidChannelIds.contains(chId) || ch.isPaidChannel)) continue
 
                 val current = chRows.firstOrNull() ?: continue
@@ -388,8 +409,9 @@ class TvGuideRepository(
             }
 
             items.sortWith(
-                compareBy<NowAiringItem> { getContentBrowseTier(it.contentType, it.title, it.titleEn, it.channelName) }
-                    .thenBy { it.startDatetime }
+                compareBy<NowAiringItem> {
+                    userSettings?.getPriorityForCategory(it.contentType) ?: getContentBrowseTier(it.contentType, it.title, it.titleEn, it.channelName)
+                }.thenBy { it.startDatetime }
             )
 
             Result.success(items)
@@ -420,6 +442,7 @@ class TvGuideRepository(
             for ((chId, chRows) in groupedByChannel) {
                 val ch = channelMap[chId] ?: continue
                 if (isIgnoredChannel(chId, ch.displayName) || isIgnoredChannel(chId, ch.nameEn) || isIgnoredChannel(chId, ch.nameAr)) continue
+                if (userSettings?.isChannelHidden(chId) == true) continue
                 if (!includePaid && (paidChannelIds.contains(chId) || ch.isPaidChannel)) continue
 
                 val nextShow = chRows.firstOrNull() ?: continue
@@ -459,8 +482,9 @@ class TvGuideRepository(
             }
 
             items.sortWith(
-                compareBy<NextAiringItem> { getContentBrowseTier(it.contentType, it.title, it.titleEn, it.channelName) }
-                    .thenBy { it.startDatetime }
+                compareBy<NextAiringItem> {
+                    userSettings?.getPriorityForCategory(it.contentType) ?: getContentBrowseTier(it.contentType, it.title, it.titleEn, it.channelName)
+                }.thenBy { it.startDatetime }
             )
 
             Result.success(items)
@@ -476,7 +500,12 @@ class TvGuideRepository(
 
         try {
             val showSummaries = db.getShows(category, search, includePaid, limit = 150)
-            val contentList = showSummaries.map { s ->
+            val hiddenIds = userSettings?.getHiddenChannels() ?: emptySet()
+            val filteredSummaries = if (hiddenIds.isNotEmpty()) {
+                showSummaries.filter { !hiddenIds.contains(it.nearestChannelId) }
+            } else showSummaries
+
+            val contentList = filteredSummaries.map { s ->
                 val airings = if (!s.nearestDate.isNullOrBlank() && !s.nearestTime.isNullOrBlank()) {
                     val ch = channelMap[s.nearestChannelId]
                     val chName = ch?.displayName ?: (if (!s.nearestChannelName.isNullOrBlank() && s.nearestChannelName != "قناة") s.nearestChannelName else null) ?: "قناة"
@@ -511,7 +540,10 @@ class TvGuideRepository(
                     airingsCount = s.airingsCount,
                     airings = airings
                 )
-            }
+            }.sortedWith(
+                compareBy<Content> { userSettings?.getPriorityForCategory(it.contentType) ?: 4 }
+                    .thenByDescending { it.airingsCount }
+            )
 
             Result.success(contentList)
         } catch (e: Exception) {

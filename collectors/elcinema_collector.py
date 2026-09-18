@@ -141,10 +141,6 @@ ELCINEMA_NAME_MAP = {
     "أوسن موفيز": 1211,
     "osn movies first": 1391,
     "osn movies action": 1211,
-    "العربية": 1132,
-    "قناة العربية": 1132,
-    "سكاي نيوز عربية": 1245,
-    "إكسترا نيوز": 1323,
     "ذكريات": 1366,
     "قناة ذكريات": 1366,
     "فنون": 1152,
@@ -274,13 +270,7 @@ def run_full_elcinema_sync():
         name_en = ch["name_en"].lower()
         src_id = str(ch.get("source_channel_id", "")).lower()
 
-        # Find matching elcinema ID
-        matched_elcinema_id = None
-        for k, v in ELCINEMA_NAME_MAP.items():
-            if k in name_ar or k in name_en or k == src_id:
-                matched_elcinema_id = v
-                break
-                
+        matched_elcinema_id = ch.get("elcinema_id")
         if matched_elcinema_id and matched_elcinema_id in discovered_channels:
             el_info = discovered_channels[matched_elcinema_id]
             if el_info.get("logo") and el_info["logo"].startswith("http"):

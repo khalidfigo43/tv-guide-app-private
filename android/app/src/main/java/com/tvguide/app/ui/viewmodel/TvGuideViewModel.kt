@@ -32,18 +32,29 @@ data class TvGuideUiState(
     val nextAiring: List<NextAiringItem> = emptyList(),
     val movies: List<Content> = emptyList(),
     val channels: List<Channel> = emptyList(),
+    val rawAllChannels: List<Channel> = emptyList(),
     val searchQuery: String = "",
     val searchResults: SearchResults = SearchResults(),
     val isSearching: Boolean = false,
     val selectedShowCategory: String = "all",
     val selectedChannelCategory: String = "all",
-    val errorMessage: String? = null
+    val errorMessage: String? = null,
+    val categoryOrder: List<String> = com.tvguide.app.util.UserSettingsManager.DEFAULT_CATEGORY_ORDER,
+    val favoriteChannelIds: List<Long> = emptyList(),
+    val hiddenChannelIds: Set<Long> = emptySet()
 )
 
 class TvGuideViewModel(application: Application) : AndroidViewModel(application) {
 
+    private val userSettings = com.tvguide.app.util.UserSettingsManager(application.applicationContext)
     private val repository = TvGuideRepository(context = application.applicationContext)
-    private val _uiState = MutableStateFlow(TvGuideUiState())
+    private val _uiState = MutableStateFlow(
+        TvGuideUiState(
+            categoryOrder = userSettings.getCategoryOrder(),
+            favoriteChannelIds = userSettings.getFavoriteChannels(),
+            hiddenChannelIds = userSettings.getHiddenChannels()
+        )
+    )
     val uiState: StateFlow<TvGuideUiState> = _uiState.asStateFlow()
 
     private var searchJob: Job? = null
@@ -93,8 +104,13 @@ class TvGuideViewModel(application: Application) : AndroidViewModel(application)
                     category = _uiState.value.selectedChannelCategory,
                     includePaid = includePaid
                 )
+                val rawAll = repository.getAllRawChannels()
                 _uiState.value = _uiState.value.copy(
-                    channels = channelsRes.getOrDefault(emptyList())
+                    channels = channelsRes.getOrDefault(emptyList()),
+                    rawAllChannels = rawAll,
+                    categoryOrder = userSettings.getCategoryOrder(),
+                    favoriteChannelIds = userSettings.getFavoriteChannels(),
+                    hiddenChannelIds = userSettings.getHiddenChannels()
                 )
             } catch (e: Throwable) {
                 android.util.Log.e("TvGuideStartup", "Channels load error: ${e.message}", e)
@@ -261,5 +277,38 @@ class TvGuideViewModel(application: Application) : AndroidViewModel(application)
             repository.hideShow(title)
             loadData()
         }
+    }
+
+    fun setCategoryOrder(newOrder: List<String>) {
+        userSettings.setCategoryOrder(newOrder)
+        _uiState.value = _uiState.value.copy(categoryOrder = newOrder)
+        loadData()
+    }
+
+    fun toggleFavoriteChannel(channelId: Long) {
+        userSettings.toggleFavoriteChannel(channelId)
+        _uiState.value = _uiState.value.copy(favoriteChannelIds = userSettings.getFavoriteChannels())
+        loadData()
+    }
+
+    fun moveFavoriteChannel(fromIndex: Int, toIndex: Int) {
+        userSettings.moveFavoriteChannel(fromIndex, toIndex)
+        _uiState.value = _uiState.value.copy(favoriteChannelIds = userSettings.getFavoriteChannels())
+        loadData()
+    }
+
+    fun toggleHideChannel(channelId: Long) {
+        userSettings.toggleHideChannel(channelId)
+        _uiState.value = _uiState.value.copy(
+            hiddenChannelIds = userSettings.getHiddenChannels(),
+            favoriteChannelIds = userSettings.getFavoriteChannels()
+        )
+        loadData()
+    }
+
+    fun unhideAllChannels() {
+        userSettings.unhideAllChannels()
+        _uiState.value = _uiState.value.copy(hiddenChannelIds = emptySet())
+        loadData()
     }
 }

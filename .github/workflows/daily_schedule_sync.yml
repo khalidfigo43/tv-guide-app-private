@@ -39,17 +39,18 @@ jobs:
         run: |
           python generate_fresh_daily_schedules.py
 
-      - name: Commit and Push to Private Repository
-        if: steps.check_time.outputs.should_run == 'true'
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/schedules.json data/metadata.json android/app/src/main/assets/schedules.json android/app/src/main/assets/metadata.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): automated daily schedule sync [$(date -u +'%Y-%m-%d')]" && git push)
-
       - name: Publish to Public Releases Repository (tv-guide-releases)
         if: steps.check_time.outputs.should_run == 'true'
         env:
           RELEASES_TOKEN: ${{ secrets.RELEASES_TOKEN || secrets.GH_PAT }}
         run: |
           python scripts/publish_to_releases.py
+
+      - name: Commit and Push to Private Repository (Optional Sync)
+        if: steps.check_time.outputs.should_run == 'true'
+        continue-on-error: true
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/schedules.json data/metadata.json android/app/src/main/assets/schedules.json android/app/src/main/assets/metadata.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): automated daily schedule sync [$(date -u +'%Y-%m-%d')]" && git push)

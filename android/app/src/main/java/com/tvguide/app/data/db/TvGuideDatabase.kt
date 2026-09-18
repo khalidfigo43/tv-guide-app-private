@@ -116,7 +116,7 @@ class TvGuideDatabase(private val context: Context) : SQLiteOpenHelper(context, 
                             val todayStr = sdf.format(java.util.Date())
 
                             if (count < 20000 || postersCount < 3500 || deletedChannelsInDb > 0 || fakeMoviesInDb > 0 ||
-                                (maxDateInDb != null && maxDateInDb < todayStr) || verInDb < 107) {
+                                (maxDateInDb != null && maxDateInDb < todayStr) || verInDb < 108) {
                                 needsCopy = true
                             }
                         } else {
