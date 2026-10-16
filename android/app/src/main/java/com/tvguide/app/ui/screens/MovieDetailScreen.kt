@@ -114,13 +114,16 @@ fun MovieDetailScreen(
         ) {
             // Hero Backdrop + Poster Header
             item {
+                val chLogo = content.airings.firstOrNull()?.channelLogo
+                val resolvedPoster = com.tvguide.app.util.rememberResolvedPoster(content.titleAr, content.posterUrl, chLogo)
+
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(280.dp)
                 ) {
                     AsyncImage(
-                        model = content.backdropUrl ?: content.posterUrl,
+                        model = content.backdropUrl ?: resolvedPoster,
                         contentDescription = content.titleAr,
                         modifier = Modifier.fillMaxSize(),
                         contentScale = ContentScale.Crop
@@ -152,10 +155,10 @@ fun MovieDetailScreen(
                         shape = RoundedCornerShape(12.dp)
                     ) {
                         AsyncImage(
-                            model = content.posterUrl,
+                            model = resolvedPoster,
                             contentDescription = content.titleAr,
                             modifier = Modifier.fillMaxSize(),
-                            contentScale = ContentScale.Crop
+                            contentScale = if (!resolvedPoster.isNullOrBlank() && resolvedPoster != chLogo) ContentScale.Crop else ContentScale.Fit
                         )
                     }
 

@@ -97,6 +97,10 @@ class TvGuideRepository(
     val database: TvGuideDatabase? = context?.let { TvGuideDatabase(it) }
     val userSettings: com.tvguide.app.util.UserSettingsManager? = context?.let { com.tvguide.app.util.UserSettingsManager(it) }
 
+    init {
+        com.tvguide.app.util.PosterResolver.setDatabase(database)
+    }
+
     private var cachedChannels: List<Channel> = emptyList()
     private var channelMap: Map<Long, Channel> = emptyMap()
     private var paidChannelIds: Set<Long> = emptySet()
@@ -146,6 +150,15 @@ class TvGuideRepository(
                n.contains("العاب إلكترونية") ||
                n.contains("رياضات إلكترونية") ||
                n.contains("ألعاب إلكترونية")
+    }
+
+    fun isGenericOrUnnamedShow(title: String?): Boolean {
+        if (title.isNullOrBlank()) return true
+        val norm = ArabicSearchHelper.normalizeArabic(title.trim().lowercase())
+        if (norm == "برنامج تلفزيوني" || norm == "برنامج تليفزيوني" || norm == "برنامج" || norm == "منوعات" || norm == "عرض") return true
+        if (norm.startsWith("برامج ") || norm.startsWith("برنامج ") || norm.startsWith("فقره ") || norm.startsWith("فقرة ")) return true
+        if (norm.contains("بث ليلي") || norm.contains("فترة بث") || norm.contains("فتره بث") || norm.contains("اعادة برامج") || norm.contains("إعادة برامج") || norm.contains("اعادة دراما")) return true
+        return false
     }
 
     fun getContentBrowseTier(type: String?, title: String?, titleEn: String?, channelName: String?): Int {
@@ -364,12 +377,13 @@ class TvGuideRepository(
 
                 val current = chRows.firstOrNull() ?: continue
                 if (isEsportsChannelName(current.title)) continue
+                if (isGenericOrUnnamedShow(current.title)) continue
 
                 val title = current.title.trim()
                 val st = current.startTime
                 val et = current.endTime ?: "13:00"
                 val logo = ch?.logoUrl
-                val poster = current.poster
+                val poster = current.poster?.takeIf { it.isNotBlank() && !it.startsWith("data:") } ?: logo
                 val overview = current.overview
                 val rating = current.rating ?: "7.5"
                 val channelName = ch?.displayName ?: "قناة"
@@ -447,12 +461,13 @@ class TvGuideRepository(
 
                 val nextShow = chRows.firstOrNull() ?: continue
                 if (isEsportsChannelName(nextShow.title)) continue
+                if (isGenericOrUnnamedShow(nextShow.title)) continue
 
                 val title = nextShow.title.trim()
                 val st = nextShow.startTime
                 val et = nextShow.endTime ?: "14:00"
                 val logo = ch?.logoUrl
-                val poster = nextShow.poster
+                val poster = nextShow.poster?.takeIf { it.isNotBlank() && !it.startsWith("data:") } ?: logo
                 val overview = nextShow.overview
                 val rating = nextShow.rating ?: "7.5"
                 val channelName = ch?.displayName ?: "قناة"
@@ -501,14 +516,16 @@ class TvGuideRepository(
         try {
             val showSummaries = db.getShows(category, search, includePaid, limit = 150)
             val hiddenIds = userSettings?.getHiddenChannels() ?: emptySet()
-            val filteredSummaries = if (hiddenIds.isNotEmpty()) {
-                showSummaries.filter { !hiddenIds.contains(it.nearestChannelId) }
-            } else showSummaries
+            val filteredSummaries = showSummaries.filter { s ->
+                (hiddenIds.isEmpty() || !hiddenIds.contains(s.nearestChannelId)) &&
+                !isGenericOrUnnamedShow(s.title)
+            }
 
             val contentList = filteredSummaries.map { s ->
+                val ch = channelMap[s.nearestChannelId]
+                val chName = ch?.displayName ?: (if (!s.nearestChannelName.isNullOrBlank() && s.nearestChannelName != "قناة") s.nearestChannelName else null) ?: "قناة"
+                val resolvedPoster = s.poster?.takeIf { it.isNotBlank() && !it.startsWith("data:") } ?: ch?.logoUrl
                 val airings = if (!s.nearestDate.isNullOrBlank() && !s.nearestTime.isNullOrBlank()) {
-                    val ch = channelMap[s.nearestChannelId]
-                    val chName = ch?.displayName ?: (if (!s.nearestChannelName.isNullOrBlank() && s.nearestChannelName != "قناة") s.nearestChannelName else null) ?: "قناة"
                     listOf(
                         Airing(
                             broadcastId = s.nearestChannelId * 1000L,
@@ -516,6 +533,8 @@ class TvGuideRepository(
                             contentId = s.id,
                             title = s.title,
                             channelName = chName,
+                            channelLogo = ch?.logoUrl,
+                            poster = resolvedPoster,
                             date = s.nearestDate,
                             startTime = TimezoneHelper.adjustTime(s.nearestTime, timezoneOffset),
                             endTime = null
@@ -531,8 +550,8 @@ class TvGuideRepository(
                     contentType = s.programType,
                     releaseYear = 2024,
                     rating = s.rating ?: "7.5",
-                    posterPath = s.poster,
-                    backdropPath = s.poster,
+                    posterPath = resolvedPoster,
+                    backdropPath = resolvedPoster,
                     overview = s.overview,
                     overviewAr = s.overview,
                     genres = listOf(s.programType),
@@ -631,7 +650,7 @@ class TvGuideRepository(
                     title = a.title,
                     channelName = ch?.displayName ?: "قناة",
                     channelLogo = ch?.logoUrl,
-                    poster = a.poster,
+                    poster = a.poster?.takeIf { it.isNotBlank() && !it.startsWith("data:") } ?: ch?.logoUrl,
                     date = a.date,
                     startTime = TimezoneHelper.adjustTime(a.startTime, timezoneOffset),
                     endTime = a.endTime?.let { TimezoneHelper.adjustTime(it, timezoneOffset) },
@@ -782,13 +801,30 @@ class TvGuideRepository(
                         if (!fullStr.isNullOrBlank()) {
                             val fullSchedules = json.decodeFromString<List<RawScheduleItem>>(fullStr)
                             if (fullSchedules.isNotEmpty()) {
+                                // Fetch programs catalog for rich TMDB posters and descriptions
+                                val programsUrl = "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/programs.json"
+                                val programsMap = try {
+                                    val progReq = okhttp3.Request.Builder().url(programsUrl).build()
+                                    client.newCall(progReq).execute().use { pResp ->
+                                        if (pResp.isSuccessful) {
+                                            val pStr = pResp.body?.string()
+                                            if (!pStr.isNullOrBlank()) {
+                                                json.decodeFromString<Map<String, RawProgramItem>>(pStr)
+                                            } else null
+                                        } else null
+                                    }
+                                } catch (e: Throwable) {
+                                    android.util.Log.w("TvGuideSync", "Could not fetch programs.json: ${e.message}")
+                                    null
+                                }
+
                                 db.applyFullSnapshot(
                                     schedules = fullSchedules,
-                                    programs = null,
+                                    programs = programsMap,
                                     version = remoteVersion,
                                     channelsMap = channelMap
                                 )
-                                android.util.Log.i("TvGuideSync", "Successfully applied full schedule snapshot with ${fullSchedules.size} items (version $remoteVersion)!")
+                                android.util.Log.i("TvGuideSync", "Successfully applied full schedule snapshot with ${fullSchedules.size} items (version $remoteVersion) and ${programsMap?.size ?: 0} programs!")
                                 return@withContext true
                             }
                         }

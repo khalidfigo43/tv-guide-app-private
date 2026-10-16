@@ -378,6 +378,12 @@ class TvGuideDatabase(private val context: Context) : SQLiteOpenHelper(context, 
                     OR
                     (s.date = ? AND s.end_time < s.start_time AND ? < s.end_time)
                 )
+                AND s.title NOT IN ('برنامج تلفزيوني', 'برنامج تليفزيوني', 'برنامج', 'منوعات', 'عرض')
+                AND s.title NOT LIKE 'برامج %'
+                AND s.title NOT LIKE 'فترة بث%'
+                AND s.title NOT LIKE '%بث ليلي%'
+                AND s.title NOT LIKE '%إعادة برامج%'
+                AND s.title NOT LIKE '%اعادة برامج%'
                 ORDER BY s.channel_id ASC, s.start_time DESC
             """.trimIndent()
             val cursor = db.rawQuery(sql, arrayOf(todayStr, nowTimeStr, nowTimeStr, yesterdayStr, nowTimeStr))
@@ -426,7 +432,13 @@ class TvGuideDatabase(private val context: Context) : SQLiteOpenHelper(context, 
                     SELECT channel_id, date, start_time, end_time, program_id, title, title_en, program_type,
                            ROW_NUMBER() OVER (PARTITION BY channel_id ORDER BY date ASC, start_time ASC) as rn
                     FROM $TABLE_SCHEDULES
-                    WHERE (date = ? AND start_time > ?) OR (date = ?)
+                    WHERE ((date = ? AND start_time > ?) OR (date = ?))
+                      AND title NOT IN ('برنامج تلفزيوني', 'برنامج تليفزيوني', 'برنامج', 'منوعات', 'عرض')
+                      AND title NOT LIKE 'برامج %'
+                      AND title NOT LIKE 'فترة بث%'
+                      AND title NOT LIKE '%بث ليلي%'
+                      AND title NOT LIKE '%إعادة برامج%'
+                      AND title NOT LIKE '%اعادة برامج%'
                 ) s
                 LEFT JOIN $TABLE_PROGRAMS p ON s.program_id = p.program_id
                 LEFT JOIN $TABLE_PROGRAMS prog_title ON s.title = prog_title.title
@@ -474,6 +486,14 @@ class TvGuideDatabase(private val context: Context) : SQLiteOpenHelper(context, 
             if (!includePaid) {
                 whereClauses.add("has_free_airings = 1")
             }
+
+            // Exclude unnamed placeholder shows from browse recommendations
+            whereClauses.add("title NOT IN ('برنامج تلفزيوني', 'برنامج تليفزيوني', 'برنامج', 'منوعات', 'عرض')")
+            whereClauses.add("title NOT LIKE 'برامج %'")
+            whereClauses.add("title NOT LIKE 'فترة بث%'")
+            whereClauses.add("title NOT LIKE '%بث ليلي%'")
+            whereClauses.add("title NOT LIKE '%إعادة برامج%'")
+            whereClauses.add("title NOT LIKE '%اعادة برامج%'")
 
             if (!category.isNullOrBlank() && category != "all") {
                 when (category.lowercase().trim()) {
@@ -708,6 +728,23 @@ class TvGuideDatabase(private val context: Context) : SQLiteOpenHelper(context, 
         } catch (e: Exception) {
             android.util.Log.e("TvGuideDatabase", "updateShowCategory error: ${e.message}", e)
             false
+        }
+    }
+
+    fun updatePosterForTitle(title: String, posterUrl: String) {
+        if (title.isBlank() || posterUrl.isBlank()) return
+        try {
+            val db = writableDatabase
+            val cvProg = ContentValues().apply {
+                put("poster", posterUrl)
+            }
+            db.update(TABLE_PROGRAMS, cvProg, "title = ?", arrayOf(title))
+            val cvShow = ContentValues().apply {
+                put("poster", posterUrl)
+            }
+            db.update(TABLE_SHOWS, cvShow, "title = ?", arrayOf(title))
+        } catch (e: Exception) {
+            android.util.Log.e("TvGuideDatabase", "updatePosterForTitle error: ${e.message}")
         }
     }
 
@@ -955,6 +992,9 @@ class TvGuideDatabase(private val context: Context) : SQLiteOpenHelper(context, 
             val nearestDate = if (firstDt.length >= 10) firstDt.substring(0, 10) else ""
             val nearestTime = if (firstDt.length >= 16) firstDt.substring(11, 16) else ""
             val ch = channelsMap[sampleChId]
+            if (poster.isNullOrBlank() || poster.startsWith("data:")) {
+                poster = ch?.logoUrl
+            }
             val nearestChannelName = ch?.displayName ?: ch?.nameAr ?: "قناة"
             val isPaidOnly = if (ch?.isPaidChannel == true) 1 else 0
             val hasFree = if (isPaidOnly == 1) 0 else 1
@@ -1018,6 +1058,20 @@ class TvGuideDatabase(private val context: Context) : SQLiteOpenHelper(context, 
                 if (s.title_en != null) sStmt.bindString(7, s.title_en) else sStmt.bindNull(7)
                 sStmt.bindString(8, s.programType ?: "movie")
                 sStmt.executeInsert()
+
+                if (!s.poster.isNullOrBlank() && !s.poster.startsWith("data:")) {
+                    val cvProg = ContentValues().apply {
+                        put("program_id", pid)
+                        put("title", title)
+                        put("title_en", s.title_en)
+                        put("program_type", s.programType ?: "movie")
+                        put("priority", CanonicalContentType.getPriority(s.programType ?: "movie"))
+                        put("poster", s.poster)
+                        put("overview", s.overview)
+                        put("rating", s.rating ?: "7.5")
+                    }
+                    db.insertWithOnConflict(TABLE_PROGRAMS, null, cvProg, SQLiteDatabase.CONFLICT_IGNORE)
+                }
             }
 
             if (programs != null) {

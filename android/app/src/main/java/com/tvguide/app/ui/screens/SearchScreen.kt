@@ -132,11 +132,13 @@ fun SearchResultCard(movie: Content, onClick: () -> Unit) {
                     .width(60.dp)
                     .height(85.dp)
             ) {
+                val chLogo = movie.airings.firstOrNull()?.channelLogo
+                val posterModel = com.tvguide.app.util.rememberResolvedPoster(movie.titleAr, movie.posterUrl, chLogo)
                 AsyncImage(
-                    model = movie.posterUrl,
+                    model = posterModel,
                     contentDescription = movie.titleAr,
                     modifier = Modifier.fillMaxSize(),
-                    contentScale = ContentScale.Crop
+                    contentScale = if (!posterModel.isNullOrBlank() && posterModel != chLogo) ContentScale.Crop else ContentScale.Fit
                 )
             }
             Spacer(modifier = Modifier.width(14.dp))

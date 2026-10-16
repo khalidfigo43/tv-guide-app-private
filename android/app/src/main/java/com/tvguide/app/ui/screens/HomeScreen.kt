@@ -549,11 +549,12 @@ fun LiveCardGrid3(item: NowAiringItem, onClick: () -> Unit) {
                 .height(150.dp)
         ) {
             Box(modifier = Modifier.fillMaxSize()) {
+                val posterModel = com.tvguide.app.util.rememberResolvedPoster(item.title, item.posterUrl ?: item.backdropUrl, item.channelLogo)
                 AsyncImage(
-                    model = item.posterUrl ?: item.backdropUrl ?: item.channelLogo,
+                    model = posterModel,
                     contentDescription = item.title,
                     modifier = Modifier.fillMaxSize(),
-                    contentScale = ContentScale.Crop
+                    contentScale = if (!posterModel.isNullOrBlank() && posterModel != item.channelLogo) ContentScale.Crop else ContentScale.Fit
                 )
 
                 // Top-end Live Badge
@@ -693,11 +694,12 @@ fun UpNextTabView(
                         .height(150.dp)
                 ) {
                     Box(modifier = Modifier.fillMaxSize()) {
+                        val posterModel = com.tvguide.app.util.rememberResolvedPoster(item.title, item.posterUrl ?: item.backdropPath, item.channelLogo)
                         AsyncImage(
-                            model = item.posterUrl ?: item.backdropPath ?: item.channelLogo,
+                            model = posterModel,
                             contentDescription = item.title,
                             modifier = Modifier.fillMaxSize(),
-                            contentScale = ContentScale.Crop
+                            contentScale = if (!posterModel.isNullOrBlank() && posterModel != item.channelLogo) ContentScale.Crop else ContentScale.Fit
                         )
 
                         // Start Time Badge Top-End
@@ -864,11 +866,13 @@ fun MoviePosterCardGrid3(
                 .height(150.dp)
         ) {
             Box(modifier = Modifier.fillMaxSize()) {
+                val chLogo = movie.airings.firstOrNull()?.channelLogo
+                val posterModel = com.tvguide.app.util.rememberResolvedPoster(movie.titleAr, movie.posterUrl, chLogo)
                 AsyncImage(
-                    model = movie.posterUrl,
+                    model = posterModel,
                     contentDescription = movie.titleAr,
                     modifier = Modifier.fillMaxSize(),
-                    contentScale = ContentScale.Crop
+                    contentScale = if (!posterModel.isNullOrBlank() && posterModel != chLogo) ContentScale.Crop else ContentScale.Fit
                 )
 
                 if (!movie.rating.isNullOrBlank()) {

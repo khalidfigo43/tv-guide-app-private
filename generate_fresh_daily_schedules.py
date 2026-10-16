@@ -312,6 +312,87 @@ def merge_and_upsert_schedules(
         merged_map[key] = standard_item
 
     result_list = list(merged_map.values())
+
+    # Post-processing: Normalize placeholders and merge consecutive identical filler slots
+    channel_name_map = {}
+    for cid, ch_info in catalog_by_id.items():
+        cname = ch_info.get("displayName") or ch_info.get("name_ar") or ch_info.get("name") or "القناة"
+        cname_clean = re.sub(r"^قناة\s+", "", cname).strip()
+        channel_name_map[cid] = cname_clean
+
+    scheds_by_channel_date: Dict[Tuple[Any, str], List[Dict[str, Any]]] = {}
+    for s in result_list:
+        k = (s.get("channelId"), s.get("date"))
+        scheds_by_channel_date.setdefault(k, []).append(s)
+
+    fixed_schedules = []
+    merged_fillers_count = 0
+    fixed_titles_count = 0
+
+    for (cid, date_val), day_scheds in scheds_by_channel_date.items():
+        day_scheds.sort(key=lambda x: x.get("startTime", ""))
+        ch_clean_name = channel_name_map.get(cid, "القناة")
+
+        for s in day_scheds:
+            title = (s.get("title") or "").strip()
+            st = s.get("startTime", "")
+
+            if title == "رقم 10" and cid in (21, 23):
+                s["title"] = "برنامج رقم 10 (رياضي)"
+                s["programType"] = "sports"
+                s["title_en"] = "Number 10 Sports Show"
+                fixed_titles_count += 1
+            elif title == "عربي":
+                if st >= "23:00" or st < "04:00":
+                    s["title"] = "فيلم عربي"
+                    s["programType"] = "movie"
+                    s["title_en"] = "Arabic Movie"
+                else:
+                    s["title"] = f"منوعات {ch_clean_name}"
+                    s["programType"] = "other"
+                    s["title_en"] = f"{ch_clean_name} Variety"
+                fixed_titles_count += 1
+            elif title in ("برنامج تلفزيوني", "برنامج تليفزيوني", "برنامج", ""):
+                if st >= "00:00" and st < "07:00":
+                    if cid in (60, 61):
+                        s["title"] = "إعادة دراما الليل"
+                        s["programType"] = "series"
+                    else:
+                        s["title"] = "فترة بث ليلي / إعادة برامج"
+                        s["programType"] = "other"
+                else:
+                    s["title"] = f"برامج {ch_clean_name}"
+                    s["programType"] = "other"
+                s["title_en"] = f"{ch_clean_name} Programming"
+                fixed_titles_count += 1
+
+        merged_day_scheds = []
+        i = 0
+        while i < len(day_scheds):
+            curr = day_scheds[i]
+            curr_title = curr.get("title", "")
+            if curr_title in ("فترة بث ليلي / إعادة برامج", "إعادة دراما الليل"):
+                j = i + 1
+                last_end = curr.get("endTime")
+                while j < len(day_scheds):
+                    nxt = day_scheds[j]
+                    if nxt.get("title") == curr_title and nxt.get("startTime") == last_end:
+                        last_end = nxt.get("endTime")
+                        j += 1
+                    else:
+                        break
+                if j > i + 1:
+                    curr["endTime"] = last_end
+                    merged_fillers_count += (j - i - 1)
+                    merged_day_scheds.append(curr)
+                    i = j
+                    continue
+            merged_day_scheds.append(curr)
+            i += 1
+
+        fixed_schedules.extend(merged_day_scheds)
+
+    result_list = fixed_schedules
     result_list.sort(key=lambda x: (x.get("date", ""), x.get("startTime", ""), x.get("channelId", 0)))
 
     print(f"✓ Merge complete:")
@@ -319,6 +400,8 @@ def merge_and_upsert_schedules(
     print(f"  Pruned past items (< {today_str}): {stats['pruned_past']}")
     print(f"  Fresh items added: {stats['inserted']}")
     print(f"  Existing items updated: {stats['updated']}")
+    print(f"  Fixed generic titles: {fixed_titles_count}")
+    print(f"  Merged redundant filler slots: {merged_fillers_count}")
     print(f"  Final total broadcast entries: {len(result_list)}")
 
     return result_list, stats
@@ -541,6 +624,8 @@ def main():
                     poster = cache_item["poster"]
                 elif title in existing_programs and existing_programs[title].get("poster"):
                     poster = existing_programs[title]["poster"]
+                elif ch_info.get("logo_url"):
+                    poster = ch_info.get("logo_url")
 
             if poster and not str(poster).startswith("data:"):
                 meta["poster"] = poster
@@ -556,6 +641,7 @@ def main():
                 ]
             programs_catalog[title] = meta
 
+        poster_to_use = poster or s.get("poster") or ch_info.get("logo_url")
         min_item = {
             "channelId": ch_id,
             "programId": stable_id,
@@ -567,6 +653,10 @@ def main():
         }
         if s.get("title_en"):
             min_item["title_en"] = s.get("title_en")
+        if poster_to_use and not str(poster_to_use).startswith("data:"):
+            min_item["poster"] = poster_to_use
+        if s.get("overview"):
+            min_item["overview"] = s.get("overview")
 
         minimized_schedules.append(min_item)
 
