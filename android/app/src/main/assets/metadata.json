@@ -1,42 +1,42 @@
 {
-  "version": 109,
-  "previousVersion": 108,
-  "generatedAt": "2026-09-18 02:23:18",
-  "generatedAtUtc": "2026-09-18T02:23:18Z",
+  "version": 110,
+  "previousVersion": 109,
+  "generatedAt": "2026-10-16 21:18:12",
+  "generatedAtUtc": "2026-10-16T21:18:12Z",
   "timezone": "Africa/Cairo",
   "dateRange": {
-    "min": "2026-09-15",
-    "max": "2026-10-01",
+    "min": "2026-10-16",
+    "max": "2026-11-01",
     "totalDays": 17
   },
-  "channelsCount": 174,
-  "broadcastsCount": 35320,
-  "uniqueProgramsCount": 8325,
+  "channelsCount": 93,
+  "broadcastsCount": 6288,
+  "uniqueProgramsCount": 1571,
   "delta": {
-    "availableFrom": 108,
-    "filename": "delta_108_to_109.json",
-    "url": "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/deltas/delta_108_to_109.json",
-    "addedCount": 2968,
-    "updatedCount": 30569,
-    "deletedCount": 3903
+    "availableFrom": 109,
+    "filename": "delta_109_to_110.json",
+    "url": "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/deltas/delta_109_to_110.json",
+    "addedCount": 6288,
+    "updatedCount": 0,
+    "deletedCount": 0
   },
   "mergeStats": {
-    "existing_input": 36255,
-    "fresh_input": 7101,
-    "updated": 1533,
-    "inserted": 5090,
-    "retained_future": 30230,
-    "pruned_past": 0
+    "existing_input": 35320,
+    "fresh_input": 6759,
+    "updated": 0,
+    "inserted": 6288,
+    "retained_future": 0,
+    "pruned_past": 35320
   },
   "collectors": {
     "rotana": {
       "name": "Rotana",
-      "status": "SUCCESS_WITH_FUTURE",
+      "status": "PARTIAL_DATA",
       "channels_attempted": 8,
-      "channels_succeeded": 8,
-      "broadcasts_count": 2011,
-      "min_date": "2026-09-17",
-      "max_date": "2026-09-30"
+      "channels_succeeded": 7,
+      "broadcasts_count": 1944,
+      "min_date": "2026-10-16",
+      "max_date": "2026-11-01"
     },
     "osn": {
       "name": "OSN",
@@ -52,15 +52,16 @@
       "status": "SUCCESS_WITH_FUTURE",
       "channels_attempted": 93,
       "channels_succeeded": 93,
-      "broadcasts_count": 5090,
-      "min_date": "2026-09-18",
-      "max_date": "2026-09-21"
+      "broadcasts_count": 4815,
+      "min_date": "2026-10-16",
+      "max_date": "2026-10-19"
     }
   },
   "validation": {
     "passed": true,
     "warnings": [
-      "Dataset contains 3 past dates older than today (['2026-09-15', '2026-09-16', '2026-09-17'])"
+      "Notice: Fresh dataset has 6288 broadcasts (< 40% of previous multi-week baseline 35320). Accepting reset with 93 active channels after staleness gap.",
+      "Dataset contains 1 past dates older than today (['2026-10-16'])"
     ]
   }
 }
