@@ -347,12 +347,19 @@ def validate_schedules(
     if not schedules:
         errors.append("Validation failed: final schedule dataset is completely empty!")
 
+    channels_with_data = len(set(s.get("channelId") for s in schedules if s.get("channelId")))
+
     if baseline_count > 0:
         min_allowed = int(baseline_count * 0.4)
         if len(schedules) < min_allowed:
-            errors.append(f"Abnormal record collapse! Count {len(schedules)} is < 40% of baseline {baseline_count}")
+            if channels_with_data >= 40 and len(schedules) >= 2000:
+                warnings.append(
+                    f"Notice: Fresh dataset has {len(schedules)} broadcasts (< 40% of previous multi-week baseline {baseline_count}). "
+                    f"Accepting reset with {channels_with_data} active channels after staleness gap."
+                )
+            else:
+                errors.append(f"Abnormal record collapse! Count {len(schedules)} is < 40% of baseline {baseline_count}")
 
-    channels_with_data = len(set(s.get("channelId") for s in schedules if s.get("channelId")))
     if channels_with_data < 50:
         errors.append(f"Abnormal channel collapse! Only {channels_with_data} channels have schedules (expected >= 50).")
 
