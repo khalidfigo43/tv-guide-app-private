@@ -1,32 +1,32 @@
 {
-  "version": 114,
-  "previousVersion": 113,
-  "generatedAt": "2026-10-20 23:41:10",
-  "generatedAtUtc": "2026-10-20T23:41:10Z",
+  "version": 115,
+  "previousVersion": 114,
+  "generatedAt": "2026-10-21 23:56:36",
+  "generatedAtUtc": "2026-10-21T23:56:36Z",
   "timezone": "Africa/Cairo",
   "dateRange": {
-    "min": "2026-10-18",
+    "min": "2026-10-19",
     "max": "2026-11-01",
-    "totalDays": 15
+    "totalDays": 14
   },
   "channelsCount": 93,
-  "broadcastsCount": 8607,
-  "uniqueProgramsCount": 1783,
+  "broadcastsCount": 8354,
+  "uniqueProgramsCount": 1859,
   "delta": {
-    "availableFrom": 113,
-    "filename": "delta_113_to_114.json",
-    "url": "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/deltas/delta_113_to_114.json",
-    "addedCount": 8607,
+    "availableFrom": 114,
+    "filename": "delta_114_to_115.json",
+    "url": "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/deltas/delta_114_to_115.json",
+    "addedCount": 8354,
     "updatedCount": 0,
     "deletedCount": 0
   },
   "mergeStats": {
-    "existing_input": 6727,
-    "fresh_input": 6540,
-    "updated": 962,
-    "inserted": 5074,
-    "retained_future": 3619,
-    "pruned_past": 978
+    "existing_input": 8607,
+    "fresh_input": 6448,
+    "updated": 851,
+    "inserted": 5110,
+    "retained_future": 3371,
+    "pruned_past": 591
   },
   "collectors": {
     "rotana": {
@@ -34,9 +34,9 @@
       "status": "PARTIAL_DATA",
       "channels_attempted": 8,
       "channels_succeeded": 7,
-      "broadcasts_count": 1466,
-      "min_date": "2026-10-20",
-      "max_date": "2026-10-31"
+      "broadcasts_count": 1338,
+      "min_date": "2026-10-21",
+      "max_date": "2026-11-01"
     },
     "osn": {
       "name": "OSN",
@@ -49,18 +49,18 @@
     },
     "elcinema": {
       "name": "ElCinema",
-      "status": "PARTIAL_DATA",
+      "status": "SUCCESS_WITH_FUTURE",
       "channels_attempted": 93,
-      "channels_succeeded": 92,
-      "broadcasts_count": 5074,
-      "min_date": "2026-10-20",
-      "max_date": "2026-10-23"
+      "channels_succeeded": 93,
+      "broadcasts_count": 5110,
+      "min_date": "2026-10-21",
+      "max_date": "2026-10-24"
     }
   },
   "validation": {
     "passed": true,
     "warnings": [
-      "Dataset contains 3 past dates older than today (['2026-10-18', '2026-10-19', '2026-10-20'])"
+      "Dataset contains 3 past dates older than today (['2026-10-19', '2026-10-20', '2026-10-21'])"
     ]
   }
 }
