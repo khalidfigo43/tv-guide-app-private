@@ -1,32 +1,32 @@
 {
-  "version": 115,
-  "previousVersion": 114,
-  "generatedAt": "2026-10-21 23:56:36",
-  "generatedAtUtc": "2026-10-21T23:56:36Z",
+  "version": 116,
+  "previousVersion": 115,
+  "generatedAt": "2026-10-22 23:55:19",
+  "generatedAtUtc": "2026-10-22T23:55:19Z",
   "timezone": "Africa/Cairo",
   "dateRange": {
-    "min": "2026-10-19",
+    "min": "2026-10-20",
     "max": "2026-11-01",
-    "totalDays": 14
+    "totalDays": 13
   },
   "channelsCount": 93,
-  "broadcastsCount": 8354,
-  "uniqueProgramsCount": 1859,
+  "broadcastsCount": 6362,
+  "uniqueProgramsCount": 1626,
   "delta": {
-    "availableFrom": 114,
-    "filename": "delta_114_to_115.json",
-    "url": "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/deltas/delta_114_to_115.json",
-    "addedCount": 8354,
+    "availableFrom": 115,
+    "filename": "delta_115_to_116.json",
+    "url": "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/deltas/delta_115_to_116.json",
+    "addedCount": 6362,
     "updatedCount": 0,
     "deletedCount": 0
   },
   "mergeStats": {
-    "existing_input": 8607,
-    "fresh_input": 6448,
-    "updated": 851,
-    "inserted": 5110,
-    "retained_future": 3371,
-    "pruned_past": 591
+    "existing_input": 8354,
+    "fresh_input": 6014,
+    "updated": 730,
+    "inserted": 4803,
+    "retained_future": 1683,
+    "pruned_past": 2034
   },
   "collectors": {
     "rotana": {
@@ -34,9 +34,9 @@
       "status": "PARTIAL_DATA",
       "channels_attempted": 8,
       "channels_succeeded": 7,
-      "broadcasts_count": 1338,
-      "min_date": "2026-10-21",
-      "max_date": "2026-11-01"
+      "broadcasts_count": 1211,
+      "min_date": "2026-10-22",
+      "max_date": "2026-10-31"
     },
     "osn": {
       "name": "OSN",
@@ -52,15 +52,15 @@
       "status": "SUCCESS_WITH_FUTURE",
       "channels_attempted": 93,
       "channels_succeeded": 93,
-      "broadcasts_count": 5110,
-      "min_date": "2026-10-21",
-      "max_date": "2026-10-24"
+      "broadcasts_count": 4803,
+      "min_date": "2026-10-22",
+      "max_date": "2026-10-25"
     }
   },
   "validation": {
     "passed": true,
     "warnings": [
-      "Dataset contains 3 past dates older than today (['2026-10-19', '2026-10-20', '2026-10-21'])"
+      "Dataset contains 3 past dates older than today (['2026-10-20', '2026-10-21', '2026-10-22'])"
     ]
   }
 }
