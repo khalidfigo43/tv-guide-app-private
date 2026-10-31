@@ -1,32 +1,32 @@
 {
-  "version": 121,
-  "previousVersion": 120,
-  "generatedAt": "2026-10-31 00:34:00",
-  "generatedAtUtc": "2026-10-31T00:34:00Z",
+  "version": 122,
+  "previousVersion": 121,
+  "generatedAt": "2026-10-31 23:58:35",
+  "generatedAtUtc": "2026-10-31T23:58:35Z",
   "timezone": "Africa/Cairo",
   "dateRange": {
-    "min": "2026-10-28",
+    "min": "2026-10-29",
     "max": "2026-11-30",
-    "totalDays": 34
+    "totalDays": 33
   },
   "channelsCount": 150,
-  "broadcastsCount": 28006,
-  "uniqueProgramsCount": 6866,
+  "broadcastsCount": 27622,
+  "uniqueProgramsCount": 6668,
   "delta": {
-    "availableFrom": 120,
-    "filename": "delta_120_to_121.json",
-    "url": "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/deltas/delta_120_to_121.json",
-    "addedCount": 28006,
+    "availableFrom": 121,
+    "filename": "delta_121_to_122.json",
+    "url": "https://raw.githubusercontent.com/khalidfigo43/tv-guide-releases/main/data/deltas/delta_121_to_122.json",
+    "addedCount": 27622,
     "updatedCount": 0,
     "deletedCount": 0
   },
   "mergeStats": {
-    "existing_input": 23001,
-    "fresh_input": 27914,
-    "updated": 17088,
-    "inserted": 8049,
-    "retained_future": 20033,
-    "pruned_past": 1649
+    "existing_input": 28006,
+    "fresh_input": 26759,
+    "updated": 19866,
+    "inserted": 4253,
+    "retained_future": 23403,
+    "pruned_past": 322
   },
   "collectors": {
     "rotana": {
@@ -34,7 +34,7 @@
       "status": "PARTIAL_DATA",
       "channels_attempted": 8,
       "channels_succeeded": 7,
-      "broadcasts_count": 2898,
+      "broadcasts_count": 2821,
       "min_date": "2026-10-30",
       "max_date": "2026-11-30"
     },
@@ -51,8 +51,8 @@
       "name": "ElCinema",
       "status": "PARTIAL_DATA",
       "channels_attempted": 93,
-      "channels_succeeded": 92,
-      "broadcasts_count": 4601,
+      "channels_succeeded": 90,
+      "broadcasts_count": 3523,
       "min_date": "2026-10-31",
       "max_date": "2026-11-04"
     }
@@ -60,7 +60,7 @@
   "validation": {
     "passed": true,
     "warnings": [
-      "Dataset contains 3 past dates older than today (['2026-10-28', '2026-10-29', '2026-10-30'])"
+      "Dataset contains 3 past dates older than today (['2026-10-29', '2026-10-30', '2026-10-31'])"
     ]
   }
 }
